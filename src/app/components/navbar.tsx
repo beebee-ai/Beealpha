@@ -33,7 +33,7 @@ export function Navbar() {
   const navItems = [
     { label: t("navbar.outcome"), id: "outcome" },
     { label: t("navbar.course"), id: "course" },
-    { label: t("navbar.works"), id: "works" },
+    { label: t("navbar.works"), id: "student-works" },
     { label: t("navbar.teachers"), id: "teachers" },
     { label: t("navbar.aboutUs"), id: "about" },
     { label: t("navbar.faq"), id: "faq" },
