@@ -56,6 +56,10 @@ export function SEO() {
       {/* Canonical Link */}
       <link rel="canonical" href="https://beealpha.nz/" />
       
+      {/* Favicon */}
+      <link rel="icon" type="image/png" href="https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-alpha/logo.png" />
+      <link rel="apple-touch-icon" href="https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-alpha/logo.png" />
+      
       {/* Language Alternates */}
       <link rel="alternate" hrefLang="zh" href="https://beealpha.nz/?lang=zh" />
       <link rel="alternate" hrefLang="en" href="https://beealpha.nz/?lang=en" />
