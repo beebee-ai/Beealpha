@@ -43,13 +43,18 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#works" className="hover:text-primary transition-colors">
+                <a href="#student-works" className="hover:text-primary transition-colors">
                   {t('navbar.works')}
                 </a>
               </li>
               <li>
                 <a href="#teachers" className="hover:text-primary transition-colors">
                   {t('navbar.teachers')}
+                </a>
+              </li>
+              <li>
+                <a href="#about" className="hover:text-primary transition-colors">
+                  {t('navbar.aboutUs')}
                 </a>
               </li>
               <li>
