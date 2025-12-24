@@ -1,6 +1,7 @@
 import { Mail, MapPin, Globe } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import logo from "figma:asset/cf3fed6ebf7bb5fd6e6487fd90ac2677e1b16424.png";
+
+const logo = "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-alpha/logo.png";
 
 export function Footer() {
   const { t } = useTranslation();

@@ -8,7 +8,8 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
-import logo from "figma:asset/cf3fed6ebf7bb5fd6e6487fd90ac2677e1b16424.png";
+
+const logo = "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-alpha/logo.png";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
