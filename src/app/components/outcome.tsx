@@ -1,42 +1,35 @@
 import { motion } from "motion/react";
-import { Target, Brain, Zap, Award, TrendingUp, Users } from "lucide-react";
+import { PenTool, Trophy, Globe, Zap } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export function Outcome() {
+  const { t } = useTranslation();
+
   const outcomes = [
     {
-      icon: Target,
-      title: "真实 AI 应用",
-      description: "不是玩具项目，而是能在家长或学校生活里直接使用的 AI 产品",
+      icon: PenTool,
+      title: t("outcome.items.0.title"),
+      description: t("outcome.items.0.desc"),
     },
     {
-      icon: Brain,
-      title: "AI 思维模式",
-      description: "学会把问题分解，让 AI 接手重复性部分，自己专注判断与创意",
+      icon: Trophy,
+      title: t("outcome.items.1.title"),
+      description: t("outcome.items.1.desc"),
+    },
+    {
+      icon: Globe,
+      title: t("outcome.items.2.title"),
+      description: t("outcome.items.2.desc"),
     },
     {
       icon: Zap,
-      title: "无摩擦学习",
-      description: "零编程基础也能做出作品，从第一节课就能让 AI 帮他完成任务",
-    },
-    {
-      icon: Award,
-      title: "未来自信心",
-      description: "意识到 AI 被他控制，而不是控制他，形成强大的未来竞争力",
-    },
-    {
-      icon: TrendingUp,
-      title: "可复用能力",
-      description: "掌握任务拆解、AI 协作、产品输出的完整能力框架",
-    },
-    {
-      icon: Users,
-      title: "高密度陪练",
-      description: "12 人小班 + 1对1 导师陪练，确保每个孩子都被真正看见",
+      title: t("outcome.items.3.title"),
+      description: t("outcome.items.3.desc"),
     },
   ];
 
   return (
-    <section id="outcome" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="outcome" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-orange-50/30 to-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <motion.div
@@ -45,16 +38,17 @@ export function Outcome() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
+            <div className="text-primary text-sm font-semibold tracking-widest mb-3 uppercase">
+              {t("outcome.badge")}
+            </div>
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              孩子将获得什么？
+              {t("outcome.title")}
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              我们不是教知识，也不是教软件操作。我们教的是"把问题交给 AI，让自己做更有价值的部分"
-            </p>
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Outcome Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {outcomes.map((outcome, index) => {
             const Icon = outcome.icon;
             return (
@@ -64,13 +58,15 @@ export function Outcome() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-gradient-to-br from-white to-orange-50/30 p-8 rounded-2xl border border-border hover:shadow-lg transition-shadow"
+                className="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-shadow"
               >
-                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
-                  <Icon className="w-6 h-6 text-primary" />
+                <div className="mb-6">
+                  <Icon className="w-12 h-12 text-primary" strokeWidth={1.5} />
                 </div>
-                <h3 className="text-xl font-bold mb-3">{outcome.title}</h3>
-                <p className="text-muted-foreground">{outcome.description}</p>
+                <h3 className="font-bold text-lg mb-3">{outcome.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {outcome.description}
+                </p>
               </motion.div>
             );
           })}

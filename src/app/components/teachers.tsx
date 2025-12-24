@@ -1,156 +1,231 @@
-import { motion } from "motion/react";
-import { GraduationCap, Heart, Lightbulb, Users } from "lucide-react";
+import { motion, AnimatePresence } from "motion/react";
+import { useState, useEffect } from "react";
+import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import { homeMentors, homeExperts, Mentor } from "../data/mentors";
 
-export function Teachers() {
-  const values = [
-    {
-      icon: GraduationCap,
-      title: "懂 AI 的教练",
-      description: "不只是老师，更是帮助孩子驯化 AI 的专业教练",
-    },
-    {
-      icon: Lightbulb,
-      title: "懂产品的导师",
-      description: "具备真实产品开发经验，教会孩子产品思维",
-    },
-    {
-      icon: Heart,
-      title: "懂孩子的伙伴",
-      description: "理解青少年学习心理，用对方法带领成长",
-    },
-    {
-      icon: Users,
-      title: "高密度陪伴",
-      description: "12人小班 + 1对1陪练，确保每个孩子都被看见",
-    },
-  ];
+interface TeachersProps {
+  onViewAll?: () => void;
+}
 
-  const principles = [
-    {
-      title: "反神秘化",
-      description: "不把 AI 当玄学，用真实模型让孩子理解 AI 的逻辑",
-      example: "孩子能解释 AI 为什么写错一句话，而不只是说「AI 就是这样」",
-    },
-    {
-      title: "用得出来",
-      description: "更关心孩子做出来什么，而不是学了多少知识点",
-      example: "课程结束孩子能做一个自己训练的 AI 项目，而不是一份 PPT",
-    },
-    {
-      title: "AI 思维",
-      description: "不是教工具，而是教思维模式",
-      example: "孩子懂得把重复性工作交给 AI，自己专注判断与创意",
-    },
-    {
-      title: "面向现实",
-      description: "课程完全围绕真实应用，不做无用的理论堆砌",
-      example: "孩子做的项目能在生活里直接使用，而不是「玩具项目」",
-    },
-  ];
+export function Teachers({ onViewAll }: TeachersProps) {
+  const { t, i18n } = useTranslation();
+  const [activeTab, setActiveTab] = useState<"mentors" | "experts">("mentors");
+  const [currentPage, setCurrentPage] = useState(0);
+  const [itemsPerPage, setItemsPerPage] = useState(6);
+  
+  const isEn = i18n.language === 'en';
+
+  const currentTeam: Mentor[] = activeTab === "mentors" ? homeMentors : homeExperts;
+
+  // Handle Resize for itemsPerPage
+  useEffect(() => {
+    const handleResize = () => {
+      // Mobile: Show 2 items per page (1 column x 2 rows)
+      // Desktop: Show 6 items per page (3 columns x 2 rows)
+      if (window.innerWidth < 768) {
+        setItemsPerPage(2);
+      } else {
+        setItemsPerPage(6);
+      }
+    };
+
+    handleResize(); // Init
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Calculate pages
+  const totalPages = Math.ceil(currentTeam.length / itemsPerPage);
+
+  // Reset page when tab changes
+  useEffect(() => {
+    setCurrentPage(0);
+  }, [activeTab]);
+
+  // Ensure current page is valid after resize
+  useEffect(() => {
+    if (currentPage >= totalPages && totalPages > 0) {
+      setCurrentPage(Math.max(0, totalPages - 1));
+    }
+  }, [itemsPerPage, totalPages, currentPage]);
+
+  const nextPage = () => {
+    setCurrentPage((prev) => (prev + 1) % totalPages);
+  };
+
+  const prevPage = () => {
+    setCurrentPage((prev) => (prev - 1 + totalPages) % totalPages);
+  };
+
+  const currentItems = currentTeam.slice(
+    currentPage * itemsPerPage,
+    (currentPage + 1) * itemsPerPage
+  );
 
   return (
     <section
       id="teachers"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-[#0a0e14]"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              是谁在教孩子？
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-white">
+              {t("teachers.title")}
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              我们不是"老师"，而是孩子的 AI 驯化教练和未来能力合伙人
+            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+              {t("teachers.subtitle")}
             </p>
           </motion.div>
         </div>
 
-        {/* Team Values */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {values.map((value, index) => {
-            const Icon = value.icon;
-            return (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white p-6 rounded-xl border border-border text-center hover:shadow-lg transition-shadow"
-              >
-                <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <Icon className="w-7 h-7 text-primary" />
-                </div>
-                <h3 className="font-bold mb-2">{value.title}</h3>
-                <p className="text-sm text-muted-foreground">
-                  {value.description}
-                </p>
-              </motion.div>
-            );
-          })}
+        {/* Tab Navigation */}
+        <div className="flex justify-center mb-12">
+          <div className="inline-flex bg-[#1a1f2e] rounded-lg p-1">
+            <button
+              onClick={() => setActiveTab("mentors")}
+              className={`px-8 py-3 rounded-lg transition-all ${
+                activeTab === "mentors"
+                  ? "bg-primary text-white"
+                  : "text-gray-400 hover:text-white"
+              }`}
+            >
+              {t("teachers.tabs.mentors")}
+            </button>
+            <button
+              onClick={() => setActiveTab("experts")}
+              className={`px-8 py-3 rounded-lg transition-all ${
+                activeTab === "experts"
+                  ? "bg-primary text-white"
+                  : "text-gray-400 hover:text-white"
+              }`}
+            >
+              {t("teachers.tabs.experts")}
+            </button>
+          </div>
         </div>
 
-        {/* Teaching Principles */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <div className="bg-white p-8 sm:p-12 rounded-2xl border border-border">
-            <h3 className="text-2xl font-bold mb-8 text-center">
-              我们的教学原则
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {principles.map((principle, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="relative"
+        {/* Team Grid with Pagination */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={`${activeTab}-${currentPage}`}
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -20 }}
+            transition={{ duration: 0.3 }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 min-h-[300px]"
+          >
+            {currentItems.map((member, index) => {
+              if (member.isInviteCard) {
+                 return (
+                  <div
+                    key={`invite-${index}`}
+                    onClick={onViewAll}
+                    className="group relative bg-[#1a1f2e] rounded-2xl overflow-hidden hover:transform hover:scale-[1.02] transition-all duration-300 flex flex-col justify-center items-center text-center p-8 border border-dashed border-gray-700 hover:border-primary/50 h-full min-h-[240px] cursor-pointer"
+                  >
+                     <div className="mb-4 p-4 bg-primary/10 rounded-full group-hover:bg-primary/20 transition-colors">
+                       <ArrowRight className="w-8 h-8 text-primary" />
+                     </div>
+                     <h3 className="text-xl font-bold text-white mb-2">
+                       {isEn ? "View All Mentors" : "查看所有导师"}
+                     </h3>
+                     <p className="text-sm text-gray-400">
+                       {isEn 
+                         ? "Click to see detailed profiles of our full mentor team." 
+                         : "点击查看导师团队详细介绍"}
+                     </p>
+                  </div>
+                 );
+              }
+
+              return (
+                <div
+                  key={member.id}
+                  className="group bg-[#1a1f2e] rounded-2xl overflow-hidden hover:transform hover:scale-[1.02] transition-all duration-300 flex flex-row h-full border border-white/5 hover:border-primary/20 min-h-[240px]"
                 >
-                  <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-primary to-orange-400 rounded-full" />
-                  <div className="pl-4">
-                    <h4 className="font-bold text-lg mb-2 text-primary">
-                      {principle.title}
-                    </h4>
-                    <p className="text-muted-foreground mb-3">
-                      {principle.description}
+                  {/* Left Side: Image (Vertical Portrait) */}
+                  <div className="w-[140px] sm:w-[180px] flex-shrink-0 relative bg-[#151925] flex items-center justify-center">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-contain object-center group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+
+                  {/* Right Side: Content */}
+                  <div className="flex-1 flex flex-col p-4 sm:p-5 relative z-10 min-w-0">
+                    <h3 className="text-lg sm:text-xl font-bold text-white mb-1 truncate">
+                      {member.name}
+                    </h3>
+                    <p className="text-xs text-primary mb-2 font-medium uppercase tracking-wide leading-tight line-clamp-2">
+                      {isEn ? member.title.en : member.title.zh}
                     </p>
-                    <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-primary/30">
-                      <p className="text-sm italic text-muted-foreground">
-                        例：{principle.example}
-                      </p>
+                    <p className="text-xs sm:text-sm text-gray-400 leading-relaxed mb-3 flex-grow line-clamp-4">
+                      {isEn ? member.bio.en : member.bio.zh}
+                    </p>
+                    
+                    {/* Tags */}
+                    <div className="flex flex-wrap gap-1.5 mt-auto">
+                      {(isEn ? member.expertise.en : member.expertise.zh).slice(0, 3).map((tag, i) => { 
+                        const colors = [
+                          "bg-yellow-500/10 text-yellow-400 border-yellow-500/20",
+                          "bg-green-500/10 text-green-400 border-green-500/20",
+                          "bg-blue-500/10 text-blue-400 border-blue-500/20",
+                        ];
+                        return (
+                          <span
+                            key={i}
+                            className={`text-[10px] px-1.5 py-0.5 rounded border ${colors[i % colors.length]} whitespace-nowrap`}
+                          >
+                            {tag}
+                          </span>
+                        );
+                      })}
+                      {/* Removed the +N badge logic here */}
                     </div>
                   </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </motion.div>
+                </div>
+              );
+            })}
+          </motion.div>
+        </AnimatePresence>
 
-        {/* Belief Statement */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mt-12 text-center"
-        >
-          <div className="bg-gradient-to-r from-primary to-orange-600 text-white p-8 rounded-2xl max-w-3xl mx-auto">
-            <p className="text-2xl font-bold mb-4">我们相信</p>
-            <p className="text-xl">
-              孩子不是学不会，只是没人用对方法带他们
-            </p>
+        {/* Pagination Controls */}
+        <div className="flex justify-center items-center gap-4">
+          <button
+            onClick={prevPage}
+            className="p-2 rounded-full bg-[#1a1f2e] text-white hover:bg-primary transition-colors disabled:opacity-50"
+            disabled={totalPages <= 1}
+          >
+            <ChevronLeft size={24} />
+          </button>
+          
+          <div className="flex gap-2">
+            {Array.from({ length: totalPages }).map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setCurrentPage(i)}
+                className={`w-3 h-3 rounded-full transition-all ${
+                  currentPage === i ? "bg-primary w-6" : "bg-gray-600 hover:bg-gray-500"
+                }`}
+              />
+            ))}
           </div>
-        </motion.div>
+
+          <button
+            onClick={nextPage}
+            className="p-2 rounded-full bg-[#1a1f2e] text-white hover:bg-primary transition-colors disabled:opacity-50"
+            disabled={totalPages <= 1}
+          >
+            <ChevronRight size={24} />
+          </button>
+        </div>
       </div>
     </section>
   );

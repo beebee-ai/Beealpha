@@ -1,9 +1,24 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Globe, ChevronDown } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { Button } from "./ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "./ui/dropdown-menu";
+import logo from "figma:asset/cf3fed6ebf7bb5fd6e6487fd90ac2677e1b16424.png";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lang: string) => {
+    i18n.changeLanguage(lang);
+  };
+
+  const currentLanguageLabel = i18n.language === 'zh' ? '中文' : 'English';
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -14,12 +29,33 @@ export function Navbar() {
   };
 
   const navItems = [
-    { label: "课程价值", id: "outcome" },
-    { label: "课程结构", id: "course" },
-    { label: "学员作品", id: "works" },
-    { label: "导师团队", id: "teachers" },
-    { label: "常见问题", id: "faq" },
+    { label: t("navbar.outcome"), id: "outcome" },
+    { label: t("navbar.course"), id: "course" },
+    { label: t("navbar.works"), id: "works" },
+    { label: t("navbar.teachers"), id: "teachers" },
+    { label: t("navbar.aboutUs"), id: "about" },
+    { label: t("navbar.faq"), id: "faq" },
   ];
+
+  const LanguageSelector = () => (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button variant="ghost" size="sm" className="flex items-center gap-2 px-2">
+          <Globe className="w-4 h-4" />
+          <span>{currentLanguageLabel}</span>
+          <ChevronDown className="w-4 h-4 opacity-50" />
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end">
+        <DropdownMenuItem onClick={() => changeLanguage('zh')} className={i18n.language === 'zh' ? 'bg-accent' : ''}>
+          中文
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => changeLanguage('en')} className={i18n.language === 'en' ? 'bg-accent' : ''}>
+          English
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
+  );
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
@@ -28,12 +64,14 @@ export function Navbar() {
           {/* Logo */}
           <button
             onClick={() => scrollToSection("hero")}
-            className="flex items-center space-x-2"
+            className="flex items-center space-x-2 group"
           >
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold">B</span>
-            </div>
-            <span className="font-bold text-xl">BEEBEE AI-Alpha</span>
+            <img 
+              src={logo} 
+              alt="BEEBEE AI-Alpha Logo" 
+              className="w-10 h-10 transition-transform group-hover:scale-105"
+            />
+            <span className="font-bold text-xl">Bee Alpha</span>
           </button>
 
           {/* Desktop Navigation */}
@@ -47,16 +85,22 @@ export function Navbar() {
                 {item.label}
               </button>
             ))}
-            <Button onClick={() => scrollToSection("cta")}>立即咨询</Button>
+            
+            <LanguageSelector />
+            
+            <Button onClick={() => scrollToSection("cta")}>{t("navbar.cta")}</Button>
           </div>
 
           {/* Mobile menu button */}
-          <button
-            className="md:hidden"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
+          <div className="md:hidden flex items-center gap-2">
+            <LanguageSelector />
+            <button
+              className="md:hidden ml-2"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -77,7 +121,7 @@ export function Navbar() {
               className="w-full"
               onClick={() => scrollToSection("cta")}
             >
-              立即咨询
+              {t("navbar.cta")}
             </Button>
           </div>
         </div>

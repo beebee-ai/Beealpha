@@ -1,8 +1,11 @@
 import { motion } from "motion/react";
 import { Button } from "./ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export function Hero() {
+  const { t } = useTranslation();
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -13,7 +16,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-orange-50/30"
+      className="pt-32 pb-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-orange-50/40 to-orange-50/60 relative"
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-4xl mx-auto">
@@ -24,7 +27,7 @@ export function Hero() {
             className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6"
           >
             <Sparkles className="w-4 h-4" />
-            <span className="text-sm">让青少年掌握未来的工作方式</span>
+            <span className="text-sm">{t('hero.badge')}</span>
           </motion.div>
 
           <motion.h1
@@ -33,18 +36,17 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
           >
-            6 周，让孩子
-            <span className="text-primary"> 用 AI 做出真实应用</span>
+            {t('hero.title_start')}
+            <span className="text-primary block">{t('hero.title_highlight')}</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto"
+            className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto"
           >
-            不用编程基础，不靠死记硬背。从第一节课开始就能让 AI
-            帮他完成现实任务，从"会用 AI"进化成"能做出作品"。
+            {t('hero.description')}
           </motion.p>
 
           <motion.div
@@ -58,7 +60,7 @@ export function Hero() {
               className="text-lg px-8"
               onClick={() => scrollToSection("cta")}
             >
-              立即报名
+              {t('hero.cta_primary')}
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
             <Button
@@ -67,31 +69,14 @@ export function Hero() {
               className="text-lg px-8"
               onClick={() => scrollToSection("outcome")}
             >
-              了解更多
+              {t('hero.cta_secondary')}
             </Button>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-3xl mx-auto"
-          >
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">6 周</div>
-              <div className="text-muted-foreground">完整训练营</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">12 人</div>
-              <div className="text-muted-foreground">小班教学</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">1 对 1</div>
-              <div className="text-muted-foreground">专属陪练</div>
-            </div>
           </motion.div>
         </div>
       </div>
+      
+      {/* Bottom shadow separator */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-orange-200/50 to-transparent"></div>
     </section>
   );
 }

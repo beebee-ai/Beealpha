@@ -1,50 +1,154 @@
-import { motion } from "motion/react";
-import { Code, Sparkles, Trophy } from "lucide-react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { motion, AnimatePresence } from "motion/react";
+import { Trophy, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import { useState, useEffect, useRef } from "react";
+import { studentWorks } from "../data/student-works";
 
-export function StudentWorks() {
-  const works = [
-    {
-      title: "智能作文助手",
-      student: "李同学 · 13岁",
-      description: "帮助分析作文结构，提供写作建议，自动生成改进方案",
-      tags: ["NLP", "写作辅助", "教育"],
-    },
-    {
-      title: "个性化学习计划生成器",
-      student: "王同学 · 14岁",
-      description: "根据学习进度和目标，自动生成个性化的学习计划和复习提醒",
-      tags: ["推荐系统", "教育", "时间管理"],
-    },
-    {
-      title: "图像风格转换工具",
-      student: "张同学 · 15岁",
-      description: "将普通照片转换成不同艺术风格，支持多种滤镜和效果",
-      tags: ["计算机视觉", "艺术创作", "图像处理"],
-    },
-    {
-      title: "智能问答机器人",
-      student: "刘同学 · 12岁",
-      description: "针对学科知识的智能问答系统，能够解答常见学习问题",
-      tags: ["对话系统", "教育", "知识图谱"],
-    },
-    {
-      title: "音乐推荐系统",
-      student: "陈同学 · 14岁",
-      description: "基于用户喜好推荐音乐，学习用户偏好并不断优化推荐",
-      tags: ["推荐算法", "音乐", "个性化"],
-    },
-    {
-      title: "代码学习助手",
-      student: "赵同学 · 15岁",
-      description: "帮助理解代码逻辑，提供代码优化建议和学习资源推荐",
-      tags: ["编程教育", "代码分析", "学习辅助"],
-    },
-  ];
+// LazyImage component using IntersectionObserver
+const LazyImage = ({ src, alt, className }: { src: string; alt: string; className?: string }) => {
+  const [imageSrc, setImageSrc] = useState<string>("");
+  const imgRef = useRef<HTMLImageElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setImageSrc(src);
+            observer.disconnect();
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (imgRef.current) {
+      observer.observe(imgRef.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [src]);
 
   return (
-    <section id="works" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <motion.img
+      ref={imgRef}
+      src={imageSrc || undefined} // Avoid broken image icon while loading
+      alt={alt}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: imageSrc ? 1 : 0 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3 }}
+      className={className}
+    />
+  );
+};
+
+function CardImageCarousel({ images, title, url }: { images: string[], title: string, url: string }) {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const nextImage = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setCurrentImageIndex((prev) => (prev + 1) % images.length);
+  };
+
+  const prevImage = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
+  };
+
+  return (
+    <div className="relative h-48 overflow-hidden block group/carousel">
+      <AnimatePresence mode="wait">
+        <LazyImage
+          key={currentImageIndex} // Re-mount LazyImage when index changes
+          src={images[currentImageIndex]}
+          alt={title}
+          className="w-full h-full object-cover absolute inset-0 group-hover:scale-110 transition-transform duration-500"
+        />
+      </AnimatePresence>
+      <div className="absolute inset-0 bg-gradient-to-t from-[#243447] to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
+      
+      {/* Navigation Arrows - Only show if multiple images */}
+      {images.length > 1 && (
+        <>
+          <button 
+            onClick={prevImage}
+            className="absolute left-2 top-1/2 -translate-y-1/2 p-1 bg-black/40 hover:bg-primary rounded-full text-white opacity-0 group-hover/carousel:opacity-100 transition-opacity z-10"
+          >
+            <ChevronLeft size={20} />
+          </button>
+          <button 
+            onClick={nextImage}
+            className="absolute right-2 top-1/2 -translate-y-1/2 p-1 bg-black/40 hover:bg-primary rounded-full text-white opacity-0 group-hover/carousel:opacity-100 transition-opacity z-10"
+          >
+            <ChevronRight size={20} />
+          </button>
+          
+          {/* Dots Indicator */}
+          <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1 z-10">
+            {images.map((_, idx) => (
+              <div 
+                key={idx} 
+                className={`w-1.5 h-1.5 rounded-full transition-colors ${idx === currentImageIndex ? 'bg-primary' : 'bg-white/40'}`}
+              />
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
+export function StudentWorks() {
+  const { t } = useTranslation();
+  
+  const [currentPage, setCurrentPage] = useState(0);
+  const [itemsPerPage, setItemsPerPage] = useState(6);
+
+  useEffect(() => {
+    const handleResize = () => {
+      // Mobile (< 768px): 2 items
+      // Desktop (>= 768px): 6 items
+      if (window.innerWidth < 768) {
+        setItemsPerPage(2);
+      } else {
+        setItemsPerPage(6);
+      }
+    };
+
+    handleResize(); // Init
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const totalPages = Math.ceil(studentWorks.length / itemsPerPage);
+
+  // Ensure current page is valid after resize
+  useEffect(() => {
+    if (currentPage >= totalPages) {
+      setCurrentPage(Math.max(0, totalPages - 1));
+    }
+  }, [itemsPerPage, totalPages, currentPage]);
+
+  const nextPage = () => {
+    setCurrentPage((prev) => (prev + 1) % totalPages);
+  };
+
+  const prevPage = () => {
+    setCurrentPage((prev) => (prev - 1 + totalPages) % totalPages);
+  };
+
+  const currentWorks = studentWorks.slice(
+    currentPage * itemsPerPage,
+    (currentPage + 1) * itemsPerPage
+  );
+
+  return (
+    <section id="student-works" className="py-20 px-4 sm:px-6 lg:px-8 bg-[#0a0e14]">
       <div className="max-w-7xl mx-auto">
+        {/* Header */}
         <div className="text-center mb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -52,80 +156,102 @@ export function StudentWorks() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-4">
-              <Trophy className="w-4 h-4" />
-              <span className="text-sm">真实学员作品</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary mb-6">
+              <Trophy size={16} />
+              <span className="text-sm font-medium uppercase tracking-wider">
+                {t("studentWorks.badge")}
+              </span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              看看他们做出了什么
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-white">
+              {t("studentWorks.title")}
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              每个项目都是学员在 6 周内独立完成的真实 AI 应用
+            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+              {t("studentWorks.subtitle")}
             </p>
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {works.map((work, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group bg-gradient-to-br from-white to-gray-50 rounded-2xl border border-border overflow-hidden hover:shadow-xl transition-all"
-            >
-              {/* Image Placeholder */}
-              <div className="relative h-48 bg-gradient-to-br from-primary/20 to-orange-200 flex items-center justify-center overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent" />
-                <Code className="w-16 h-16 text-primary/40" />
-                <div className="absolute top-4 right-4">
-                  <div className="w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center">
-                    <Sparkles className="w-5 h-5 text-primary" />
-                  </div>
-                </div>
-              </div>
+        {/* Project Grid */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={currentPage}
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -20 }}
+            transition={{ duration: 0.3 }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 min-h-[500px] items-start"
+          >
+            {currentWorks.map((work, index) => (
+              <div
+                key={work.url}
+                className="group relative bg-[#1a1f2e] rounded-xl overflow-hidden border border-white/5 hover:border-primary/50 transition-colors"
+              >
+                {/* Image Carousel */}
+                <CardImageCarousel 
+                  images={work.images} 
+                  title={`Student Work ${index + 1}`} 
+                  url={work.url}
+                />
 
-              {/* Content */}
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
-                  {work.title}
-                </h3>
-                <p className="text-sm text-primary mb-3">{work.student}</p>
-                <p className="text-muted-foreground mb-4 line-clamp-2">
-                  {work.description}
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {work.tags.map((tag, i) => (
-                    <span
-                      key={i}
-                      className="text-xs bg-primary/10 text-primary px-3 py-1 rounded-full"
+                {/* Content */}
+                <div className="p-6">
+                  <div className="flex justify-between items-start mb-4">
+                    <div className="flex flex-col items-start gap-2">
+                      <span className="inline-block px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20">
+                        {t(`studentWorks.works.${studentWorks.indexOf(work)}.role`, "Student Author")}
+                      </span>
+                      <h3 className="text-lg font-bold text-white mb-1 group-hover:text-primary transition-colors">
+                        {t(`studentWorks.works.${studentWorks.indexOf(work)}.title`, `Project ${studentWorks.indexOf(work) + 1}`)}
+                      </h3>
+                    </div>
+                    <a
+                      href={work.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 bg-white/5 rounded-lg text-gray-400 hover:text-white hover:bg-primary transition-all flex-shrink-0 ml-4"
                     >
-                      {tag}
-                    </span>
-                  ))}
+                      <ExternalLink size={18} />
+                    </a>
+                  </div>
+                  <p className="text-sm text-gray-400 line-clamp-2 mb-4">
+                    {t(`studentWorks.works.${studentWorks.indexOf(work)}.desc`, "Project description goes here.")}
+                  </p>
                 </div>
               </div>
-            </motion.div>
-          ))}
-        </div>
+            ))}
+          </motion.div>
+        </AnimatePresence>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mt-12 text-center"
-        >
-          <div className="bg-gradient-to-br from-orange-50 to-red-50 p-8 rounded-2xl border border-border max-w-3xl mx-auto">
-            <p className="text-lg">
-              这些都是<span className="font-bold text-primary">真实学员</span>
-              在训练营中完成的项目。
-              <br />
-              每个孩子在结营 Demo Day 上展示自己的作品，建立起强大的自信心。
-            </p>
+        {/* Pagination Controls */}
+        <div className="flex justify-center items-center gap-4">
+          <button
+            onClick={prevPage}
+            className="p-2 rounded-full bg-[#1a1f2e] text-white hover:bg-primary transition-colors disabled:opacity-50"
+            disabled={totalPages <= 1}
+          >
+            <ChevronLeft size={24} />
+          </button>
+          
+          <div className="flex gap-2">
+            {Array.from({ length: totalPages }).map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setCurrentPage(i)}
+                className={`w-3 h-3 rounded-full transition-all ${
+                  currentPage === i ? "bg-primary w-6" : "bg-gray-600 hover:bg-gray-500"
+                }`}
+              />
+            ))}
           </div>
-        </motion.div>
+
+          <button
+            onClick={nextPage}
+            className="p-2 rounded-full bg-[#1a1f2e] text-white hover:bg-primary transition-colors disabled:opacity-50"
+            disabled={totalPages <= 1}
+          >
+            <ChevronRight size={24} />
+          </button>
+        </div>
       </div>
     </section>
   );
