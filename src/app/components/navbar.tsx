@@ -18,7 +18,8 @@ export function Navbar() {
     i18n.changeLanguage(lang);
   };
 
-  const currentLanguageLabel = i18n.language === 'zh' ? '中文' : 'English';
+  // 更准确的语言判断，支持 zh-CN, zh-TW 等变体
+  const currentLanguageLabel = i18n.language?.startsWith('zh') ? '中文' : 'English';
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -47,10 +48,10 @@ export function Navbar() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => changeLanguage('zh')} className={i18n.language === 'zh' ? 'bg-accent' : ''}>
+        <DropdownMenuItem onClick={() => changeLanguage('zh')} className={i18n.language?.startsWith('zh') ? 'bg-accent' : ''}>
           中文
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => changeLanguage('en')} className={i18n.language === 'en' ? 'bg-accent' : ''}>
+        <DropdownMenuItem onClick={() => changeLanguage('en')} className={i18n.language?.startsWith('en') ? 'bg-accent' : ''}>
           English
         </DropdownMenuItem>
       </DropdownMenuContent>

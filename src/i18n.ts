@@ -410,7 +410,19 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: 'zh',
+    fallbackLng: 'en',
+    supportedLngs: ['en', 'zh'],
+    load: 'languageOnly', // 只使用语言代码，忽略地区代码（如 zh-CN -> zh）
+    detection: {
+      // 检测顺序：localStorage > 浏览器语言
+      order: ['localStorage', 'navigator'],
+      // localStorage 的 key 名称
+      lookupLocalStorage: 'i18nextLng',
+      // 缓存用户选择的语言
+      caches: ['localStorage'],
+      // 排除某些语言检测方式
+      excludeCacheFor: ['cimode'],
+    },
     interpolation: {
       escapeValue: false,
     },

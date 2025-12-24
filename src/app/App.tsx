@@ -14,6 +14,8 @@ import { Footer } from "./components/footer";
 import { AboutUs } from "./components/about-us";
 import { AllMentors } from "./components/all-mentors";
 import { InviteCodeModal } from "./components/invite-code-modal";
+import { SEO } from "./components/seo";
+import { HelmetProvider } from 'react-helmet-async';
 import "../i18n";
 import { useTranslation } from "react-i18next";
 
@@ -38,32 +40,35 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
-      <Navbar />
-      <main>
-        <Hero />
-        <Outcome />
-        <CourseMode />
-        <CoursePaths />
-        <WhyWhat />
-        <CoreValues />
-        <StudentWorks />
-        <Teachers onViewAll={handleOpenAllMentors} />
-        <AboutUs />
-        <FAQ />
-        <CTA />
-      </main>
-      <Footer />
-      
-      {showAllMentors && (
-        <AllMentors onClose={() => setShowAllMentors(false)} />
-      )}
+    <HelmetProvider>
+      <SEO />
+      <div className="min-h-screen bg-white">
+        <Navbar />
+        <main>
+          <Hero />
+          <Outcome />
+          <CourseMode />
+          <CoursePaths />
+          <WhyWhat />
+          <CoreValues />
+          <StudentWorks />
+          <Teachers onViewAll={handleOpenAllMentors} />
+          <AboutUs />
+          <FAQ />
+          <CTA />
+        </main>
+        <Footer />
+        
+        {showAllMentors && (
+          <AllMentors onClose={() => setShowAllMentors(false)} />
+        )}
 
-      <InviteCodeModal 
-        isOpen={showInviteModal} 
-        onClose={() => setShowInviteModal(false)}
-        onSuccess={handleInviteSuccess}
-      />
-    </div>
+        <InviteCodeModal 
+          isOpen={showInviteModal} 
+          onClose={() => setShowInviteModal(false)}
+          onSuccess={handleInviteSuccess}
+        />
+      </div>
+    </HelmetProvider>
   );
 }
