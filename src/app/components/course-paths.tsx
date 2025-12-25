@@ -71,7 +71,7 @@ export function CoursePaths() {
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <motion.div
@@ -175,7 +175,7 @@ export function CoursePaths() {
                       className="w-full bg-gradient-to-r from-[#ff6b35] to-[#f7931e] hover:opacity-90 text-white font-bold py-6 text-lg rounded-xl shadow-lg hover:translate-y-[-2px] transition-all"
                       onClick={() => handleInquire(pathway.title)}
                     >
-                      {i18n.language === 'zh' ? '立即咨询' : 'Inquire Now'}
+                      {t('navbar.cta')}
                     </Button>
                   </CardContent>
                 </Card>

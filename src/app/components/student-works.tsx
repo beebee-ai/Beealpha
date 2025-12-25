@@ -146,7 +146,7 @@ export function StudentWorks() {
   );
 
   return (
-    <section id="student-works" className="py-20 px-4 sm:px-6 lg:px-8 bg-[#0a0e14]">
+    <section id="student-works" className="py-12 px-4 sm:px-6 lg:px-8 bg-[#0a0e14]">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
