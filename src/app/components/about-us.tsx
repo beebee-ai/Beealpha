@@ -7,7 +7,7 @@ export function AboutUs() {
   const isEn = i18n.language === 'en';
 
   return (
-    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-black text-white">
+    <section id="about" className="py-12 px-4 sm:px-6 lg:px-8 bg-black text-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <motion.div

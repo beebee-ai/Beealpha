@@ -52,7 +52,7 @@ export function FAQ() {
   return (
     <section
       id="faq"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white"
+      className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white"
     >
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">

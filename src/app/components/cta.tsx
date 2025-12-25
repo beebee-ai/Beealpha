@@ -95,7 +95,7 @@ export function CTA() {
   return (
     <section
       id="cta"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/5 via-orange-50/30 to-white"
+      className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/5 via-orange-50/30 to-white"
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">

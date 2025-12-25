@@ -29,7 +29,7 @@ export function Outcome() {
   ];
 
   return (
-    <section id="outcome" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-orange-50/30 to-white">
+    <section id="outcome" className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-orange-50/30 to-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <motion.div

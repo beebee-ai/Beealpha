@@ -24,7 +24,7 @@ export function CourseMode() {
   ];
 
   return (
-    <section id="course" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="course" className="py-12 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <motion.div
