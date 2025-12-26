@@ -43,7 +43,7 @@ jobs:
 
       - name: Build
         env:
-          BASE_PATH: /${{ steps.repo.outputs.name }}/
+          BASE_PATH: /
         run: npm run build
 
       - name: List build files
