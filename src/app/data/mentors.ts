@@ -68,101 +68,6 @@ export const homeMentors: Mentor[] = [
     category: "project",
   },
   {
-    id: 6,
-    name: "Ashlynn L",
-    title: {
-      en: "Data Scientist & AI Data Engineer",
-      zh: "数据科学 / AI 数据工程师",
-    },
-    bio: {
-      en: "ICL Distinction MSc and Edinburgh First Class; strong in statistical modeling, async crawlers and LLM data systems.",
-      zh: "帝国理工硕士（卓越），爱丁堡一等荣誉；擅长统计建模、异步爬虫、LLM 数据处理与检索系统。",
-    },
-    expertise: {
-      en: [
-        "Data Science",
-        "Statistical Modeling",
-        "Async Crawling",
-        "LLM Data",
-        "ElasticSearch",
-      ],
-      zh: [
-        "数据科学",
-        "统计建模",
-        "异步爬虫",
-        "LLM 数据",
-        "ElasticSearch",
-      ],
-    },
-    image:
-      "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-beta/pacer/cartoon_ashlynn.png",
-    category: "project",
-  },
-  {
-    id: 16,
-    name: "Jennifer L",
-    title: {
-      en: "Senior AI Product GTM Expert / Serial Entrepreneur",
-      zh: "资深 AI 产品 GTM 专家 / 连续创业者",
-    },
-    bio: {
-      en: "NYU Economics & KCL International Management graduate, currently pursuing MBA at Cheung Kong. Former Lu Qi team member, co-founded AI company with Li Ziran, focusing on AI Growth Agent and product commercialization.",
-      zh: "NYU 经济学士、KCL 国际管理硕士，长江商学院 MBA 在读。曾在陆奇团队工作，与李自然共创 AI 公司，聚焦 AI Growth Agent 与产品商业化。",
-    },
-    expertise: {
-      en: [
-        "AI Product GTM",
-        "Growth Strategy",
-        "Cold Start",
-        "0-to-1 Product",
-        "Commercialization",
-      ],
-      zh: [
-        "AI 产品 GTM",
-        "增长策略",
-        "冷启动",
-        "0-1 产品",
-        "商业化",
-      ],
-    },
-    image:
-      "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-beta/pacer/cartoon_jennifer.png",
-    category: "project",
-  },
-  {
-    id: 13,
-    name: "Jerry Y",
-    title: {
-      en: "AI Infrastructure & Cloud Architecture Expert",
-      zh: "AI 基础设施与云架构专家",
-    },
-    bio: {
-      en: "16-year veteran, early DevOps adopter; expert in Kubernetes, cloud-native engineering and vLLM deployments.",
-      zh: "16 年大厂经验，国内最早 DevOps 实践者之一；精通 Kubernetes、MLOps、云原生、vLLM 推理部署。",
-    },
-    expertise: {
-      en: [
-        "Cloud-native",
-        "DevOps",
-        "MLOps",
-        "Kubernetes",
-        "vLLM",
-        "Infra",
-      ],
-      zh: [
-        "云原生",
-        "DevOps",
-        "MLOps",
-        "Kubernetes",
-        "vLLM",
-        "Infra",
-      ],
-    },
-    image:
-      "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-beta/pacer/cartoon_jerry.png",
-    category: "project",
-  },
-  {
     id: 9,
     name: "Fangzhong L",
     title: {
@@ -331,6 +236,101 @@ export const homeExperts: Mentor[] = [
     image:
       "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-beta/pacer/cartoon_guoyu.png",
     category: "lecturer",
+  },
+  {
+    id: 16,
+    name: "Jennifer L",
+    title: {
+      en: "Senior AI Product GTM Expert / Serial Entrepreneur",
+      zh: "资深 AI 产品 GTM 专家 / 连续创业者",
+    },
+    bio: {
+      en: "NYU Economics & KCL International Management graduate, currently pursuing MBA at Cheung Kong. Former Lu Qi team member, co-founded AI company with Li Ziran, focusing on AI Growth Agent and product commercialization.",
+      zh: "NYU 经济学士、KCL 国际管理硕士，长江商学院 MBA 在读。曾在陆奇团队工作，与李自然共创 AI 公司，聚焦 AI Growth Agent 与产品商业化。",
+    },
+    expertise: {
+      en: [
+        "AI Product GTM",
+        "Growth Strategy",
+        "Cold Start",
+        "0-to-1 Product",
+        "Commercialization",
+      ],
+      zh: [
+        "AI 产品 GTM",
+        "增长策略",
+        "冷启动",
+        "0-1 产品",
+        "商业化",
+      ],
+    },
+    image:
+      "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-beta/pacer/cartoon_jennifer.png",
+    category: "project",
+  },
+  {
+    id: 13,
+    name: "Jerry Y",
+    title: {
+      en: "AI Infrastructure & Cloud Architecture Expert",
+      zh: "AI 基础设施与云架构专家",
+    },
+    bio: {
+      en: "16-year veteran, early DevOps adopter; expert in Kubernetes, cloud-native engineering and vLLM deployments.",
+      zh: "16 年大厂经验，国内最早 DevOps 实践者之一；精通 Kubernetes、MLOps、云原生、vLLM 推理部署。",
+    },
+    expertise: {
+      en: [
+        "Cloud-native",
+        "DevOps",
+        "MLOps",
+        "Kubernetes",
+        "vLLM",
+        "Infra",
+      ],
+      zh: [
+        "云原生",
+        "DevOps",
+        "MLOps",
+        "Kubernetes",
+        "vLLM",
+        "Infra",
+      ],
+    },
+    image:
+      "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-beta/pacer/cartoon_jerry.png",
+    category: "project",
+  },
+  {
+    id: 6,
+    name: "Ashlynn L",
+    title: {
+      en: "Data Scientist & AI Data Engineer",
+      zh: "数据科学 / AI 数据工程师",
+    },
+    bio: {
+      en: "ICL Distinction MSc and Edinburgh First Class; strong in statistical modeling, async crawlers and LLM data systems.",
+      zh: "帝国理工硕士（卓越），爱丁堡一等荣誉；擅长统计建模、异步爬虫、LLM 数据处理与检索系统。",
+    },
+    expertise: {
+      en: [
+        "Data Science",
+        "Statistical Modeling",
+        "Async Crawling",
+        "LLM Data",
+        "ElasticSearch",
+      ],
+      zh: [
+        "数据科学",
+        "统计建模",
+        "异步爬虫",
+        "LLM 数据",
+        "ElasticSearch",
+      ],
+    },
+    image:
+      "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-beta/pacer/cartoon_ashlynn.png",
+    category: "project",
   },
   {
     id: 999,
