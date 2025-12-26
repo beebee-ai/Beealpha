@@ -50,11 +50,13 @@ function CardImageCarousel({ images, title, url }: { images: string[], title: st
 
   const nextImage = (e: React.MouseEvent) => {
     e.preventDefault();
+    e.stopPropagation(); // Prevent card click
     setCurrentImageIndex((prev) => (prev + 1) % images.length);
   };
 
   const prevImage = (e: React.MouseEvent) => {
     e.preventDefault();
+    e.stopPropagation(); // Prevent card click
     setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
   };
 
@@ -182,9 +184,12 @@ export function StudentWorks() {
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 min-h-[500px] items-start"
           >
             {currentWorks.map((work, index) => (
-              <div
+              <a
                 key={work.url}
-                className="group relative bg-[#1a1f2e] rounded-xl overflow-hidden border border-white/5 hover:border-primary/50 transition-colors"
+                href={work.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative bg-[#1a1f2e] rounded-xl overflow-hidden border border-white/5 hover:border-primary/50 transition-colors cursor-pointer block"
               >
                 {/* Image Carousel */}
                 <CardImageCarousel 
@@ -204,20 +209,18 @@ export function StudentWorks() {
                         {t(`studentWorks.works.${studentWorks.indexOf(work)}.title`, `Project ${studentWorks.indexOf(work) + 1}`)}
                       </h3>
                     </div>
-                    <a
-                      href={work.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <div
+                      onClick={(e) => e.stopPropagation()}
                       className="p-2 bg-white/5 rounded-lg text-gray-400 hover:text-white hover:bg-primary transition-all flex-shrink-0 ml-4"
                     >
                       <ExternalLink size={18} />
-                    </a>
+                    </div>
                   </div>
                   <p className="text-sm text-gray-400 line-clamp-2 mb-4">
                     {t(`studentWorks.works.${studentWorks.indexOf(work)}.desc`, "Project description goes here.")}
                   </p>
                 </div>
-              </div>
+              </a>
             ))}
           </motion.div>
         </AnimatePresence>
