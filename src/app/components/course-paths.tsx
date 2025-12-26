@@ -35,6 +35,12 @@ export function CoursePaths() {
           details: t("coursePaths.path1.courses.1.details"),
           description: t("coursePaths.path1.courses.1.desc"),
         },
+        // 答疑课暂时隐藏
+        // {
+        //   name: t("coursePaths.path1.courses.2.name"),
+        //   details: t("coursePaths.path1.courses.2.details"),
+        //   description: t("coursePaths.path1.courses.2.desc"),
+        // },
       ],
       outcomes: [
         t("coursePaths.path1.outcomes.0"),
@@ -43,6 +49,7 @@ export function CoursePaths() {
         t("coursePaths.path1.outcomes.3"),
       ],
       highlight: t("coursePaths.path1.highlight"),
+      note: t("coursePaths.path1.note", ""),
       gradient: "from-blue-50 to-purple-50",
     },
     {
@@ -58,6 +65,11 @@ export function CoursePaths() {
           details: t("coursePaths.path2.courses.0.details"),
           description: t("coursePaths.path2.courses.0.desc"),
         },
+        {
+          name: t("coursePaths.path2.courses.1.name"),
+          details: t("coursePaths.path2.courses.1.details"),
+          description: t("coursePaths.path2.courses.1.desc"),
+        },
       ],
       outcomes: [
         t("coursePaths.path2.outcomes.0"),
@@ -66,6 +78,7 @@ export function CoursePaths() {
         t("coursePaths.path2.outcomes.3"),
       ],
       highlight: t("coursePaths.path2.highlight"),
+      note: "",
       gradient: "from-orange-50 to-red-50",
     },
   ];
@@ -169,6 +182,15 @@ export function CoursePaths() {
                         {pathway.highlight}
                       </p>
                     </div>
+
+                    {/* Note Box */}
+                    {pathway.note && (
+                      <div className="bg-amber-50/80 p-3 rounded-lg border-l-4 border-amber-500 mb-6">
+                        <p className="text-xs text-amber-800 leading-relaxed">
+                          {pathway.note}
+                        </p>
+                      </div>
+                    )}
 
                     {/* Inquiry Button */}
                     <Button 
