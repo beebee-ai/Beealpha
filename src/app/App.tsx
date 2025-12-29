@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Navbar } from "./components/navbar";
 import { Hero } from "./components/hero";
 import { Outcome } from "./components/outcome";
-import { CourseMode } from "./components/course-mode";
 import { CoursePaths } from "./components/course-paths";
 import { WhyWhat } from "./components/why-what";
 import { CoreValues } from "./components/core-values";
@@ -47,7 +46,6 @@ export default function App() {
         <main>
           <Hero />
           <Outcome />
-          <CourseMode />
           <CoursePaths />
           <WhyWhat />
           <CoreValues />

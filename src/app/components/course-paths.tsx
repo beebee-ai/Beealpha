@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Rocket, Users, Clock, DollarSign, CircleCheck } from "lucide-react";
+import { Rocket, Users, Clock, Target, GraduationCap, CircleCheck } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
@@ -22,33 +22,25 @@ export function CoursePaths() {
       subtitle: t("coursePaths.path1.subtitle"),
       icon: Users,
       duration: t("coursePaths.path1.duration"),
-      price: "6,000 NZD",
+      targetAudience: t("coursePaths.path1.targetAudience"),
       description: t("coursePaths.path1.description"),
-      courses: [
-        {
-          name: t("coursePaths.path1.courses.0.name"),
-          details: t("coursePaths.path1.courses.0.details"),
-          description: t("coursePaths.path1.courses.0.desc"),
-        },
-        {
-          name: t("coursePaths.path1.courses.1.name"),
-          details: t("coursePaths.path1.courses.1.details"),
-          description: t("coursePaths.path1.courses.1.desc"),
-        },
-        {
-          name: t("coursePaths.path1.courses.2.name"),
-          details: t("coursePaths.path1.courses.2.details"),
-          description: t("coursePaths.path1.courses.2.desc"),
-        },
+      scheduleTitle: t("coursePaths.path1.scheduleTitle"),
+      schedule: [
+        t("coursePaths.path1.schedule.0"),
+        t("coursePaths.path1.schedule.1"),
+        t("coursePaths.path1.schedule.2"),
       ],
-      outcomes: [
-        t("coursePaths.path1.outcomes.0"),
-        t("coursePaths.path1.outcomes.1"),
-        t("coursePaths.path1.outcomes.2"),
-        t("coursePaths.path1.outcomes.3"),
+      classSize: t("coursePaths.path1.classSize"),
+      curriculumTitle: t("coursePaths.path1.curriculumTitle"),
+      curriculum: [
+        t("coursePaths.path1.curriculum.0"),
+        t("coursePaths.path1.curriculum.1"),
+        t("coursePaths.path1.curriculum.2"),
+        t("coursePaths.path1.curriculum.3"),
+        t("coursePaths.path1.curriculum.4"),
+        t("coursePaths.path1.curriculum.5"),
+        t("coursePaths.path1.curriculum.6"),
       ],
-      highlight: t("coursePaths.path1.highlight"),
-      note: t("coursePaths.path1.note", ""),
       gradient: "from-blue-50 to-purple-50",
     },
     {
@@ -56,40 +48,35 @@ export function CoursePaths() {
       subtitle: t("coursePaths.path2.subtitle"),
       icon: Rocket,
       duration: t("coursePaths.path2.duration"),
-      price: "4,200 NZD",
+      targetAudience: t("coursePaths.path2.targetAudience"),
       description: t("coursePaths.path2.description"),
-      courses: [
-        {
-          name: t("coursePaths.path2.courses.0.name"),
-          details: t("coursePaths.path2.courses.0.details"),
-          description: t("coursePaths.path2.courses.0.desc"),
-        },
-        {
-          name: t("coursePaths.path2.courses.1.name"),
-          details: t("coursePaths.path2.courses.1.details"),
-          description: t("coursePaths.path2.courses.1.desc"),
-        },
-        // 创业辅导课暂时隐藏
-        // {
-        //   name: t("coursePaths.path2.courses.2.name"),
-        //   details: t("coursePaths.path2.courses.2.details"),
-        //   description: t("coursePaths.path2.courses.2.desc"),
-        // },
+      scheduleTitle: t("coursePaths.path2.scheduleTitle"),
+      schedule: [
+        t("coursePaths.path2.schedule.0"),
+        t("coursePaths.path2.schedule.1"),
+        t("coursePaths.path2.schedule.2"),
       ],
-      outcomes: [
-        t("coursePaths.path2.outcomes.0"),
-        t("coursePaths.path2.outcomes.1"),
-        t("coursePaths.path2.outcomes.2"),
-        t("coursePaths.path2.outcomes.3"),
-      ],
-      highlight: t("coursePaths.path2.highlight"),
-      note: "",
+      classSize: t("coursePaths.path2.classSize"),
+      selection: t("coursePaths.path2.selection", ""),
+      curriculumTitle: t("coursePaths.path2.curriculumTitle"),
+      curriculum: [
+        t("coursePaths.path2.curriculum.0"),
+        t("coursePaths.path2.curriculum.1"),
+        t("coursePaths.path2.curriculum.2"),
+        t("coursePaths.path2.curriculum.3"),
+        t("coursePaths.path2.curriculum.4"),
+        t("coursePaths.path2.curriculum.5"),
+        t("coursePaths.path2.curriculum.6"),
+        t("coursePaths.path2.curriculum.7"),
+        t("coursePaths.path2.curriculum.8"),
+        t("coursePaths.path2.curriculum.9", ""),
+      ].filter(item => item !== ""),
       gradient: "from-orange-50 to-red-50",
     },
   ];
 
   return (
-    <section className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
+    <section id="course" className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <motion.div
@@ -144,58 +131,69 @@ export function CoursePaths() {
                       {pathway.description}
                     </p>
 
-                    <div className="space-y-4 mb-6">
+                    {/* 课程时长 */}
+                    <div className="mb-6">
                       <div className="flex items-center gap-2 text-muted-foreground">
-                        <Clock className="w-5 h-5" />
-                        <span>{pathway.duration}</span>
+                        <Clock className="w-5 h-5 text-primary flex-shrink-0" />
+                        <span className="font-semibold">{pathway.duration}</span>
                       </div>
                     </div>
 
-                    <div className="space-y-4 mb-6">
-                      <h4 className="font-bold">课程内容：</h4>
-                      {pathway.courses.map((course, i) => (
-                        <div
-                          key={i}
-                          className="bg-white/60 p-4 rounded-lg border border-border"
-                        >
-                          <div className="font-bold mb-1">{course.name}</div>
-                          <div className="text-sm text-muted-foreground mb-1">
-                            {course.details}
-                          </div>
-                          <div className="text-xs text-muted-foreground italic">
-                            {course.description}
-                          </div>
+                    {/* 适用人群 */}
+                    <div className="mb-6">
+                      <div className="flex items-start gap-2">
+                        <Target className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                        <div>
+                          <h4 className="font-bold mb-1">{t('coursePaths.labels.targetAudience')}</h4>
+                          <p className="text-sm text-muted-foreground leading-relaxed">
+                            {pathway.targetAudience}
+                          </p>
                         </div>
-                      ))}
+                      </div>
                     </div>
 
-                    <div className="mb-6 flex-1">
-                      <h4 className="font-bold mb-3">孩子能做到：</h4>
+                    {/* 课程设置 */}
+                    <div className="mb-6">
+                      <h4 className="font-bold mb-3 flex items-center gap-2">
+                        <GraduationCap className="w-5 h-5 text-primary" />
+                        {pathway.scheduleTitle}
+                      </h4>
                       <div className="space-y-2">
-                        {pathway.outcomes.map((outcome, i) => (
-                          <div key={i} className="flex items-center gap-2">
-                            <CircleCheck className="w-5 h-5 text-primary flex-shrink-0" />
-                            <span className="text-sm">{outcome}</span>
+                        {pathway.schedule.map((item, i) => (
+                          <div key={i} className="flex items-start gap-2">
+                            <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                            <span className="text-sm text-muted-foreground">{item}</span>
                           </div>
                         ))}
                       </div>
                     </div>
 
-                    {/* Highlight Box */}
-                    <div className="bg-white/80 p-4 rounded-lg border-l-4 border-primary mb-6">
-                      <p className="text-sm leading-relaxed">
-                        {pathway.highlight}
+                    {/* 班级规模 */}
+                    <div className="mb-6 bg-white/60 p-4 rounded-lg border border-border">
+                      <p className="text-sm">
+                        <span className="font-semibold">{t('coursePaths.labels.classSize')}</span>
+                        {pathway.classSize}
                       </p>
+                      {pathway.selection && (
+                        <p className="text-sm mt-2">
+                          <span className="font-semibold">{t('coursePaths.labels.selection')}</span>
+                          {pathway.selection}
+                        </p>
+                      )}
                     </div>
 
-                    {/* Note Box */}
-                    {pathway.note && (
-                      <div className="bg-amber-50/80 p-3 rounded-lg border-l-4 border-amber-500 mb-6">
-                        <p className="text-xs text-amber-800 leading-relaxed">
-                          {pathway.note}
-                        </p>
+                    {/* 课程结构 */}
+                    <div className="mb-6 flex-1">
+                      <h4 className="font-bold mb-3">{pathway.curriculumTitle}</h4>
+                      <div className="space-y-2">
+                        {pathway.curriculum.map((item, i) => (
+                          <div key={i} className="flex items-start gap-2">
+                            <CircleCheck className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                            <span className="text-sm">{item}</span>
+                          </div>
+                        ))}
                       </div>
-                    )}
+                    </div>
 
                     {/* Inquiry Button */}
                     <Button 
