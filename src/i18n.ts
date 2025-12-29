@@ -6,7 +6,7 @@ const resources = {
   en: {
     translation: {
       navbar: {
-        outcome: "Values",
+        outcome: "Course Value",
         course: "Course",
         works: "Showcase",
         teachers: "Mentors",
@@ -57,73 +57,73 @@ const resources = {
       },
       coursePaths: {
         badge: "Learning Paths",
-        title: "Two Paths, Real Results",
+        title: "Two Learning Camps",
         subtitle:
-          "Designed for students with different foundations to create real products in 6 weeks",
+          "Choose the right path based on your foundation and goals",
+        labels: {
+          targetAudience: "Target Audience:",
+          classSize: "Class Size:",
+          selection: "Selection:",
+        },
         path1: {
-          title: "Zero-Base Path",
-          subtitle: "For students with no coding background",
-          duration: "6 Weeks · ~40 Hours",
+          title: "Alpha Genesis Camp",
+          subtitle: "AI Core Cognition & Engineering Practice",
+          duration: "3 Weeks · ~15 Hours",
+          targetAudience:
+            "Ages 12-18, interested in technology, aspiring to create independent products (no coding background required)",
           description:
-            "Most kids start with no concept of Prompting. That's okay. BEEBEE AI-Alpha is designed for rapid output from zero.",
-          courses: [
-            {
-              name: "Alpha Advanced Product Course",
-              details: "2 Sessions/Week · 12 Sessions Total · 1.5h Each",
-              desc: "Core product course, from idea to MVP",
-            },
-            {
-              name: "Q&A Sessions",
-              details: "Mid-week Session · 6 Sessions · 2h Each",
-              desc: "Online Q&A + homework review to ensure smooth setup and bug-free code",
-            },
-            {
-              name: "Orbiter Coaching",
-              details: "10 Sessions · 1 Hour Each · 1-on-1 Mentoring",
-              desc: "Exclusive coach guidance to ensure delivery",
-            },
+            "Experience the complete journey from AI 'magic' to 'engineering' through hands-on practice. From inspiration validation with Google AI Studio to full-stack development with Cursor. No boring theory, only cool products. Demystify AI for teens, build interest in taming AI to serve them, and gain real engineering confidence.",
+          scheduleTitle: "Course Schedule",
+          schedule: [
+            "Main Classes: 2 sessions/week, 6 sessions total, 1.5h each (includes hands-on practice)",
+            "Q&A Sessions: Mid-week session, 3 sessions total, 1h each, ensure smooth setup and bug-free code",
+            "Demo Day: Separate from 6 main classes, team-based online product demo, ~2 hours",
           ],
-          outcomes: [
-            "Decompose ideas into executable steps",
-            "Select AI models and build workflows",
-            "Let AI run autonomously",
-            "Polish into a showcase MVP",
+          classSize:
+            "12-person premium class, 4-person groups led by camp leader",
+          curriculumTitle: "Course Checklist",
+          curriculum: [
+            "Google AI Studio Discovery",
+            "CRAFT Questioning Framework + Vibe Coding Intro",
+            "JSK Product Design Model Practice",
+            "API Enhancement Plugin Connection",
+            "Online Independent Domain Deployment",
+            "Product Hunt Launch · Closed-Loop Practice",
+            "Demo Day · Results Presentation & Defense",
           ],
-          highlight:
-            "No painful coding wall, no frustration. This is frictionless learning.",
-          // note: "* Q&A session duration flexible (1-4 hours based on needs)",
         },
         path2: {
-          title: "Accelerated Path",
-          subtitle: "For students with Coding/STEAM background",
-          duration: "6 Weeks · ~30 Hours",
+          title: "Alpha Odyssey Camp",
+          subtitle:
+            "Advanced Independent Product Creation Course",
+          duration: "6 Weeks · ~27 Hours",
+          targetAudience:
+            "Ages 12-18, with coding/engineering experience, seeking college portfolio or high-intensity product proof",
           description:
-            'For them, BEEBEE AI is "Full Accelerator". They don\'t need coaching or slow adaptation.',
-          courses: [
-            {
-              name: "Alpha Advanced Product Course",
-              details: "2 Sessions/Week · 12 Sessions Total · 1.5h Each",
-              desc: "Dive straight into project making",
-            },
-            {
-              name: "Q&A Sessions",
-              details: "Mid-week Session · 6 Sessions · 2h Each",
-              desc: "Online Q&A + homework review to ensure smooth setup and bug-free code",
-            },
-            // {
-            //   name: "Alpha Entrepreneurship Mentoring",
-            //   details: "3 Sessions · Group-based · 1.5h Each",
-            //   desc: "Demo Day prep & entrepreneurial mindset",
-            // },
+            "Develop your own product with AI and bring it to market, realizing personal interests. Industrial-standard project suitable for college applications, career transition, or startup. Mentors and founders can endorse successful graduates.",
+          scheduleTitle: "Course Schedule",
+          schedule: [
+            "Main Course: 2 sessions/week, 12 sessions total, 1.5h each",
+            "Q&A + Homework Review: Mid-week session, 6 sessions total, 2h each, ensure smooth setup and bug-free code",
+            "Demo Day: Separate from main classes, team-based online product demo, ~3 hours, chance for CVC/BEEBEE seed investment",
           ],
-          outcomes: [
-            "Make more complex AI tools and applications",
-            "Autonomously iterate, optimize models and processes",
-            "Advanced workflow design",
-            "Break through in real-world challenges",
+          classSize: "6-12 person small class",
+          selection: "Online face-to-face interview selection",
+          curriculumTitle: "Course Checklist",
+          curriculum: [
+            "Master Cursor AI-assisted full-stack development",
+            "CRAFT questioning framework for engineering development",
+            "JSK product design model in practice",
+            "Apply React/Vue frontend frameworks & responsive design",
+            "Learn GitHub+Cloudflare+Firebase full-stack deployment",
+            "Stripe global multi-currency API integration for payment loop",
+            "RAG architecture & LLM API integration",
+            "AI-era web scraping techniques in practice",
+            "Product Hunt launch guide",
+            "Complete high-intensity team Demo Day, chance for CVC/BEEBEE seed investment",
           ],
           highlight:
-            "These kids often perform impressively on Demo Day because the course gives them 'real-world challenges' that they can't get in school.",
+            '本期课程以"产品商业闭环"为核心目标，通过四个阶段完成从 MVP（最小可行性产品）到 MSP（最小可销售产品）的跨越',
         },
       },
       whyWhat: {
@@ -290,107 +290,102 @@ const resources = {
         ],
       },
       teachers: {
-        title: "导师团队",
+        title: "Mentor Team",
         subtitle:
-          "我们不是'老师'，而是孩子的 AI 驯化教练和未来能力合伙人",
+          "We're not just 'teachers'—we're your child's AI coaching partners and future capability allies",
         tabs: {
-          mentors: "项目导师",
-          experts: "专业讲师",
+          mentors: "Project Mentors",
+          experts: "Expert Instructors",
         },
         mentors: [
           {
             name: "Pin Zhou",
-            role: "创业导师 / AI 产品总经理",
-            desc: "连续创业者，BeeBee AI & 超加速学院人，AI 实战经验丰富，跨学科、跨产业、跨年龄……",
+            role: "Entrepreneurship Mentor / AI Product GM",
+            desc: "Serial entrepreneur, BeeBee AI & HyperAccelerator. Rich AI practice experience across disciplines, industries, and ages...",
           },
           {
             name: "Iris Hu",
-            role: "NLP 科学家 / 高效能教练",
-            desc: "北师大教授，国家项目负责人，NLP 领域深耕 40+，三次中科转科学家……",
+            role: "NLP Scientist / High Performance Coach",
+            desc: "Professor at Beijing Normal University, National Project Lead, 40+ years in NLP, 3-time scientist...",
           },
           {
             name: "Vito Liu",
-            role: "RAG 系统工程师 / AI 全栈",
-            desc: "资深 CS+ 教学双学位，主导多个企业级 RAG 与知识库系统开发。",
+            role: "RAG Systems Engineer / AI Full-Stack",
+            desc: "Dual degree in CS & Education, leading multiple enterprise RAG and knowledge base system developments.",
           },
         ],
         experts: [
           {
             name: "Ashlynn Lu",
-            role: "数据科学 / AI 数据工程师",
-            desc: "数据驱动型专家，数据可视化及用户体验优化专家，擅长机器学习建模实战……",
+            role: "Data Science / AI Data Engineer",
+            desc: "Data-driven expert, data visualization and UX optimization specialist, skilled in ML modeling...",
           },
           {
             name: "Jennifer Liu",
-            role: "资深 AI 产品 GTM 专家 / 增长",
-            desc: "NYU 毕业，长期深耕产品市场增长管理层职，长江商学院 MBA，具有国际化视野……",
+            role: "Senior AI Product GTM Expert / Growth",
+            desc: "NYU graduate, deep product market growth management experience, Cheung Kong MBA, global perspective...",
           },
           {
             name: "Fangzhong Liu",
-            role: "资深数据科学家",
-            desc: "美国顶尖大学数据科学硕士，优秀 XGBoost/uplift 建模、MMM、RAG……",
+            role: "Senior Data Scientist",
+            desc: "Top US university data science master, excellent XGBoost/uplift modeling, MMM, RAG...",
           },
         ],
       },
       faq: {
         title: "FAQ",
-        subtitle:
-          "Answers to parents' most concerned questions",
+        subtitle: "Answers to parents' most concerned questions",
         more: "More questions?",
         contact: "Contact Us",
         items: [
           {
-            q: "Can my child learn without coding basics?",
-            a: "Yes! Designed for zero basis. 'Frictionless learning'. Zero-Base Path available. Finish a real AI app in ~30 hours.",
+            q: "Can my child learn without any coding background?",
+            a: "Absolutely! Alpha Genesis Camp is designed for zero-foundation students. BEEBEE AI-Alpha uses a 'frictionless learning' method that doesn't require coding background. In Genesis Camp, kids can create real outputs from the first lesson. After about 15 hours of learning, they can complete a real AI application. For Odyssey Camp, we recommend some coding or engineering experience.",
           },
           {
-            q: "Is it online or offline?",
-            a: "Mainly online interactive. Breaks geographic limits. 12-student small class + 1-on-1 coaching.",
+            q: "Is the course online or offline?",
+            a: "Courses are primarily online with interactive teaching. This breaks geographic barriers and allows children from Chinese families worldwide to participate. Genesis Camp has 12-student small classes with 4-person groups; Odyssey Camp has 6-12 person small classes. We ensure every child gets sufficient attention and guidance.",
           },
           {
-            q: "What can they achieve in 6 weeks?",
-            a: "1) Independent AI app; 2) AI workflow design; 3) Model selection; 4) Problem solving with AI; 5) Demo Day presentation.",
+            q: "What can they achieve after 3 weeks (Genesis) or 6 weeks (Odyssey)?",
+            a: "Genesis Camp (3 weeks): Kids will be able to: 1) Complete a real runnable AI application independently; 2) Understand AI workflow design basics; 3) Build interest in taming AI to serve them; 4) Present their work on Demo Day. Odyssey Camp (6 weeks): In addition to the above, kids will: 1) Master AI-assisted full-stack development; 2) Complete payment loop integration; 3) Launch on Product Hunt; 4) Have a chance for seed investment; 5) Get industrial-standard project proof suitable for college applications.",
           },
           {
-            q: "Difference from other coding/AI courses?",
-            a: "Focus on 'Making' not just 'Learning'. Start projects from day 1. Real tools, real problems. AI Thinking over tool operation.",
+            q: "How is this different from other coding/AI courses?",
+            a: 'The biggest difference is we focus on "making things" rather than "learning knowledge points." Traditional coding courses often start with syntax, and many kids still can\'t make useful things after half a year. BEEBEE AI-Alpha starts with real projects from day one, using real AI tools and models to solve real problems. We don\'t just teach tool operation, but AI thinking and product capability.',
           },
           {
-            q: "How much is the tuition?",
-            a: "1) Zero-Base Path: 6,000 NZD (12 product sessions + 10 coaching sessions); 2) Accelerated Path: 4,200 NZD (12 product sessions).",
+            q: "What age range is suitable?",
+            a: "Genesis Camp: Ages 12-18, interested in technology, aspiring to create independent products (no coding background required). Odyssey Camp: Ages 12-18, with coding/engineering experience, seeking college portfolio or high-intensity product proof. We value learning motivation and interest in AI/tech over just age. If your child is curious about technology, likes hands-on creation, and wants to master future skills, they're a great fit.",
           },
           {
-            q: "What age is suitable?",
-            a: "Upper primary to high school. We value motivation and interest over age. Curiosity and desire to create matter most.",
+            q: "How is the class schedule arranged?",
+            a: "Genesis Camp: 3 weeks, 2 main sessions per week (1.5h each) + 1 mid-week Q&A session (1h). Odyssey Camp: 6 weeks, 2 main sessions per week (1.5h each) + 1 mid-week Q&A/homework review (2h). We arrange the most suitable class times based on students' time zones. Specific times will be confirmed with parents before the course starts to ensure it doesn't affect the child's regular studies.",
           },
           {
-            q: "How is the schedule arranged?",
-            a: "6 weeks, twice a week. 1.5h product class, 1h coaching. Arranged based on time zones and availability.",
+            q: "What if my child needs to miss a class?",
+            a: "We provide course recordings. If a child misses class for a reason, they can watch the recording to catch up. For Q&A sessions, we'll coordinate makeup times based on circumstances. Our goal is to ensure every child completes their learning and creates their work, so we'll do our best to accommodate parents and students' actual situations. If something really comes up and they can't continue, please communicate with us. We'll refund remaining tuition for reasonable causes—we want everyone to have a good experience!",
           },
           {
-            q: "What if my child misses a class?",
-            a: "Recordings available. Coaching sessions can be rescheduled. We aim for completion and good experience.",
-          },
-          {
-            q: "What do they get after camp?",
-            a: "1) AI App Portfolio; 2) Internship Certificate & Reference Letter; 3) Demo Day opportunity; 4) Confidence and Control over AI.",
+            q: "What will my child get after the camp?",
+            a: "In addition to a complete AI application portfolio, children will receive: 1) BEEBEE AI-Alpha internship certificate and recommendation letter; 2) Demo Day project presentation opportunity; 3) Outstanding Odyssey projects may receive seed investment; 4) Most importantly, build a sense of control over AI and future confidence.",
           },
         ],
       },
       cta: {
         title: "Start Your Child's AI Journey",
         subtitle:
-          "Limited spots, 12 students per cohort. Enroll now.",
+          "Limited spots, small classes. Enroll now to give your child a head start.",
         form: {
           title: "Inquire Now",
           name: "Parent Name",
           email: "Email",
           phone: "Phone",
-          message: "Message (Optional)",
+          message: "Your Questions or Needs (Optional)",
           submit: "Submit Inquiry",
         },
         contact: {
-          title: "Other Ways to Contact",
+          title: "Other Contact Methods",
           project: "Program Inquiry",
           direct: "Direct Contact",
         },
@@ -398,7 +393,7 @@ const resources = {
       footer: {
         brand: "Bee Alpha",
         tagline:
-          "Empowering the next generation to build real apps with AI frictionlessly.",
+          "Empowering teens to build real apps with AI frictionlessly and master the future way of working.",
         quickLinks: "Quick Links",
         contactUs: "Contact Us",
         location: "New Zealand & Global Online",
@@ -460,73 +455,71 @@ const resources = {
       },
       coursePaths: {
         badge: "Learning Paths",
-        title: "两条路径，都能产出真实作品",
-        subtitle:
-          "我们专门设计了两条路径，让不同基础的孩子都能在 6 周内做出能拿得出手的产品",
+        title: "两大训练营",
+        subtitle: "根据基础和目标，选择适合的营地路径",
+        labels: {
+          targetAudience: "目标学员：",
+          classSize: "班级规模：",
+          selection: "选拔方式：",
+        },
         path1: {
-          title: "零基础路径",
-          subtitle: "适合没有编程基础的学生",
-          duration: "6 周 · 约 40 小时",
+          title: "Alpha 启航营（Genesis）",
+          subtitle: "AI 核心认知与工程实践",
+          duration: "3 周 · 约 15 小时",
+          targetAudience:
+            "12-18 岁，对科技感兴趣，希望拥有自己独立产品的青少年（无需编程基础）",
           description:
-            '多数孩子刚来时连 Prompt 都没概念，这没关系。BEEBEE AI-Alpha 的课程就是为了让"零基础"也能快速产出。',
-          courses: [
-            {
-              name: "Alpha 进阶产品课",
-              details: "每周 2 次线上课 · 共 12 次 · 每次 1.5 小时",
-              desc: "核心产品课程，从想法到 MVP",
-            },
-            {
-              name: "答疑课",
-              details: "每周中 1 次 · 共 6 次 · 每次 2 小时",
-              desc: "线上答疑+作业检查，确保环境跑通、代码无 Bug",
-            },
-            {
-              name: "Orbiter 陪练课",
-              details: "10 次 · 每次 1 小时 · 1对1 辅导",
-              desc: "专属教练实时指导，确保落地",
-            },
+            '通过亲手实践 AI 的"魔法"到"工程"的全过程，从 Google AI Studio 的灵感验证到 Cursor 的全栈开发。不讲枯燥理论，只做酷炫产品。让青少年对 AI 祛魅，建立驯化 AI 为自己服务的兴趣，并拥有真正的工程自信。',
+          scheduleTitle: "课程设置",
+          schedule: [
+            "主课安排：每周 2 次线上课，共 6 次，每次 1.5 小时授课（含实操演练）",
+            "答疑课：每周中 1 次线上答疑课，共 3 次，每次 1 小时，确保环境跑通、代码无 Bug",
+            "Demo Day：6次主课之外单独举行，以小组为单位进行团队线上产品演示，约 2 小时",
           ],
-          outcomes: [
-            "把一个想法拆成可执行步骤",
-            "选择合适 AI 模型并搭建工作流",
-            "让 AI 自己跑起来",
-            "打磨成可展示的 MVP（最小可用产品）",
+          classSize:
+            "12 人精品小班制，4人1组，由营长带领学习团队配合",
+          curriculumTitle: "课程清单",
+          curriculum: [
+            "Google AI Studio 探秘",
+            "CRAFT 提问框架 + Vibe Coding 初体验",
+            "JSK 产品设计模型实操",
+            "API 增强外挂连接",
+            "线上独立域名部署",
+            "Product Hunt 发布 · 闭环实战",
+            "Demo Day · 成果路演与答辩",
           ],
-          highlight:
-            "没有痛苦的编程墙，没有挫败感，这就是 frictionless learning（无摩擦学习）。",
-          // note: "* 答疑课时间可根据实际需求灵活调整（1-4小时）",
         },
         path2: {
-          title: "加速路径",
-          subtitle: "适合有编程/STEAM基础的学生",
-          duration: "6 周 · 约 30 小时",
+          title: "ALPHA 远航营（Odyssey）",
+          subtitle: "独立产品创造高阶课",
+          duration: "6 周 · 约 27 小时",
+          targetAudience:
+            "12-18 岁，有一定编程或工程经验，想获得明确升学或做出较高强度产品证明能力",
           description:
-            '对他们来说，BEEBEE AI 是"全力加速器"。他们不需要陪练课，也不需要慢慢适应。',
-          courses: [
-            {
-              name: "Alpha 进阶产品课",
-              details: "每周 2 次线上课 · 共 12 次 · 每次 1.5 小时",
-              desc: "上来就能进入项目制作",
-            },
-            {
-              name: "答疑课",
-              details: "每周中 1 次 · 共 6 次 · 每次 2 小时",
-              desc: "线上答疑+作业检查，确保环境跑通、代码无 Bug",
-            },
-            // {
-            //   name: "Alpha 创业辅导课",
-            //   details: "3 次 · 以组为单位 · 每次 1.5 小时",
-            //   desc: "Demo Day 准备与创业思维培养",
-            // },
+            "用AI开发出自己的产品并市场化，实现个人兴趣落地。此项目完全以工业化标准设立，完成后可用于升学作品，职业转型，创业起点。导师和创始人均可为成功结营的学生背书。",
+          scheduleTitle: "课程设置",
+          schedule: [
+            "主课安排：每周 2 次线上课，共 12 次，每次 1.5 小时互动课程",
+            "答疑课：每周中 1 次线上答疑+作业检查，共 6 次，每次 2 小时，确保环境跑通、代码无 Bug",
+            "Demo Day：主课之外单独举行，以���组为单位进行团队线上产品演示，约 3 小时，有机会获得CVC/BEEBEE 种子投资",
           ],
-          outcomes: [
-            "做出更复杂的 AI 工具和应用",
-            "自主迭代、优化模型和流程",
-            "高级工作流设计",
-            "在真实世界挑战中突破",
+          classSize: "6-12人小班制",
+          selection: "线上面对面答题选拔",
+          curriculumTitle: "课程清单",
+          curriculum: [
+            "掌握Cursor AI辅助全栈开发",
+            "CRAFT 提问框架用于工程开发",
+            "JSK 产品设计模型实操",
+            "运用React/Vue前端框架与响应式设计",
+            "学会GitHub+Cloudflare+Firebase全链路",
+            "Stripe全球多货币API接入完成收费闭环",
+            "RAG架构及大模型API能力接入",
+            "AI时代的爬虫技术实战",
+            "Product Hunt登顶指南",
+            "完成高强度团队Demo Day路演，有机会获得CVC/BEEBEE 种子投资",
           ],
           highlight:
-            "这些孩子往往在 Demo Day 上表现惊人，因为课程给了他们在学校无法获得的 '真实世界挑战'。",
+            '本期课程以"产品商业闭环"为核心目标，通过四个阶段完成从 MVP（最小可行性产品）到 MSP（最小可销售产品）的跨越',
         },
       },
       whyWhat: {
@@ -569,7 +562,7 @@ const resources = {
           {
             title: "反神秘化",
             subtitle: "Demystify AI",
-            desc: "不把 AI 当玄学，不吹。用真实模型让孩子理解 AI 的逻辑。",
+            desc: "不把 AI 当玄学，不吹用真实模型让孩子理解 AI 的逻辑。",
             example:
               '孩子能解释 AI 为什么写错一句话，而不是只是说"AI 就是这样"。',
           },
@@ -703,7 +696,7 @@ const resources = {
           {
             name: "Pin Zhou",
             role: "创业导师 / AI 产品总经理",
-            desc: "连续创业者，BeeBee AI & 超加速学院人，AI 实战经验丰富，跨学科、跨产业、跨年龄……",
+            desc: "连���创业者，BeeBee AI & 超加速学院人，AI 实战经验丰富，跨学科、跨产业、跨年龄……",
           },
           {
             name: "Iris Hu",
@@ -742,39 +735,35 @@ const resources = {
         items: [
           {
             q: "孩子没有任何编程基础，能学会吗？",
-            a: "完全可以！我们的课程专门为零基础学生设计。BEEBEE AI-Alpha 采用「无摩擦学习」方法，不需要编程基础。我们提供零基础路径（Alpha 产品课 + Orbiter 陪练课），让孩子从第一节课就能做出成果。约 30 小时的学习后，孩子就能完成一个真实的 AI 应用。",
+            a: "完全可以！Alpha 启航营（Genesis）专门为零基础学生设计。BEEBEE AI-Alpha 采用「无摩擦学习」方法，不需要编程基础。在启航营中，孩子从第一节课就能做出成果。约 15 小时的学习后，孩子就能完成一个真实的 AI 应用。远航营（Odyssey）则建议有一定编程或工程经验。",
           },
           {
             q: "课程是线上还是线下？",
-            a: "课程以线上为主，采用在线互动教学。这样可以打破地域限制，让全球华人家庭的孩子都能参与。12 人小班制 + 1对1 陪练，保证每个孩子都能得到充分的关注和指导。",
+            a: "课程以线上为主，采用在线互动教学。这样可以打破地域限制，让全球华人家庭的孩子都能参与。启航营12人小班制，4人1组；远航营6-12人小班制。我们确保每个孩子都能得到充分的关注和指导。",
           },
           {
-            q: "6 周能学到什么程度？",
-            a: "6 周训练营结束后，孩子将能够：1) 独立完成一个真实可运行的 AI 应用；2) 掌握 AI 工作流的设计和搭建；3) 理解如何选择和使用不同的 AI 模型；4) 具备把问题拆解并用 AI 解决的思维能力；5) 在结营 Demo Day 上展示自己的作品。这不是理论学习，而是实实在在的产品开发能力。",
+            q: "3 周（启航营）或 6 周（远航营）能学到什么程度？",
+            a: "启航营（3周）：孩子将能够：1) 独立完成一个真实可运行的 AI 应用；2) 理解 AI 工作流设计基础；3) 建立驯化 AI 为自己服务的兴趣；4) 在结营 Demo Day 上展示自己的作品。远航营（6周）：除以上外，孩子还将：1) 掌握 AI 辅助全栈开发；2) 完成收费闭环集成；3) 在 Product Hunt 上发布；4) 有机会获得种子投资；5) 获得适合升学作品的工业化标准项目证明。",
           },
           {
             q: "和其他编程/AI 课程有什么不同？",
-            a: '最大的不同是我们专注于"做出来"而不是"学知识点"。传统编程课往往从语法开始，很多孩子学了半年还做不出能用的东西。BEEBEE AI-Alpha 从第一节课就开始做项目，用真实的 AI 工具和模型，解决真实的问题。我们教的不是工具操作，而是 AI 思维和产品能力。',
-          },
-          {
-            q: "课程费用是多少？",
-            a: "我们提供两种路径：1) 零基础路径（Alpha 产品课 + Orbiter 陪练课）：6,000 NZD，包含 12 次产品课（18 小时）+ 10 次陪练课（10 小时），总计约 30 小时；2) 加速路径（仅 Alpha 产品课）：4,200 NZD，包含 12 次产品课（18 小时），适合已有编程或 STEAM 基础的学生。",
+            a: '最大的不同是我们专注于\"做出来\"而不是\"学知识点\"。传统编程课往往从语法开始，很多孩子学了半年还做不出能用的东西。BEEBEE AI-Alpha 从第一节课就开始做项目，用真实的 AI 工具和模型，解决真实的问题。我们教的不是工具操作，而是 AI 思维和产品能力。',
           },
           {
             q: "什么年龄段的孩子适合参加？",
-            a: "小学高年级到高中阶段的学生都适合。我们更看重的是孩子的学习动力和对 AI/科技的兴趣，而不仅是年龄。如果孩子对技术好奇、喜欢动手创造、想要掌握未来技能，就很适合参加我们的训练营。",
+            a: "启航营：12-18 岁，对科技感兴趣，希望拥有自己独立产品的青少年（无需编程基础）。远航营：12-18 岁，有一定编程或工程经验，想获得明确升学或做出较高强度产品证明能力。我们更看重的是孩子的学习动力和对 AI/科技的兴趣，而不仅是年龄。如果孩子对技术好奇、喜欢动手创造、想要掌握未来技能，就很适合参加我们的训练营。",
           },
           {
             q: "上课时间如何安排？",
-            a: "课程为期 6 周，每周 2 次课。产品课每次 1.5 小时，陪练课每次 1 小时。我们会根据学员的时区和时间安排最合适的上课时间。具体时间在开课前会和家长确认，确保不影响孩子的正常学习。",
+            a: "启航营：3 周，每周 2 次主课（每次1.5小时）+ 1 次周中答疑课（1小时）。远航营：6 周，每周 2 次主课（每次1.5小时）+ 1 次周中答疑/作业检查（2小时）。我们会根据学员的时区安排最合适的上课时间。具体时间在开课前会和家长确认，确保不影响孩子的正常学习。",
           },
           {
             q: "如果孩子中途有事缺课怎么办？",
-            a: "我们提供课程录像回放，如果孩子因故缺课可以观看录像补课。对陪练课，我们会根据情况协调补课时间。我们的目标是确保每个孩子都能完成学习并做出作品，所以会尽力配合家长和学生的实际情况。如果中途有事真的坚持不了，记得和我们沟通。有合理原因会退剩余学费，我们希望每个人都能有好体验！",
+            a: "我们提供课程录像回放，如果孩子因故缺课可以观看录像补课。对答疑课，我们会根据情况协调补课时间。我们的目标是确保每个孩子都能完成学习并做出作品，所以会尽力配合家长和学生的实际情况。如果中途有事真的坚持不了，记得和我们沟通。有合理原因会退剩余学费，我们希望每个人都能有好体验！",
           },
           {
             q: "结营后孩子能获得什么？",
-            a: "除了一个完整的 AI 应用作品，孩子还将获得：1) BEEBEE AI-Alpha 实习证明、推荐信；2) Demo Day 项目展示机会；3) 优秀项目还有机会拿到投资；4) 最重要的是，建立起对 AI 的掌控感和未来自信心。",
+            a: "除了一个完整的 AI 应用作品，孩子还将获得：1) BEEBEE AI-Alpha 实习证明、推荐信；2) Demo Day 项目展示机会；3) 优秀远航营项目还有机会拿到种子投资；4) 最重要的是，建立起对 AI 的掌控感和未来自信心。",
           },
         ],
       },

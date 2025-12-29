@@ -57,7 +57,7 @@ export function WhyWhat() {
   ];
 
   return (
-    <section className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-orange-50/30">
+    <section id="why-what" className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-orange-50/30">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
