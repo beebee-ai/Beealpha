@@ -166,7 +166,7 @@ export function Teachers({ onViewAll }: TeachersProps) {
                     <p className="text-xs text-primary mb-2 font-medium uppercase tracking-wide leading-tight line-clamp-2">
                       {isEn ? member.title.en : member.title.zh}
                     </p>
-                    <p className="text-xs sm:text-sm text-gray-400 leading-relaxed mb-3 flex-grow line-clamp-4">
+                    <p className="text-xs sm:text-sm text-gray-400 leading-relaxed mb-3 flex-grow overflow-hidden line-clamp-4">
                       {isEn ? member.bio.en : member.bio.zh}
                     </p>
                     

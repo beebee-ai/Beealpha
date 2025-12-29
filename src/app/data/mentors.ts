@@ -525,178 +525,6 @@ export const detailedMentors: Mentor[] = [
     category: "project",
   },
   {
-    id: "mentor-charlie",
-    name: "Charlie C",
-    title: {
-      en: "AI Algorithm Engineer",
-      zh: "AI 算法工程师",
-    },
-    bio: {
-      en: "Focused on NLP algorithms and AI productization, with two years of hands-on experience. Contributed to the development of exam and writing agents for the Second Brain project and integrated them into platforms such as WeChat and Feishu. Experienced in Transformer optimization, prompt engineering, RAG pipelines and full-stack Python development.",
-      zh: "专注 NLP 算法与 AI 产品化，有两年算法研发经验。深度参与第二大脑的考试与写作智能体研发，负责微信、飞书等主流平台的接入与功能落地。对 Transformer 优化、提示词工程、RAG 系统与全栈工程有实践积累。",
-    },
-    details: {
-      en: `
-<p>Charlie Chen is an AI algorithm engineer focused on NLP development and AI product delivery. He works across both modeling and backend engineering, giving him a full-stack perspective on building AI systems.</p>
-
-<h4>Technical Expertise</h4>
-<ul>
-  <li>Transformer optimization and NLP model construction</li>
-  <li>Prompt engineering and large-model fine-tuning</li>
-  <li>Multimodal RAG pipelines and Elasticsearch vector search</li>
-  <li>Python full-stack development (Flask / FastAPI / WebSocket)</li>
-  <li>Docker-based deployment and service architecture design</li>
-</ul>
-
-<h4>Project Achievements</h4>
-<ul>
-  <li>Led development of exam/writing agents and integrated them into WeChat, Feishu and other major platforms</li>
-  <li>Strong practical experience in API integration and third-party service connectivity</li>
-  <li>Bridges model capabilities with real product requirements</li>
-</ul>
-
-<h4>Teaching Philosophy</h4>
-<ul>
-  <li>Balances theory with hands-on practice; simplifies complex ideas into clear steps</li>
-  <li>Provides personalized technical guidance</li>
-  <li>Creates a relaxed and intuitive learning environment</li>
-</ul>
-`,
-      zh: `
-<p>Charlie Chen，AI 算法工程师，长期在 NLP 方向深耕，尤其关注"算法到产品"的落地流程。他既写模型，也写后端，对工程化有完整理解。</p>
-
-<h4>技术专长</h4>
-<ul>
-  <li>Transformer 架构优化与 NLP 模型构建</li>
-  <li>提示词工程与大型模型调优策略</li>
-  <li>多模态 RAG 系统设计及 Elasticsearch 向量检索</li>
-  <li>Python 全栈开发（Flask / FastAPI / WebSocket）</li>
-  <li>Docker 容器化部署与服务架构设计</li>
-</ul>
-
-<h4>项目经验</h4>
-<ul>
-  <li>主导开发考试/写作智能体，引入微信、飞书等多平台使用场景</li>
-  <li>在 API 集成、跨平台通信和第三方服务对接方面经验扎实</li>
-  <li>推动模型能力与实际业务需求的真实闭环</li>
-</ul>
-
-<h4>教学方式与理念</h4>
-<ul>
-  <li>理论与实践并重，擅长把复杂流程拆成可执行步骤</li>
-  <li>强调个性化指导，能快速定位学习者的卡点</li>
-  <li>风格轻松直接，帮助学生用最快路径吃透 NLP 核心技能</li>
-</ul>
-`,
-    },
-    quote: {
-      en: "Transformer's self-attention taught me: true intelligence isn't remembering everything—it's knowing what to focus on at the right moment.",
-      zh: "Transformer的自注意力机制教会我:真正的智能不是记住所有信息,而是知道在什么时候关注什么。",
-    },
-    expertise: {
-      en: [
-        "Transformer Optimization",
-        "Prompt Engineering",
-        "Multi-modal RAG",
-        "Vector Search",
-        "Full Stack (Flask/FastAPI)",
-      ],
-      zh: [
-        "Transformer优化",
-        "提示词工程",
-        "多模态RAG",
-        "向量检索",
-        "全栈开发",
-      ],
-    },
-    image:
-      "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-beta/pacer/cartoon_charlie.png",
-    category: "project",
-  },
-  {
-    id: "mentor-bobby",
-    name: "Bobby W",
-    title: {
-      en: "Senior Frontend Engineer",
-      zh: "资深前端工程师",
-    },
-    bio: {
-      en: "Senior frontend engineer with 8 years of experience, skilled in multi-platform development across WeChat Mini Programs, H5, PC, and mobile apps. Strong in frontend architecture, component design, and modern JavaScript frameworks.",
-      zh: "拥有 8 年前端开发经验，精通多端研发与现代前端技术栈。具备从微信小程序、H5、PC 到 App 的全平台项目经验，熟悉前端架构、组件封装与高质量工程实践。",
-    },
-    details: {
-      en: `
-<p>Bobby Wang is a senior frontend engineer with deep experience in multi-platform development and modern frontend architecture. He focuses on building reliable, scalable frontends across different ecosystems.</p>
-
-<h4>Technical Expertise</h4>
-<ul>
-  <li>Uniapp cross-platform development: write once, run on multiple clients</li>
-  <li>Vue ecosystem (Vue2 / Vue3 / Nuxt SSR)</li>
-  <li>Strong understanding of JavaScript internals and reactive development</li>
-  <li>WebSocket-based real-time communication</li>
-  <li>Frontend architecture, component design, and engineering best practices</li>
-</ul>
-
-<h4>Project Experience</h4>
-<ul>
-  <li>Worked on e-commerce platforms, admin systems, SaaS tools, data dashboards and more</li>
-  <li>Experienced in full-cycle development: planning, architecture, implementation, deployment</li>
-  <li>Seasoned in multi-platform adaptation and complex UI/UX interactions</li>
-</ul>
-
-<h4>Teaching Philosophy</h4>
-<ul>
-  <li>Focuses on practical application and clean code, built on real commercial experience</li>
-  <li>Uses real-world examples to explain core frontend concepts and best practices</li>
-  <li>Helps students build strong engineering intuition through clear and structured teaching</li>
-</ul>
-`,
-      zh: `
-<p>Bobby Wang，资深前端工程师，长期从事多端研发与前端架构设计工作。对多平台生态、性能优化和工程规范有成熟经验，能将前端技术有效落地到稳定的商业产品中。</p>
-
-<h4>技术专长</h4>
-<ul>
-  <li>Uniapp 跨平台开发：一套代码多端运行的完整实践</li>
-  <li>Vue 全家桶（Vue2 / Vue3 / Nuxt SSR）</li>
-  <li>深入理解 JavaScript 核心机制与响应式开发模式</li>
-  <li>WebSocket 实时通信与数据交互</li>
-  <li>前端架构设计、组件封装与工程化规范</li>
-</ul>
-
-<h4>项目经验</h4>
-<ul>
-  <li>负责在线商城、后台管理系统、SaaS 工具、数据大屏等多个商业级项目</li>
-  <li>完整参与从需求、架构、开发到上线的全流程</li>
-  <li>对多端适配与复杂交互开发有丰富实战积累</li>
-</ul>
-
-<h4>教学方式与理念</h4>
-<ul>
-  <li>基于丰富的商业项目经验，强调实战能力与代码质量培养</li>
-  <li>善用真实案例说明前端关键概念与最佳实践</li>
-  <li>以清晰直观的方式带学生构建扎实的前端工程思维</li>
-</ul>
-`,
-    },
-    quote: {
-      en: "Frontend is not about stacking code, but building solid engineering and great experiences.",
-      zh: "前端不是堆代码，而是把体验和工程做到位。",
-    },
-    expertise: {
-      en: [
-        "Frontend",
-        "Vue",
-        "Uniapp",
-        "Components",
-        "Engineering",
-      ],
-      zh: ["前端", "Vue", "Uniapp", "组件设计", "工程化"],
-    },
-    image:
-      "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-beta/pacer/cartoon_bobby.png",
-    category: "project",
-  },
-  {
     id: "mentor-fangzhong",
     name: "Fangzhong L",
     title: {
@@ -1140,6 +968,178 @@ export const detailedMentors: Mentor[] = [
     },
     image:
       "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-beta/pacer/cartoon_heyang.png",
+    category: "project",
+  },
+  {
+    id: "mentor-charlie",
+    name: "Charlie C",
+    title: {
+      en: "AI Algorithm Engineer",
+      zh: "AI 算法工程师",
+    },
+    bio: {
+      en: "Focused on NLP algorithms and AI productization, with two years of hands-on experience. Contributed to the development of exam and writing agents for the Second Brain project and integrated them into platforms such as WeChat and Feishu. Experienced in Transformer optimization, prompt engineering, RAG pipelines and full-stack Python development.",
+      zh: "专注 NLP 算法与 AI 产品化，有两年算法研发经验。深度参与第二大脑的考试与写作智能体研发，负责微信、飞书等主流平台的接入与功能落地。对 Transformer 优化、提示词工程、RAG 系统与全栈工程有实践积累。",
+    },
+    details: {
+      en: `
+<p>Charlie Chen is an AI algorithm engineer focused on NLP development and AI product delivery. He works across both modeling and backend engineering, giving him a full-stack perspective on building AI systems.</p>
+
+<h4>Technical Expertise</h4>
+<ul>
+  <li>Transformer optimization and NLP model construction</li>
+  <li>Prompt engineering and large-model fine-tuning</li>
+  <li>Multimodal RAG pipelines and Elasticsearch vector search</li>
+  <li>Python full-stack development (Flask / FastAPI / WebSocket)</li>
+  <li>Docker-based deployment and service architecture design</li>
+</ul>
+
+<h4>Project Achievements</h4>
+<ul>
+  <li>Led development of exam/writing agents and integrated them into WeChat, Feishu and other major platforms</li>
+  <li>Strong practical experience in API integration and third-party service connectivity</li>
+  <li>Bridges model capabilities with real product requirements</li>
+</ul>
+
+<h4>Teaching Philosophy</h4>
+<ul>
+  <li>Balances theory with hands-on practice; simplifies complex ideas into clear steps</li>
+  <li>Provides personalized technical guidance</li>
+  <li>Creates a relaxed and intuitive learning environment</li>
+</ul>
+`,
+      zh: `
+<p>Charlie Chen，AI 算法工程师，长期在 NLP 方向深耕，尤其关注"算法到产品"的落地流程。他既写模型，也写后端，对工程化有完整理解。</p>
+
+<h4>技术专长</h4>
+<ul>
+  <li>Transformer 架构优化与 NLP 模型构建</li>
+  <li>提示词工程与大型模型调优策略</li>
+  <li>多模态 RAG 系统设计及 Elasticsearch 向量检索</li>
+  <li>Python 全栈开发（Flask / FastAPI / WebSocket）</li>
+  <li>Docker 容器化部署与服务架构设计</li>
+</ul>
+
+<h4>项目经验</h4>
+<ul>
+  <li>主导开发考试/写作智能体，引入微信、飞书等多平台使用场景</li>
+  <li>在 API 集成、跨平台通信和第三方服务对接方面经验扎实</li>
+  <li>推动模型能力与实际业务需求的真实闭环</li>
+</ul>
+
+<h4>教学方式与理念</h4>
+<ul>
+  <li>理论与实践并重，擅长把复杂流程拆成可执行步骤</li>
+  <li>强调个性化指导，能快速定位学习者的卡点</li>
+  <li>风格轻松直接，帮助学生用最快路径吃透 NLP 核心技能</li>
+</ul>
+`,
+    },
+    quote: {
+      en: "Transformer's self-attention taught me: true intelligence isn't remembering everything—it's knowing what to focus on at the right moment.",
+      zh: "Transformer的自注意力机制教会我:真正的智能不是记住所有信息,而是知道在什么时候关注什么。",
+    },
+    expertise: {
+      en: [
+        "Transformer Optimization",
+        "Prompt Engineering",
+        "Multi-modal RAG",
+        "Vector Search",
+        "Full Stack (Flask/FastAPI)",
+      ],
+      zh: [
+        "Transformer优化",
+        "提示词工程",
+        "多模态RAG",
+        "向量检索",
+        "全栈开发",
+      ],
+    },
+    image:
+      "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-beta/pacer/cartoon_charlie.png",
+    category: "project",
+  },
+  {
+    id: "mentor-bobby",
+    name: "Bobby W",
+    title: {
+      en: "Senior Frontend Engineer",
+      zh: "资深前端工程师",
+    },
+    bio: {
+      en: "Senior frontend engineer with 8 years of experience, skilled in multi-platform development across WeChat Mini Programs, H5, PC, and mobile apps. Strong in frontend architecture, component design, and modern JavaScript frameworks.",
+      zh: "拥有 8 年前端开发经验，精通多端研发与现代前端技术栈。具备从微信小程序、H5、PC 到 App 的全平台项目经验，熟悉前端架构、组件封装与高质量工程实践。",
+    },
+    details: {
+      en: `
+<p>Bobby Wang is a senior frontend engineer with deep experience in multi-platform development and modern frontend architecture. He focuses on building reliable, scalable frontends across different ecosystems.</p>
+
+<h4>Technical Expertise</h4>
+<ul>
+  <li>Uniapp cross-platform development: write once, run on multiple clients</li>
+  <li>Vue ecosystem (Vue2 / Vue3 / Nuxt SSR)</li>
+  <li>Strong understanding of JavaScript internals and reactive development</li>
+  <li>WebSocket-based real-time communication</li>
+  <li>Frontend architecture, component design, and engineering best practices</li>
+</ul>
+
+<h4>Project Experience</h4>
+<ul>
+  <li>Worked on e-commerce platforms, admin systems, SaaS tools, data dashboards and more</li>
+  <li>Experienced in full-cycle development: planning, architecture, implementation, deployment</li>
+  <li>Seasoned in multi-platform adaptation and complex UI/UX interactions</li>
+</ul>
+
+<h4>Teaching Philosophy</h4>
+<ul>
+  <li>Focuses on practical application and clean code, built on real commercial experience</li>
+  <li>Uses real-world examples to explain core frontend concepts and best practices</li>
+  <li>Helps students build strong engineering intuition through clear and structured teaching</li>
+</ul>
+`,
+      zh: `
+<p>Bobby Wang，资深前端工程师，长期从事多端研发与前端架构设计工作。对多平台生态、性能优化和工程规范有成熟经验，能将前端技术有效落地到稳定的商业产品中。</p>
+
+<h4>技术专长</h4>
+<ul>
+  <li>Uniapp 跨平台开发：一套代码多端运行的完整实践</li>
+  <li>Vue 全家桶（Vue2 / Vue3 / Nuxt SSR）</li>
+  <li>深入理解 JavaScript 核心机制与响应式开发模式</li>
+  <li>WebSocket 实时通信与数据交互</li>
+  <li>前端架构设计、组件封装与工程化规范</li>
+</ul>
+
+<h4>项目经验</h4>
+<ul>
+  <li>负责在线商城、后台管理系统、SaaS 工具、数据大屏等多个商业级项目</li>
+  <li>完整参与从需求、架构、开发到上线的全流程</li>
+  <li>对多端适配与复杂交互开发有丰富实战积累</li>
+</ul>
+
+<h4>教学方式与理念</h4>
+<ul>
+  <li>基于丰富的商业项目经验，强调实战能力与代码质量培养</li>
+  <li>善用真实案例说明前端关键概念与最佳实践</li>
+  <li>以清晰直观的方式带学生构建扎实的前端工程思维</li>
+</ul>
+`,
+    },
+    quote: {
+      en: "Frontend is not about stacking code, but building solid engineering and great experiences.",
+      zh: "前端不是堆代码，而是把体验和工程做到位。",
+    },
+    expertise: {
+      en: [
+        "Frontend",
+        "Vue",
+        "Uniapp",
+        "Components",
+        "Engineering",
+      ],
+      zh: ["前端", "Vue", "Uniapp", "组件设计", "工程化"],
+    },
+    image:
+      "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-beta/pacer/cartoon_bobby.png",
     category: "project",
   },
   {
