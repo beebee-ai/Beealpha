@@ -334,7 +334,8 @@ const resources = {
       },
       faq: {
         title: "FAQ",
-        subtitle: "Answers to parents' most concerned questions",
+        subtitle:
+          "Answers to parents' most concerned questions",
         more: "More questions?",
         contact: "Contact Us",
         items: [
@@ -348,7 +349,7 @@ const resources = {
           },
           {
             q: "What can they achieve after 3 weeks (Genesis) or 6 weeks (Odyssey)?",
-            a: "Genesis Camp (3 weeks): Kids will be able to: 1) Complete a real runnable AI application independently; 2) Understand AI workflow design basics; 3) Build interest in taming AI to serve them; 4) Present their work on Demo Day. Odyssey Camp (6 weeks): In addition to the above, kids will: 1) Master AI-assisted full-stack development; 2) Complete payment loop integration; 3) Launch on Product Hunt; 4) Have a chance for seed investment; 5) Get industrial-standard project proof suitable for college applications.",
+            a: "Genesis Camp (3 weeks): Kids will be able to: \n1) Complete a real runnable AI application independently; \n2) Understand AI workflow design basics; \n3) Build interest in taming AI to serve them; \n4) Present their work on Demo Day. \n\nOdyssey Camp (6 weeks): In addition to the above, kids will: \n1) Master AI-assisted full-stack development; \n2) Complete payment loop integration; \n3) Launch on Product Hunt; \n4) Have a chance for seed investment; \n5) Get industrial-standard project proof suitable for college applications.",
           },
           {
             q: "How is this different from other coding/AI courses?",
@@ -356,11 +357,11 @@ const resources = {
           },
           {
             q: "What age range is suitable?",
-            a: "Genesis Camp: Ages 12-18, interested in technology, aspiring to create independent products (no coding background required). Odyssey Camp: Ages 12-18, with coding/engineering experience, seeking college portfolio or high-intensity product proof. We value learning motivation and interest in AI/tech over just age. If your child is curious about technology, likes hands-on creation, and wants to master future skills, they're a great fit.",
+            a: "Genesis Camp: Ages 12-18, interested in technology, aspiring to create independent products (no coding background required). \n\nOdyssey Camp: Ages 12-18, with coding/engineering experience, seeking college portfolio or high-intensity product proof. \n\nWe value learning motivation and interest in AI/tech over just age. If your child is curious about technology, likes hands-on creation, and wants to master future skills, they're a great fit.",
           },
           {
             q: "How is the class schedule arranged?",
-            a: "Genesis Camp: 3 weeks, 2 main sessions per week (1.5h each) + 1 mid-week Q&A session (1h). Odyssey Camp: 6 weeks, 2 main sessions per week (1.5h each) + 1 mid-week Q&A/homework review (2h). We arrange the most suitable class times based on students' time zones. Specific times will be confirmed with parents before the course starts to ensure it doesn't affect the child's regular studies.",
+            a: "Genesis Camp: 3 weeks, 2 main sessions per week (1.5h each) + 1 mid-week Q&A session (1h). \n\nOdyssey Camp: 6 weeks, 2 main sessions per week (1.5h each) + 1 mid-week Q&A/homework review (2h). \n\nWe arrange the most suitable class times based on students' time zones. Specific times will be confirmed with parents before the course starts to ensure it doesn't affect the child's regular studies.",
           },
           {
             q: "What if my child needs to miss a class?",
@@ -368,7 +369,7 @@ const resources = {
           },
           {
             q: "What will my child get after the camp?",
-            a: "In addition to a complete AI application portfolio, children will receive: 1) BEEBEE AI-Alpha internship certificate and recommendation letter; 2) Demo Day project presentation opportunity; 3) Outstanding Odyssey projects may receive seed investment; 4) Most importantly, build a sense of control over AI and future confidence.",
+            a: "In addition to a complete AI application portfolio, children will receive: \n1) BEEBEE AI-Alpha internship certificate and recommendation letter; \n2) Demo Day project presentation opportunity; \n3) Outstanding Odyssey projects may receive seed investment; \n4) Most importantly, build a sense of control over AI and future confidence.",
           },
         ],
       },
@@ -501,7 +502,7 @@ const resources = {
           schedule: [
             "主课安排：每周 2 次线上课，共 12 次，每次 1.5 小时互动课程",
             "答疑课：每周中 1 次线上答疑+作业检查，共 6 次，每次 2 小时，确保环境跑通、代码无 Bug",
-            "Demo Day：主课之外单独举行，以���组为单位进行团队线上产品演示，约 3 小时，有机会获得CVC/BEEBEE 种子投资",
+            "Demo Day：主课之外单独举行，以小组为单位进行团队线上产品演示，约 3 小时，有机会获得CVC/BEEBEE 种子投资",
           ],
           classSize: "6-12人小班制",
           selection: "线上面对面答题选拔",
@@ -739,11 +740,11 @@ const resources = {
           },
           {
             q: "课程是线上还是线下？",
-            a: "课程以线上为主，采用在线互动教学。这样可以打破地域限制，让全球华人家庭的孩子都能参与。启航营12人小班制，4人1组；远航营6-12人小班制。我们确保每个孩子都能得到充分的关注和指导。",
+            a: "课程以线上为主，采用在线互动教学。这样可以打破地域限制，让全球华人家庭的孩子都能参与。启航营12人小班制，4人1组；\n\n远航营6-12人小班制。我们确保每个孩子都能得到充分的关注和指导。",
           },
           {
             q: "3 周（启航营）或 6 周（远航营）能学到什么程度？",
-            a: "启航营（3周）：孩子将能够：1) 独立完成一个真实可运行的 AI 应用；2) 理解 AI 工作流设计基础；3) 建立驯化 AI 为自己服务的兴趣；4) 在结营 Demo Day 上展示自己的作品。远航营（6周）：除以上外，孩子还将：1) 掌握 AI 辅助全栈开发；2) 完成收费闭环集成；3) 在 Product Hunt 上发布；4) 有机会获得种子投资；5) 获得适合升学作品的工业化标准项目证明。",
+            a: "启航营（3周）：孩子将能够：\n1) 独立完成一个真实可运行的 AI 应用；\n2) 理解 AI 工作流设计基础；\n3) 建立驯化 AI 为自己服务的兴趣；\n4) 在结营 Demo Day 上展示自己的作品。\n\n远航营（6周）：除以上外，孩子还将：\n1) 掌握 AI 辅助全栈开发；\n2) 完成收费闭环集成；\n3) 在 Product Hunt 上发布；\n4) 有机会获得种子投资；\n5) 获得适合升学作品的工业化标准项目证明。",
           },
           {
             q: "和其他编程/AI 课程有什么不同？",
@@ -751,11 +752,11 @@ const resources = {
           },
           {
             q: "什么年龄段的孩子适合参加？",
-            a: "启航营：12-18 岁，对科技感兴趣，希望拥有自己独立产品的青少年（无需编程基础）。远航营：12-18 岁，有一定编程或工程经验，想获得明确升学或做出较高强度产品证明能力。我们更看重的是孩子的学习动力和对 AI/科技的兴趣，而不仅是年龄。如果孩子对技术好奇、喜欢动手创造、想要掌握未来技能，就很适合参加我们的训练营。",
+            a: "启航营：12-18 岁，对科技感兴趣，希望拥有自己独立产品的青少年（无需编程基础）。\n\n远航营：12-18 岁，有一定编程或工程经验，想获得明确升学或做出较高强度产品证明能力。\n\n我们更看重的是孩子的学习动力和对 AI/科技的兴趣，而不仅是年龄。如果孩子对技术好奇、喜欢动手创造、想要掌握未来技能，就很适合参加我们的训练营。",
           },
           {
             q: "上课时间如何安排？",
-            a: "启航营：3 周，每周 2 次主课（每次1.5小时）+ 1 次周中答疑课（1小时）。远航营：6 周，每周 2 次主课（每次1.5小时）+ 1 次周中答疑/作业检查（2小时）。我们会根据学员的时区安排最合适的上课时间。具体时间在开课前会和家长确认，确保不影响孩子的正常学习。",
+            a: "启航营：3 周，每周 2 次主课（每次1.5小时）+ 1 次周中答疑课（1小时）。\n\n远航营：6 周，每周 2 次主课（每次1.5小时）+ 1 次周中答疑/作业检查（2小时）。\n\n我们会根据学员的时区安排最合适的上课时间。具体时间在开课前会和家长确认，确保不影响孩子的正常学习。",
           },
           {
             q: "如果孩子中途有事缺课怎么办？",
@@ -763,7 +764,7 @@ const resources = {
           },
           {
             q: "结营后孩子能获得什么？",
-            a: "除了一个完整的 AI 应用作品，孩子还将获得：1) BEEBEE AI-Alpha 实习证明、推荐信；2) Demo Day 项目展示机会；3) 优秀远航营项目还有机会拿到种子投资；4) 最重要的是，建立起对 AI 的掌控感和未来自信心。",
+            a: "除了一个完整的 AI 应用作品，孩子还将获得：\n1) BEEBEE AI-Alpha 实习证明、推荐信；\n2) Demo Day 项目展示机会；\n3) 优秀远航营项目还有机会拿到种子投资；\n4) 最重要的是，建立起对 AI 的掌控感和未来自信心。",
           },
         ],
       },

@@ -43,10 +43,6 @@ export function FAQ() {
       question: t("faq.items.7.q"),
       answer: t("faq.items.7.a"),
     },
-    {
-      question: t("faq.items.8.q"),
-      answer: t("faq.items.8.a"),
-    },
   ];
 
   return (
@@ -93,7 +89,7 @@ export function FAQ() {
                     {faq.question}
                   </span>
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground pb-6 leading-relaxed">
+                <AccordionContent className="text-muted-foreground pb-6 leading-relaxed whitespace-pre-wrap">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
