@@ -63,26 +63,25 @@ const resources = {
         path1: {
           title: "Zero-Base Path",
           subtitle: "For students with no coding background",
-          duration: "6 Weeks · ~31 Hours",
+          duration: "6 Weeks · ~40 Hours",
           description:
             "Most kids start with no concept of Prompting. That's okay. BEEBEE AI-Alpha is designed for rapid output from zero.",
           courses: [
             {
               name: "Alpha Advanced Product Course",
-              details:
-                "Main: 2 Sessions/Week · 12 Sessions Total · 1.5h Each | Homework Review: Weekly · 6 Sessions · 0.5h Each",
+              details: "2 Sessions/Week · 12 Sessions Total · 1.5h Each",
               desc: "Core product course, from idea to MVP",
+            },
+            {
+              name: "Q&A Sessions",
+              details: "Mid-week Session · 6 Sessions · 2h Each",
+              desc: "Online Q&A + homework review to ensure smooth setup and bug-free code",
             },
             {
               name: "Orbiter Coaching",
               details: "10 Sessions · 1 Hour Each · 1-on-1 Mentoring",
               desc: "Exclusive coach guidance to ensure delivery",
             },
-            // {
-            //   name: "Q&A Sessions",
-            //   details: "Weekly · 1 Hour Each · 6 Sessions Total",
-            //   desc: "Address questions and challenges during learning",
-            // },
           ],
           outcomes: [
             "Decompose ideas into executable steps",
@@ -97,30 +96,34 @@ const resources = {
         path2: {
           title: "Accelerated Path",
           subtitle: "For students with Coding/STEAM background",
-          duration: "6 Weeks · ~26 Hours",
+          duration: "6 Weeks · ~30 Hours",
           description:
-            "For them, BEEBEE AI is a 'Full Accelerator'. They don't need coaching or slow adaptation.",
+            'For them, BEEBEE AI is "Full Accelerator". They don\'t need coaching or slow adaptation.',
           courses: [
             {
               name: "Alpha Advanced Product Course",
-              details:
-                "Main: 2 Sessions/Week · 12 Sessions Total · 1.5h Each | Homework Review: Weekly · 6 Sessions · 0.5h Each",
+              details: "2 Sessions/Week · 12 Sessions Total · 1.5h Each",
               desc: "Dive straight into project making",
             },
             {
-              name: "Alpha Entrepreneurship Mentoring",
-              details: "3 Sessions · Group-based · 1.5h Each",
-              desc: "Demo Day prep & entrepreneurial mindset",
+              name: "Q&A Sessions",
+              details: "Mid-week Session · 6 Sessions · 2h Each",
+              desc: "Online Q&A + homework review to ensure smooth setup and bug-free code",
             },
+            // {
+            //   name: "Alpha Entrepreneurship Mentoring",
+            //   details: "3 Sessions · Group-based · 1.5h Each",
+            //   desc: "Demo Day prep & entrepreneurial mindset",
+            // },
           ],
           outcomes: [
-            "Build complex AI tools and apps",
-            "Iterate and optimize models autonomously",
+            "Make more complex AI tools and applications",
+            "Autonomously iterate, optimize models and processes",
             "Advanced workflow design",
-            "Breakthrough in real-world challenges",
+            "Break through in real-world challenges",
           ],
           highlight:
-            "These kids often perform amazingly on Demo Day because the course gives them 'real-world challenges' schools can't offer.",
+            "These kids often perform impressively on Demo Day because the course gives them 'real-world challenges' that they can't get in school.",
         },
       },
       whyWhat: {
@@ -463,26 +466,25 @@ const resources = {
         path1: {
           title: "零基础路径",
           subtitle: "适合没有编程基础的学生",
-          duration: "6 周 · 约 31 小时",
+          duration: "6 周 · 约 40 小时",
           description:
             '多数孩子刚来时连 Prompt 都没概念，这没关系。BEEBEE AI-Alpha 的课程就是为了让"零基础"也能快速产出。',
           courses: [
             {
               name: "Alpha 进阶产品课",
-              details:
-                "主课：每周 2 次线上课 · 共 12 次 · 每次 1.5 小时｜作业检查：每周 1 次 · 共 6 次 · 每次 0.5 小时",
+              details: "每周 2 次线上课 · 共 12 次 · 每次 1.5 小时",
               desc: "核心产品课程，从想法到 MVP",
+            },
+            {
+              name: "答疑课",
+              details: "每周中 1 次 · 共 6 次 · 每次 2 小时",
+              desc: "线上答疑+作业检查，确保环境跑通、代码无 Bug",
             },
             {
               name: "Orbiter 陪练课",
               details: "10 次 · 每次 1 小时 · 1对1 辅导",
               desc: "专属教练实时指导，确保落地",
             },
-            // {
-            //   name: "答疑课",
-            //   details: "每周一次 · 每次 1 小时 · 共 6 次",
-            //   desc: "解决学习过程中的各类问题",
-            // },
           ],
           outcomes: [
             "把一个想法拆成可执行步骤",
@@ -497,21 +499,25 @@ const resources = {
         path2: {
           title: "加速路径",
           subtitle: "适合有编程/STEAM基础的学生",
-          duration: "6 周 · 约 26 小时",
+          duration: "6 周 · 约 30 小时",
           description:
-            "对于他们来说，BEEBEE AI 是一个 '全速加速器'。他们不需要陪练课，也不需要慢慢适应。",
+            '对他们来说，BEEBEE AI 是"全力加速器"。他们不需要陪练课，也不需要慢慢适应。',
           courses: [
             {
               name: "Alpha 进阶产品课",
-              details:
-                "主课：每周 2 次线上课 · 共 12 次 · 每次 1.5 小时｜作业检查：每周 1 次 · 共 6 次 · 每次 0.5 小时",
+              details: "每周 2 次线上课 · 共 12 次 · 每次 1.5 小时",
               desc: "上来就能进入项目制作",
             },
             {
-              name: "Alpha 创业辅导课",
-              details: "3 次 · 以组为单位 · 每次 1.5 小时",
-              desc: "Demo Day 准备与创业思维培养",
+              name: "答疑课",
+              details: "每周中 1 次 · 共 6 次 · 每次 2 小时",
+              desc: "线上答疑+作业检查，确保环境跑通、代码无 Bug",
             },
+            // {
+            //   name: "Alpha 创业辅导课",
+            //   details: "3 次 · 以组为单位 · 每次 1.5 小时",
+            //   desc: "Demo Day 准备与创业思维培养",
+            // },
           ],
           outcomes: [
             "做出更复杂的 AI 工具和应用",
@@ -764,7 +770,7 @@ const resources = {
           },
           {
             q: "如果孩子中途有事缺课怎么办？",
-            a: "我们提供课程录像回放，如果孩子因故缺课可以观看录像补课。对于陪练课，我们会根据情况协调补课时间。我们的目标是确保每个孩子都能完成学习并做出作品，所以会尽力配合家长和学生的实际情况。如果中途有事真的坚持不了，记得和我们沟通。有合理原因会退剩余学费，我们希望每个人都能有好体验！",
+            a: "我们提供课程录像回放，如果孩子因故缺课可以观看录像补课。对陪练课，我们会根据情况协调补课时间。我们的目标是确保每个孩子都能完成学习并做出作品，所以会尽力配合家长和学生的实际情况。如果中途有事真的坚持不了，记得和我们沟通。有合理原因会退剩余学费，我们希望每个人都能有好体验！",
           },
           {
             q: "结营后孩子能获得什么？",

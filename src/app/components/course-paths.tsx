@@ -35,12 +35,11 @@ export function CoursePaths() {
           details: t("coursePaths.path1.courses.1.details"),
           description: t("coursePaths.path1.courses.1.desc"),
         },
-        // 答疑课暂时隐藏
-        // {
-        //   name: t("coursePaths.path1.courses.2.name"),
-        //   details: t("coursePaths.path1.courses.2.details"),
-        //   description: t("coursePaths.path1.courses.2.desc"),
-        // },
+        {
+          name: t("coursePaths.path1.courses.2.name"),
+          details: t("coursePaths.path1.courses.2.details"),
+          description: t("coursePaths.path1.courses.2.desc"),
+        },
       ],
       outcomes: [
         t("coursePaths.path1.outcomes.0"),
@@ -70,6 +69,12 @@ export function CoursePaths() {
           details: t("coursePaths.path2.courses.1.details"),
           description: t("coursePaths.path2.courses.1.desc"),
         },
+        // 创业辅导课暂时隐藏
+        // {
+        //   name: t("coursePaths.path2.courses.2.name"),
+        //   details: t("coursePaths.path2.courses.2.details"),
+        //   description: t("coursePaths.path2.courses.2.desc"),
+        // },
       ],
       outcomes: [
         t("coursePaths.path2.outcomes.0"),
