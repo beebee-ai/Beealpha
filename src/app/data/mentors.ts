@@ -223,7 +223,7 @@ export const homeExperts: Mentor[] = [
     },
     bio: {
       en: "Former Chief Designer at Baidu and UX designer at Netscape/eBay/PayPal; educated at SJTU, IIT Institute of Design and Columbia Business School; built one of China's earliest professional UX teams.",
-      zh: "前百度首席设计���,曾任硅谷 Netscape / eBay / PayPal 设计师，就读上交大、IIT 设计学院、哥大商学院，中国最早一批专业 UX 团队创建者。",
+      zh: "前百度首席设计设计师,曾任硅谷 Netscape / eBay / PayPal 设计师，就读上交大、IIT 设计学院、哥大商学院，中国最早一批专业 UX 团队创建者。",
     },
     expertise: {
       en: [
@@ -522,97 +522,6 @@ export const detailedMentors: Mentor[] = [
     },
     image:
       "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-beta/pacer/cartoon_Vito.png",
-    category: "project",
-  },
-  {
-    id: "mentor-ashlynn",
-    name: "Ashlynn L",
-    title: {
-      en: "AI Data Engineer",
-      zh: "AI 数据工程师",
-    },
-    bio: {
-      en: "Holds a First-Class Honours degree in Mathematics & Statistics from the University of Edinburgh and a Distinction MSc in Data Science from Imperial College London. Currently an AI-focused backend engineer at BEEBEEAI, building productivity tools powered by large language models. Known for combining rigorous statistical thinking with practical engineering execution.",
-      zh: "毕业于爱丁堡大学数学与统计学（一等荣誉），帝国理工学院统计系数据科学硕士（卓越级）。现为 BEEBEEAI 后端软件工程师，专注于基于大语言模型的生产力工具研发。具备扎实的数学推理能力与工程实现能力，在统计建模、LLM 数据处理与高性能系统设计方面经验丰富。",
-    },
-    details: {
-      en: `
-<p>Ashlynn Lu is an AI Data Engineer with strong foundations in mathematics, statistics, and engineering execution. She is experienced in applying statistical frameworks to AI workflows and building scalable systems for LLM-driven applications.</p>
-
-<h4>Academic Background & Awards</h4>
-<ul>
-  <li>MSc in Data Science (Distinction), Imperial College London</li>
-  <li>BSc in Mathematics & Statistics (First-Class Honours), University of Edinburgh</li>
-  <li>Recipient of the Lawley Prize for outstanding performance in joint honours statistics</li>
-  <li>Winner of the School Vacation Scholarship</li>
-</ul>
-
-<h4>Technical Expertise</h4>
-<ul>
-  <li>Design and implementation of large-scale asynchronous crawling systems</li>
-  <li>LLM-based semantic keyword extraction and data optimization</li>
-  <li>Integration of MySQL and Elasticsearch multi-storage systems</li>
-  <li>Bayesian optimization and high-dimensional constrained problem solving</li>
-  <li>Python/R data analysis and statistical modeling</li>
-</ul>
-
-<h4>Teaching Philosophy</h4>
-<ul>
-  <li>Interprets AI algorithms through rigorous statistical thinking</li>
-  <li>Balances mathematical foundations with practical engineering execution</li>
-  <li>Known for clear explanations that break down complex models and probabilistic logic</li>
-</ul>
-`,
-      zh: `
-<p>Ashlynn Lu，AI 数据工程师与后端软件开发者，兼具强数学基础与扎实工程能力。她擅长将统计学方法引入 AI 工作流，通过严谨的分析与系统化实现提升模型与数据的效率。</p>
-
-<h4>学术经历与奖项</h4>
-<ul>
-  <li>帝国理工学院统计系数据科学硕士（卓越级）</li>
-  <li>爱丁堡大学数学与统计学士（一等荣誉学位）</li>
-  <li>爱丁堡大学 Lawley 奖（统计联合荣誉学位最杰出表现）</li>
-  <li>学院假期奖学金获得者</li>
-</ul>
-
-<h4>技术能力与工程实践</h4>
-<ul>
-  <li>设计与实现大规模异步爬虫系统，支持高并发与高扩展数据任务</li>
-  <li>构建基于 LLM 的语义关键词提取系统，提升数据清洗与标注效率</li>
-  <li>完成 MySQL 与 Elasticsearch 的多存储集成与查询优化</li>
-  <li>擅长贝叶斯优化与高维约束问题求解</li>
-  <li>熟练使用 Python / R 进行数据分析与统计建模</li>
-</ul>
-
-<h4>教学侧重点与理念</h4>
-<ul>
-  <li>用统计思维解读 AI 算法本质，帮助学生建立底层理解</li>
-  <li>强调数学基础与工程实践的平衡，将抽象概念转化为可操作技巧</li>
-  <li>善于用清晰示例拆解复杂模型与概率推理步骤</li>
-</ul>
-`,
-    },
-    quote: {
-      en: "Statistics makes AI clearer, engineering makes it real.",
-      zh: "用统计让 AI 更透明，用工程让模型真正落地。",
-    },
-    expertise: {
-      en: [
-        "Data Science",
-        "Statistical Modeling",
-        "Async Crawling",
-        "LLM Data",
-        "ElasticSearch",
-      ],
-      zh: [
-        "数据科学",
-        "统计建模",
-        "异步爬虫",
-        "LLM 数据",
-        "ElasticSearch",
-      ],
-    },
-    image:
-      "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-beta/pacer/cartoon_ashlynn.png",
     category: "project",
   },
   {
@@ -1234,190 +1143,6 @@ export const detailedMentors: Mentor[] = [
     category: "project",
   },
   {
-    id: "mentor-jerry",
-    name: "Jerry",
-    title: {
-      en: "AI Infrastructure & Cloud Architecture Expert",
-      zh: "AI 基础设施与云架构专家",
-    },
-    bio: {
-      en: "Mini MBA Certificate Program (OMMBA) at SUNY Buffalo and BS from UESTC. Over 16 years in top tech companies and one of the earliest DevOps practitioners in China. Specialized in AIOps, MLOps, cloud architecture (AWS/Azure/GCP), Kubernetes, and AI infrastructure including RAG pipelines and vLLM deployments.",
-      zh: "纽约州立大学布法罗分校管理学院 Mini MBA 项目，电子科技大学本科。拥有16年顶尖科技公司经验，是国内最早一批践行 DevOps 的工程师之一，深耕 AIOps/MLOps、云原生架构与 AI 系统基础设施构建。在 BEE Beta 掌握从底层 Infra 到 AI 落地的完整体系，包括云平台、Kubernetes、RAG、vLLM 推理服务部署等核心能力。",
-    },
-    details: {
-      en: `
-<p>Jerry brings 16 years of hands-on experience across cloud architecture, DevOps, MLOps, and AI infrastructure. As one of the earliest DevOps adopters in China, he has led large-scale automation and intelligent ops systems across multiple cloud platforms.</p>
-
-<h4>Education</h4>
-<ul>
-  <li>Mini MBA Certificate Program (OMMBA), SUNY Buffalo School of Management</li>
-  <li>BS, University of Electronic Science and Technology of China</li>
-</ul>
-
-<h4>Professional Experience</h4>
-<ul>
-  <li>16 years in top-tier technology companies</li>
-  <li>Early DevOps practitioner since 2008</li>
-  <li>Expert in AIOps, MLOps, automated pipelines and monitoring systems</li>
-  <li>Architect for AWS / Azure / GCP cloud infrastructure</li>
-  <li>CNCF Certified Kubernetes Administrator</li>
-  <li>NVIDIA Certified AI Infrastructure & Operations Engineer</li>
-  <li>Holds 10+ internationally recognized industry certifications</li>
-</ul>
-
-<h4>AI / Engineering Stack</h4>
-<ul>
-  <li>Cloudflare, Firebase integration</li>
-  <li>RAG / LangChain pipelines</li>
-  <li>vLLM + KubeRay inference deployment</li>
-  <li>Cloud-native architecture and container orchestration</li>
-  <li>Kubernetes, Terraform, CI/CD automation</li>
-</ul>
-
-<h4>Teaching Style</h4>
-<ul>
-  <li>Explains complex systems with clear and approachable language</li>
-  <li>Strong engineering pragmatism with focus on reliability and scalability</li>
-  <li>Easy to communicate with and ideal for students leveling up toward AI infrastructure engineering</li>
-</ul>
-`,
-      zh: `
-<p>Jerry 在云架构、AI 系统基础设施、DevOps/MLOps 等方向具备极深一线经验，是国内最早推动 DevOps 实践的工程师之一，长期负责复杂系统的稳定性、自动化与智能化。</p>
-
-<h4>教育背景</h4>
-<ul>
-  <li>纽约州立大学布法罗分校管理学院 Mini MBA Certificate Program (OMMBA)</li>
-  <li>电子科技大学 本科</li>
-</ul>
-
-<h4>专业经验</h4>
-<ul>
-  <li>16 年顶尖科技公司工程经验，覆盖开发、运维、架构到 AI 系统落地</li>
-  <li>2008 年起践行 DevOps，是国内最早的探索者之一</li>
-  <li>AIOps / MLOps 实践者，负责模型上线流程、自动化测试与监控体系</li>
-  <li>AWS / Azure / GCP 全栈云基础设施管理与架构设计</li>
-  <li>CNCF Certified Kubernetes Administrator（CKA）</li>
-  <li>NVIDIA Certified AI Infrastructure & Operations Engineer</li>
-  <li>拥有 10+ 国际权威技术认证</li>
-</ul>
-
-<h4>AI / 工程技术栈（在 BEE Beta 掌握）</h4>
-<ul>
-  <li>CloudFlare、Firebase 全链路服务集成</li>
-  <li>RAG / LangChain 系统构建</li>
-  <li>vLLM + KubeRay 推理服务部署与优化</li>
-  <li>云原生系统设计、容器化、自动化部署、可观测性体系</li>
-  <li>Kubernetes、Terraform、CI/CD Pipeline 构建</li>
-</ul>
-
-<h4>教学理念与风格</h4>
-<ul>
-  <li>用简单易懂的语言拆解复杂概念，让学生快速理解系统本质</li>
-  <li>强调工程实践，注重系统稳定性与可维护性</li>
-  <li>沟通顺畅，课堂氛围轻松，适合从工程基础向 AI Infra 进阶的学生</li>
-</ul>
-`,
-    },
-    quote: {
-      en: "Break complexity into clarity — that’s how control begins.",
-      zh: "复杂系统要敢拆，拆清楚了就能掌控。",
-    },
-    expertise: {
-      en: [
-        "Cloud-native",
-        "DevOps",
-        "MLOps",
-        "Kubernetes",
-        "vLLM",
-        "Infra",
-      ],
-      zh: [
-        "云原生",
-        "DevOps",
-        "MLOps",
-        "Kubernetes",
-        "vLLM",
-        "Infra",
-      ],
-    },
-    image:
-      "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-beta/pacer/cartoon_jerry.png",
-    category: "project",
-  },
-  {
-    id: "mentor-jennifer-liu",
-    name: "Jennifer L",
-    title: {
-      en: "Senior AI Product GTM Expert / Serial Entrepreneur",
-      zh: "资深 AI 产品 GTM 专家 / 连续创业者",
-    },
-    bio: {
-      en: "Jennifer Liu holds a Bachelor's in Economics from NYU and a Master's in International Management from KCL, currently pursuing an MBA at Cheung Kong Graduate School of Business. She has deep experience in product validation, growth, and survival strategies for early-stage entrepreneurs, having worked with the Lu Qi team. She co-founded an AI company with YouTube tech influencer Li Ziran, leading multiple AI product launches and growth strategies. Her focus is on AI Growth Agent, AI product commercialization, and cold start methodologies.",
-      zh: "拥有 NYU 经济学学士与 KCL国际管理硕士学位，现于长江商学院攻读 MBA。曾在陆奇团队工作期间深度参与早期创业者从 0 到 1 的产品验证、增长与生存策略。与 YouTube 科技博主李自然合伙创立 AI 公司，主导多款 AI 产品上线与增长，长期聚焦 AI Growth Agent、AI 产品商业化与冷启动方法论。",
-    },
-    details: {
-      en: `
-    <p>Jennifer Liu holds an academic background in Economics and International Management, with rich practical experience in AI product GTM (Go-to-Market) strategies. She co-founded an AI company with renowned tech influencer Li Ziran, leading AI product launches and growth strategies, with a deep focus on early product market entry and cold start methodologies.</p>
-
-<h4>Cross-domain Professional Experience</h4>
-<ul>
-  <li>Worked with Lu Qi's team on product validation and survival strategies for early-stage entrepreneurs</li>
-  <li>Co-founded an AI company with Li Ziran, leading product positioning, growth, and commercialization</li>
-  <li>Focused on market entry and commercialization paths for AI products, deeply understanding cold start methodologies</li>
-  <li>Provided GTM strategy support for over 100 AI startups</li>
-</ul>
-
-<h4>Teaching Style & Philosophy</h4>
-<ul>
-  <li>Practical, execution-oriented approach, emphasizing key decisions and actionable steps from 0 to 1</li>
-  <li>Uses real-life entrepreneurial case studies, focusing on validation thinking, growth paths, and commercialization feasibility</li>
-  <li>Direct and pragmatic style, addressing cold start issues and true user needs</li>
-</ul>
-`,
-      zh: `
-    <p>Jennifer Liu 拥有经济学与国际管理的深厚学术背景，且在 AI 产品 GTM（Go-to-Market）方面具有丰富的实战经验。她与知名科技博主李自然共同创办 AI 公司，推动多款 AI 产品的快速增长，深谙早期产品的市场切入与冷启动策略。</p>
-
-<h4>跨领域的专业经验</h4>
-<ul>
-  <li>曾在陆奇团队参与早期创业者从 0 到 1 的产品验证与生存策略</li>
-  <li>与李自然共同创立 AI 公司，主导 AI 产品的定位、增长与商业化</li>
-  <li>专注于 AI 产品的市场切入与商业化路径，深入了解产品冷启动方法论</li>
-  <li>为 100 多家 AI 初创公司提供 GTM 策略支持</li>
-</ul>
-
-<h4>教学理念与风格</h4>
-<ul>
-  <li>实战导向，强调从 0 到 1 的关键判断与可执行步骤</li>
-  <li>结合真实创业案例，注重验证思路、增长路径与商业化可行性</li>
-  <li>风格直接务实，专注解决“冷启动问题”和“用户需求”</li>
-</ul>
-`,
-    },
-    quote: {
-      en: "From 0 to 1, it's not created, it's validated.",
-      zh: "从 0 到 1，不是做出来的，而是验证出来的。",
-    },
-    expertise: {
-      en: [
-        "AI Product GTM",
-        "Growth Strategy",
-        "Cold Start",
-        "0-to-1 Product",
-        "Commercialization",
-      ],
-      zh: [
-        "AI 产品 GTM",
-        "增长策略",
-        "冷启动",
-        "0-1 产品",
-        "商业化",
-      ],
-    },
-    image:
-      "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-beta/pacer/cartoon_jennifer.png",
-    category: "project",
-  },
-  {
     id: 998,
     name: "",
     title: { en: "", zh: "" },
@@ -1549,6 +1274,281 @@ export const detailedExperts: Mentor[] = [
     image:
       "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-beta/pacer/cartoon_guoyu.png",
     category: "lecturer",
+  },
+  {
+    id: "mentor-jennifer-liu",
+    name: "Jennifer L",
+    title: {
+      en: "Senior AI Product GTM Expert / Serial Entrepreneur",
+      zh: "资深 AI 产品 GTM 专家 / 连续创业者",
+    },
+    bio: {
+      en: "Jennifer Liu holds a Bachelor's in Economics from NYU and a Master's in International Management from KCL, currently pursuing an MBA at Cheung Kong Graduate School of Business. She has deep experience in product validation, growth, and survival strategies for early-stage entrepreneurs, having worked with the Lu Qi team. She co-founded an AI company with YouTube tech influencer Li Ziran, leading multiple AI product launches and growth strategies. Her focus is on AI Growth Agent, AI product commercialization, and cold start methodologies.",
+      zh: "拥有 NYU 经济学学士与 KCL国际管理硕士学位，现于长江商学院攻读 MBA。曾在陆奇团队工作期间深度参与早期创业者从 0 到 1 的产品验证、增长与生存策略。与 YouTube 科技博主李自然合伙创立 AI 公司，主导多款 AI 产品上线与增长，长期聚焦 AI Growth Agent、AI 产品商业化与冷启动方法论。",
+    },
+    details: {
+      en: `
+    <p>Jennifer Liu holds an academic background in Economics and International Management, with rich practical experience in AI product GTM (Go-to-Market) strategies. She co-founded an AI company with renowned tech influencer Li Ziran, leading AI product launches and growth strategies, with a deep focus on early product market entry and cold start methodologies.</p>
+
+<h4>Cross-domain Professional Experience</h4>
+<ul>
+  <li>Worked with Lu Qi's team on product validation and survival strategies for early-stage entrepreneurs</li>
+  <li>Co-founded an AI company with Li Ziran, leading product positioning, growth, and commercialization</li>
+  <li>Focused on market entry and commercialization paths for AI products, deeply understanding cold start methodologies</li>
+  <li>Provided GTM strategy support for over 100 AI startups</li>
+</ul>
+
+<h4>Teaching Style & Philosophy</h4>
+<ul>
+  <li>Practical, execution-oriented approach, emphasizing key decisions and actionable steps from 0 to 1</li>
+  <li>Uses real-life entrepreneurial case studies, focusing on validation thinking, growth paths, and commercialization feasibility</li>
+  <li>Direct and pragmatic style, addressing cold start issues and true user needs</li>
+</ul>
+`,
+      zh: `
+    <p>Jennifer Liu 拥有经济学与国际管理的深厚学术背景，且在 AI 产品 GTM（Go-to-Market）方面具有丰富的实战经验。她与知名科技博主李自然共同创办 AI 公司，推动多款 AI 产品的快速增长，深谙早期产品的市场切入与冷启动策略。</p>
+
+<h4>跨领域的专业经验</h4>
+<ul>
+  <li>曾在陆奇团队参与早期创业者从 0 到 1 的产品验证与生存策略</li>
+  <li>与李自然共同创立 AI 公司，主导 AI 产品的定位、增长与商业化</li>
+  <li>专注于 AI 产品的市场切入与商业化路径，深入了解产品冷启动方法论</li>
+  <li>为 100 多家 AI 初创公司提供 GTM 策略支持</li>
+</ul>
+
+<h4>教学理念与风格</h4>
+<ul>
+  <li>实战导向，强调从 0 到 1 的关键判断与可执行步骤</li>
+  <li>结合真实创业案例，注重验证思路、增长路径与商业化可行性</li>
+  <li>风格直接务实，专注解决“冷启动问题”和“用户需求”</li>
+</ul>
+`,
+    },
+    quote: {
+      en: "From 0 to 1, it's not created, it's validated.",
+      zh: "从 0 到 1，不是做出来的，而是验证出来的。",
+    },
+    expertise: {
+      en: [
+        "AI Product GTM",
+        "Growth Strategy",
+        "Cold Start",
+        "0-to-1 Product",
+        "Commercialization",
+      ],
+      zh: [
+        "AI 产品 GTM",
+        "增长策略",
+        "冷启动",
+        "0-1 产品",
+        "商业化",
+      ],
+    },
+    image:
+      "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-beta/pacer/cartoon_jennifer.png",
+    category: "project",
+  },
+  {
+    id: "mentor-jerry",
+    name: "Jerry",
+    title: {
+      en: "AI Infrastructure & Cloud Architecture Expert",
+      zh: "AI 基础设施与云架构专家",
+    },
+    bio: {
+      en: "Mini MBA Certificate Program (OMMBA) at SUNY Buffalo and BS from UESTC. Over 16 years in top tech companies and one of the earliest DevOps practitioners in China. Specialized in AIOps, MLOps, cloud architecture (AWS/Azure/GCP), Kubernetes, and AI infrastructure including RAG pipelines and vLLM deployments.",
+      zh: "纽约州立大学布法罗分校管理学院 Mini MBA 项目，电子科技大学本科。拥有16年顶尖科技公司经验，是国内最早一批践行 DevOps 的工程师之一，深耕 AIOps/MLOps、云原生架构与 AI 系统基础设施构建。在 BEE Beta 掌握从底层 Infra 到 AI 落地的完整体系，包括云平台、Kubernetes、RAG、vLLM 推理服务部署等核心能力。",
+    },
+    details: {
+      en: `
+<p>Jerry brings 16 years of hands-on experience across cloud architecture, DevOps, MLOps, and AI infrastructure. As one of the earliest DevOps adopters in China, he has led large-scale automation and intelligent ops systems across multiple cloud platforms.</p>
+
+<h4>Education</h4>
+<ul>
+  <li>Mini MBA Certificate Program (OMMBA), SUNY Buffalo School of Management</li>
+  <li>BS, University of Electronic Science and Technology of China</li>
+</ul>
+
+<h4>Professional Experience</h4>
+<ul>
+  <li>16 years in top-tier technology companies</li>
+  <li>Early DevOps practitioner since 2008</li>
+  <li>Expert in AIOps, MLOps, automated pipelines and monitoring systems</li>
+  <li>Architect for AWS / Azure / GCP cloud infrastructure</li>
+  <li>CNCF Certified Kubernetes Administrator</li>
+  <li>NVIDIA Certified AI Infrastructure & Operations Engineer</li>
+  <li>Holds 10+ internationally recognized industry certifications</li>
+</ul>
+
+<h4>AI / Engineering Stack</h4>
+<ul>
+  <li>Cloudflare, Firebase integration</li>
+  <li>RAG / LangChain pipelines</li>
+  <li>vLLM + KubeRay inference deployment</li>
+  <li>Cloud-native architecture and container orchestration</li>
+  <li>Kubernetes, Terraform, CI/CD automation</li>
+</ul>
+
+<h4>Teaching Style</h4>
+<ul>
+  <li>Explains complex systems with clear and approachable language</li>
+  <li>Strong engineering pragmatism with focus on reliability and scalability</li>
+  <li>Easy to communicate with and ideal for students leveling up toward AI infrastructure engineering</li>
+</ul>
+`,
+      zh: `
+<p>Jerry 在云架构、AI 系统基础设施、DevOps/MLOps 等方向具备极深一线经验，是国内最早推动 DevOps 实践的工程师之一，长期负责复杂系统的稳定性、自动化与智能化。</p>
+
+<h4>教育背景</h4>
+<ul>
+  <li>纽约州立大学布法罗分校管理学院 Mini MBA Certificate Program (OMMBA)</li>
+  <li>电子科技大学 本科</li>
+</ul>
+
+<h4>专业经验</h4>
+<ul>
+  <li>16 年顶尖科技公司工程经验，覆盖开发、运维、架构到 AI 系统落地</li>
+  <li>2008 年起践行 DevOps，是国内最早的探索者之一</li>
+  <li>AIOps / MLOps 实践者，负责模型上线流程、自动化测试与监控体系</li>
+  <li>AWS / Azure / GCP 全栈云基础设施管理与架构设计</li>
+  <li>CNCF Certified Kubernetes Administrator（CKA）</li>
+  <li>NVIDIA Certified AI Infrastructure & Operations Engineer</li>
+  <li>拥有 10+ 国际权威技术认证</li>
+</ul>
+
+<h4>AI / 工程技术栈（在 BEE Beta 掌握）</h4>
+<ul>
+  <li>CloudFlare、Firebase 全链路服务集成</li>
+  <li>RAG / LangChain 系统构建</li>
+  <li>vLLM + KubeRay 推理服务部署与优化</li>
+  <li>云原生系统设计、容器化、自动化部署、可观测性体系</li>
+  <li>Kubernetes、Terraform、CI/CD Pipeline 构建</li>
+</ul>
+
+<h4>教学理念与风格</h4>
+<ul>
+  <li>用简单易懂的语言拆解复杂概念，让学生快速理解系统本质</li>
+  <li>强调工程实践，注重系统稳定性与可维护性</li>
+  <li>沟通顺畅，课堂氛围轻松，适合从工程基础向 AI Infra 进阶的学生</li>
+</ul>
+`,
+    },
+    quote: {
+      en: "Break complexity into clarity — that’s how control begins.",
+      zh: "复杂系统要敢拆，拆清楚了就能掌控。",
+    },
+    expertise: {
+      en: [
+        "Cloud-native",
+        "DevOps",
+        "MLOps",
+        "Kubernetes",
+        "vLLM",
+        "Infra",
+      ],
+      zh: [
+        "云原生",
+        "DevOps",
+        "MLOps",
+        "Kubernetes",
+        "vLLM",
+        "Infra",
+      ],
+    },
+    image:
+      "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-beta/pacer/cartoon_jerry.png",
+    category: "project",
+  },
+  {
+    id: "mentor-ashlynn",
+    name: "Ashlynn L",
+    title: {
+      en: "AI Data Engineer",
+      zh: "AI 数据工程师",
+    },
+    bio: {
+      en: "Holds a First-Class Honours degree in Mathematics & Statistics from the University of Edinburgh and a Distinction MSc in Data Science from Imperial College London. Currently an AI-focused backend engineer at BEEBEEAI, building productivity tools powered by large language models. Known for combining rigorous statistical thinking with practical engineering execution.",
+      zh: "毕业于爱丁堡大学数学与统计学（一等荣誉），帝国理工学院统计系数据科学硕士（卓越级）。现为 BEEBEEAI 后端软件工程师，专注于基于大语言模型的生产力工具研发。具备扎实的数学推理能力与工程实现能力，在统计建模、LLM 数据处理与高性能系统设计方面经验丰富。",
+    },
+    details: {
+      en: `
+<p>Ashlynn Lu is an AI Data Engineer with strong foundations in mathematics, statistics, and engineering execution. She is experienced in applying statistical frameworks to AI workflows and building scalable systems for LLM-driven applications.</p>
+
+<h4>Academic Background & Awards</h4>
+<ul>
+  <li>MSc in Data Science (Distinction), Imperial College London</li>
+  <li>BSc in Mathematics & Statistics (First-Class Honours), University of Edinburgh</li>
+  <li>Recipient of the Lawley Prize for outstanding performance in joint honours statistics</li>
+  <li>Winner of the School Vacation Scholarship</li>
+</ul>
+
+<h4>Technical Expertise</h4>
+<ul>
+  <li>Design and implementation of large-scale asynchronous crawling systems</li>
+  <li>LLM-based semantic keyword extraction and data optimization</li>
+  <li>Integration of MySQL and Elasticsearch multi-storage systems</li>
+  <li>Bayesian optimization and high-dimensional constrained problem solving</li>
+  <li>Python/R data analysis and statistical modeling</li>
+</ul>
+
+<h4>Teaching Philosophy</h4>
+<ul>
+  <li>Interprets AI algorithms through rigorous statistical thinking</li>
+  <li>Balances mathematical foundations with practical engineering execution</li>
+  <li>Known for clear explanations that break down complex models and probabilistic logic</li>
+</ul>
+`,
+      zh: `
+<p>Ashlynn Lu，AI 数据工程师与后端软件开发者，兼具强数学基础与扎实工程能力。她擅长将统计学方法引入 AI 工作流，通过严谨的分析与系统化实现提升模型与数据的效率。</p>
+
+<h4>学术经历与奖项</h4>
+<ul>
+  <li>帝国理工学院统计系数据科学硕士（卓越级）</li>
+  <li>爱丁堡大学数学与统计学士（一等荣誉学位）</li>
+  <li>爱丁堡大学 Lawley 奖（统计联合荣誉学位最杰出表现）</li>
+  <li>学院假期奖学金获得者</li>
+</ul>
+
+<h4>技术能力与工程实践</h4>
+<ul>
+  <li>设计与实现大规模异步爬虫系统，支持高并发与高扩展数据任务</li>
+  <li>构建基于 LLM 的语义关键词提取系统，提升数据清洗与标注效率</li>
+  <li>完成 MySQL 与 Elasticsearch 的多存储集成与查询优化</li>
+  <li>擅长贝叶斯优化与高维约束问题求解</li>
+  <li>熟练使用 Python / R 进行数据分析与统计建模</li>
+</ul>
+
+<h4>教学侧重点与理念</h4>
+<ul>
+  <li>用统计思维解读 AI 算法本质，帮助学生建立底层理解</li>
+  <li>强调数学基础与工程实践的平衡，将抽象概念转化为可操作技巧</li>
+  <li>善于用清晰示例拆解复杂模型与概率推理步骤</li>
+</ul>
+`,
+    },
+    quote: {
+      en: "Statistics makes AI clearer, engineering makes it real.",
+      zh: "用统计让 AI 更透明，用工程让模型真正落地。",
+    },
+    expertise: {
+      en: [
+        "Data Science",
+        "Statistical Modeling",
+        "Async Crawling",
+        "LLM Data",
+        "ElasticSearch",
+      ],
+      zh: [
+        "数据科学",
+        "统计建模",
+        "异步爬虫",
+        "LLM 数据",
+        "ElasticSearch",
+      ],
+    },
+    image:
+      "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-beta/pacer/cartoon_ashlynn.png",
+    category: "project",
   },
   {
     id: 999,
