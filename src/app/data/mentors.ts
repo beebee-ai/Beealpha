@@ -43,7 +43,7 @@ export const homeMentors: Mentor[] = [
     category: "project",
   },
   {
-    id: 4,
+    id: 2,
     name: "Vito L",
     title: {
       en: "RAG Engineer & AI Full-Stack Developer",
@@ -68,7 +68,7 @@ export const homeMentors: Mentor[] = [
     category: "project",
   },
   {
-    id: 9,
+    id: 3,
     name: "Fangzhong L",
     title: {
       en: "Senior Data Scientist",
@@ -93,7 +93,7 @@ export const homeMentors: Mentor[] = [
     category: "project",
   },
   {
-    id: 10,
+    id: 4,
     name: "Mingxi C",
     title: {
       en: "Full-Stack Engineer & AI Application Developer",
@@ -126,7 +126,7 @@ export const homeMentors: Mentor[] = [
     category: "project",
   },
   {
-    id: 11,
+    id: 5,
     name: "Shu H",
     title: {
       en: "NYC Financial Systems Engineer",
@@ -157,7 +157,7 @@ export const homeMentors: Mentor[] = [
     category: "project",
   },
   {
-    id: 12,
+    id: 6,
     name: "Heyang L",
     title: {
       en: "Machine Learning Engineer, Google",
@@ -176,7 +176,7 @@ export const homeMentors: Mentor[] = [
     category: "project",
   },
   {
-    id: 15,
+    id: 7,
     name: "Bobby W",
     title: {
       en: "Senior Frontend Engineer",
@@ -215,7 +215,7 @@ export const homeMentors: Mentor[] = [
 
 export const homeExperts: Mentor[] = [
   {
-    id: 22,
+    id: 8,
     name: "Yu G",
     title: {
       en: "Chief-level UX & Product Design Expert",
@@ -238,7 +238,7 @@ export const homeExperts: Mentor[] = [
     category: "lecturer",
   },
   {
-    id: 16,
+    id: 9,
     name: "Jennifer L",
     title: {
       en: "Senior AI Product GTM Expert / Serial Entrepreneur",
@@ -269,7 +269,7 @@ export const homeExperts: Mentor[] = [
     category: "project",
   },
   {
-    id: 13,
+    id: 10,
     name: "Jerry Y",
     title: {
       en: "AI Infrastructure & Cloud Architecture Expert",
@@ -298,11 +298,30 @@ export const homeExperts: Mentor[] = [
       ],
     },
     image:
-      "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-beta/pacer/cartoon_jerry.png",
+      "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-alpha/pacer/cartoon_jerry.png",
     category: "project",
   },
   {
-    id: 6,
+    id: 11,
+    name: "Andy C",
+    title: {
+      en: "Engineer, Enterpreneur & Game Developer",
+      zh: "工程师、企业家与游戏开发者",
+    },
+    bio: {
+      en: "Serial founder with 3 years of applied Al experience across product, operations, game design and supply.",
+      zh: "连续创业者，在产品、运营、游戏设计和供应链等领域拥有三年人工智能应用经验",
+    },
+    expertise: {
+      en: ["Product", "AI Applications", "Game Design"],
+      zh: ["产品", "人工智能应用", "游戏设计"],
+    },
+    image:
+      "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-alpha/pacer/cartoon_andy.png",
+    category: "project",
+  },
+  {
+    id: 12,
     name: "Ashlynn L",
     title: {
       en: "Data Scientist & AI Data Engineer",
@@ -1456,7 +1475,26 @@ export const detailedExperts: Mentor[] = [
       ],
     },
     image:
-      "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-beta/pacer/cartoon_jerry.png",
+      "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-alpha/pacer/cartoon_jerry.png",
+    category: "project",
+  },
+  {
+    id: "mentor-andy",
+    name: "Andy C",
+    title: {
+      en: "Engineer, Enterpreneur & Game Developer",
+      zh: "工程师、企业家与游戏开发者",
+    },
+    bio: {
+      en: "Serial founder with 3 years of applied Al experience across product, operations, game design and supply.",
+      zh: "连续创业者，在产品、运营、游戏设计和供应链等领域拥有三年人工智能应用经验",
+    },
+    expertise: {
+      en: ["Product", "AI Applications", "Game Design"],
+      zh: ["产品", "人工智能应用", "游戏设计"],
+    },
+    image:
+      "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-alpha/pacer/cartoon_andy.png",
     category: "project",
   },
   {
