@@ -27,7 +27,7 @@ export function Hero() {
             className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6"
           >
             <Sparkles className="w-4 h-4" />
-            <span className="text-sm">{t('hero.badge')}</span>
+            <span className="text-sm">{t("hero.badge")}</span>
           </motion.div>
 
           <motion.h1
@@ -36,8 +36,10 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
           >
-            {t('hero.title_start')}
-            <span className="text-primary block">{t('hero.title_highlight')}</span>
+            {/* {t('hero.title_start')} */}
+            <span className="text-primary block">
+              {t("hero.title_highlight")}
+            </span>
           </motion.h1>
 
           <motion.p
@@ -46,7 +48,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto"
           >
-            {t('hero.description')}
+            {t("hero.description")}
           </motion.p>
 
           <motion.div
@@ -60,7 +62,7 @@ export function Hero() {
               className="text-lg px-8"
               onClick={() => scrollToSection("cta")}
             >
-              {t('hero.cta_primary')}
+              {t("hero.cta_primary")}
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
             <Button
@@ -69,12 +71,12 @@ export function Hero() {
               className="text-lg px-8"
               onClick={() => scrollToSection("outcome")}
             >
-              {t('hero.cta_secondary')}
+              {t("hero.cta_secondary")}
             </Button>
           </motion.div>
         </div>
       </div>
-      
+
       {/* Bottom shadow separator */}
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-orange-200/50 to-transparent"></div>
     </section>

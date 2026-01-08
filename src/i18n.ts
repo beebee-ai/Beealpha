@@ -20,13 +20,13 @@ const resources = {
         title_start: "Frictionless for kids to",
         title_highlight: "Build Real Apps with AI",
         description:
-          "No coding background needed, no rote memorization. From the first lesson, let AI help complete real tasks, evolving from 'using AI' to 'creating products'.",
+          "No coding background needed, no rote memorization. From the first lesson, let AI help you complete real tasks, evolving from 'using AI' to 'creating products'.",
         cta_primary: "Join Now",
         cta_secondary: "Learn More",
       },
       outcome: {
         badge: "The Result",
-        title: "What Will Your Child Get?",
+        title: "What Will Teens Get?",
         items: [
           {
             title: "Transferable Productivity",
@@ -130,7 +130,7 @@ const resources = {
         badge: "Why Choose Us",
         title: "Why Choose Us",
         subtitle:
-          "Don't let kids be passive or fearful in the AI era, give them control.",
+          "Don't let teens be passive or fearful in the AI era, give them control.",
         items: [
           {
             title: "Real Product Oriented",
@@ -138,7 +138,7 @@ const resources = {
           },
           {
             title: "Small Class Personalized",
-            desc: "12 students + 1-on-1 coaching. Mentors track every child's work.",
+            desc: "12 students + 1-on-1 coaching. Mentors track everyone's work.",
           },
           {
             title: "Global Online",
@@ -150,7 +150,7 @@ const resources = {
           },
           {
             title: "AI Era Essential",
-            desc: "Schools lag behind AI changes. Kids need systematic AI capability training.",
+            desc: "Schools lag behind AI changes. Teens need systematic AI capability training.",
           },
           {
             title: "Control Mindset",
@@ -166,37 +166,37 @@ const resources = {
           {
             title: "Demystify AI",
             subtitle: "Demystify AI",
-            desc: "Not magic, not hype. Use real models to let kids understand AI logic.",
+            desc: "Not magic. Use real models to let you understand AI logic.",
             example:
-              "Kids can explain why AI wrote a sentence wrong, not just say 'AI is like that'.",
+              "Can explain why AI wrote a sentence wrong, not just say 'AI is like that'.",
           },
           {
             title: "Hands-on First",
             subtitle: "Hands-on First",
-            desc: "We care about what kids make, not how many points they memorized.",
+            desc: "We care about what you make, not how many points they memorized.",
             example:
-              "Kids finish with an AI project they trained, not a PPT.",
+              "Finish with an AI project they trained, not a PPT.",
           },
           {
             title: "AI Thinking",
             subtitle: "AI Thinking",
             desc: "We teach thinking patterns—how to decompose a problem and let AI handle the repetitive parts.",
             example:
-              "Kids delegate research and drafting to AI, focusing on judgment and creativity.",
+              "Delegate research and drafting to AI, focusing on judgment and creativity.",
           },
           {
             title: "Confidence Building",
             subtitle: "Confidence Building",
-            desc: "When kids realize they control AI, they build strong 'future confidence'.",
+            desc: "When teens realize they control AI, they build strong 'future confidence'.",
             example:
-              "Kids present AI projects in class, knowing they stand at the tech forefront.",
+              "Present AI projects in class, knowing they stand at the tech forefront.",
           },
           {
             title: "Small Cohort + 1-on-1",
             subtitle: "Small Cohort with 1-on-1",
-            desc: "12 students max. Mentors track every work. Quality over scale.",
+            desc: "12 students max. Mentors track everyone's work. Quality over scale.",
             example:
-              "High-density coaching helps kids build control over AI.",
+              "High-density coaching helps teens build control over AI.",
           },
           {
             title: "Practical & Future-Oriented",
@@ -213,7 +213,7 @@ const resources = {
         badge: "Showcase",
         title: "Student Work Showcase",
         subtitle:
-          "From 0 to 1, they created real value with AI",
+          "From 0 to 1, Students created real value with AI",
         footer:
           "These are real projects from real students. Every child presents their work on Demo Day, building strong confidence.",
         works: [
@@ -292,7 +292,7 @@ const resources = {
       teachers: {
         title: "Mentor Team",
         subtitle:
-          "We're not just 'teachers'—we're your child's AI coaching partners and future capability allies",
+          "We're not just 'teachers'—we're your AI coaching partners and future capability allies",
         tabs: {
           mentors: "Project Mentors",
           experts: "Expert Instructors",
@@ -335,48 +335,48 @@ const resources = {
       faq: {
         title: "FAQ",
         subtitle:
-          "Answers to parents' most concerned questions",
+          "Answers to students' most concerned questions",
         more: "More questions?",
         contact: "Contact Us",
         items: [
           {
-            q: "Can my child learn without any coding background?",
-            a: "Absolutely! Alpha Genesis Camp is designed for zero-foundation students. BEEBEE AI-Alpha uses a 'frictionless learning' method that doesn't require coding background. In Genesis Camp, kids can create real outputs from the first lesson. After about 15 hours of learning, they can complete a real AI application. For Odyssey Camp, we recommend some coding or engineering experience.",
+            q: "Can I learn without any coding background?",
+            a: "Absolutely! Alpha Genesis Camp is designed for zero-foundation students. BEEBEE AI-Alpha uses a 'frictionless learning' method that doesn't require coding background. In Genesis Camp, students can create real outputs from the first lesson. After about 15 hours of learning, students can complete a real AI application. For Odyssey Camp, we recommend some coding or engineering experience.",
           },
           {
             q: "Is the course online or offline?",
-            a: "Courses are primarily online with interactive teaching. This breaks geographic barriers and allows children from Chinese families worldwide to participate. Genesis Camp has 12-student small classes with 4-person groups; Odyssey Camp has 6-12 person small classes. We ensure every child gets sufficient attention and guidance.",
+            a: "Courses are primarily online with interactive teaching. This breaks geographic barriers and allows teens from Chinese families worldwide to participate. Genesis Camp has 12-student small classes with 4-person groups; Odyssey Camp has 6-12 person small classes. We ensure everyone gets sufficient attention and guidance.",
           },
           {
-            q: "What can they achieve after 3 weeks (Genesis) or 6 weeks (Odyssey)?",
-            a: "Genesis Camp (3 weeks): Kids will be able to: \n1) Complete a real runnable AI application independently; \n2) Understand AI workflow design basics; \n3) Build interest in taming AI to serve them; \n4) Present their work on Demo Day. \n\nOdyssey Camp (6 weeks): In addition to the above, kids will: \n1) Master AI-assisted full-stack development; \n2) Complete payment loop integration; \n3) Launch on Product Hunt; \n4) Have a chance for seed investment; \n5) Get industrial-standard project proof suitable for college applications.",
+            q: "What can achieve after 3 weeks (Genesis) or 6 weeks (Odyssey)?",
+            a: "Genesis Camp (3 weeks): Student will be able to: \n1) Complete a real runnable AI application independently; \n2) Understand AI workflow design basics; \n3) Build interest in taming AI to serve them; \n4) Present their work on Demo Day. \n\nOdyssey Camp (6 weeks): In addition to the above, Student will: \n1) Master AI-assisted full-stack development; \n2) Complete payment loop integration; \n3) Launch on Product Hunt; \n4) Have a chance for seed investment; \n5) Get industrial-standard project proof suitable for college applications.",
           },
           {
             q: "How is this different from other coding/AI courses?",
-            a: 'The biggest difference is we focus on "making things" rather than "learning knowledge points." Traditional coding courses often start with syntax, and many kids still can\'t make useful things after half a year. BEEBEE AI-Alpha starts with real projects from day one, using real AI tools and models to solve real problems. We don\'t just teach tool operation, but AI thinking and product capability.',
+            a: 'The biggest difference is we focus on "making things" rather than "learning knowledge points." Traditional coding courses often start with syntax, and many students still can\'t make useful things after half a year. BEEBEE AI-Alpha starts with real projects from day one, using real AI tools and models to solve real problems. We don\'t just teach tool operation, but AI thinking and product capability.',
           },
           {
             q: "What age range is suitable?",
-            a: "Genesis Camp: Ages 12-18, interested in technology, aspiring to create independent products (no coding background required). \n\nOdyssey Camp: Ages 12-18, with coding/engineering experience, seeking college portfolio or high-intensity product proof. \n\nWe value learning motivation and interest in AI/tech over just age. If your child is curious about technology, likes hands-on creation, and wants to master future skills, they're a great fit.",
+            a: "Genesis Camp: Ages 12-18, interested in technology, aspiring to create independent products (no coding background required). \n\nOdyssey Camp: Ages 12-18, with coding/engineering experience, seeking college portfolio or high-intensity product proof. \n\nWe value interest in AI/tech over just age. If you are curious about technology, likes hands-on creation, and wants to master future skills, they're a great fit.",
           },
           {
             q: "How is the class schedule arranged?",
-            a: "Genesis Camp: 3 weeks, 2 main sessions per week (1.5h each) + 1 mid-week Q&A session (1h). \n\nOdyssey Camp: 6 weeks, 2 main sessions per week (1.5h each) + 1 mid-week Q&A/homework review (2h). \n\nWe arrange the most suitable class times based on students' time zones. Specific times will be confirmed with parents before the course starts to ensure it doesn't affect the child's regular studies.",
+            a: "Genesis Camp: 3 weeks, 2 main sessions per week (1.5h each) + 1 mid-week Q&A session (1h). \n\nOdyssey Camp: 6 weeks, 2 main sessions per week (1.5h each) + 1 mid-week Q&A/homework review (2h). \n\nWe arrange the most suitable class times based on students' time zones. Specific times will be confirmed with parents before the course starts to ensure it doesn't affect the student's regular studies.",
           },
           {
-            q: "What if my child needs to miss a class?",
-            a: "We provide course recordings. If a child misses class for a reason, they can watch the recording to catch up. For Q&A sessions, we'll coordinate makeup times based on circumstances. Our goal is to ensure every child completes their learning and creates their work, so we'll do our best to accommodate parents and students' actual situations. If something really comes up and they can't continue, please communicate with us. We'll refund remaining tuition for reasonable causes—we want everyone to have a good experience!",
+            q: "What if I needs to miss a class?",
+            a: "We provide course recordings. If you misses class for a reason, you can watch the recording to catch up. For Q&A sessions, we'll coordinate makeup times based on circumstances. Our goal is to ensure every student completes their learning and creates their work, so we'll do our best to accommodate parents and students' actual situations. If something really comes up and you can't continue, please communicate with us. We'll refund remaining tuition for reasonable causes—we want everyone to have a good experience!",
           },
           {
-            q: "What will my child get after the camp?",
-            a: "In addition to a complete AI application portfolio, children will receive: \n1) BEEBEE AI-Alpha internship certificate and recommendation letter; \n2) Demo Day project presentation opportunity; \n3) Outstanding Odyssey projects may receive seed investment; \n4) Most importantly, build a sense of control over AI and future confidence.",
+            q: "What will get after the camp?",
+            a: "In addition to a complete AI application portfolio, students will receive: \n1) BEEBEE AI-Alpha internship certificate and recommendation letter; \n2) Demo Day project presentation opportunity; \n3) Outstanding Odyssey projects may receive seed investment; \n4) Most importantly, build a sense of control over AI and future confidence.",
           },
         ],
       },
       cta: {
-        title: "Start Your Child's AI Journey",
+        title: "AI is here. The future looks bright",
         subtitle:
-          "Limited spots, small classes. Enroll now to give your child a head start.",
+          "Limited spots, small classes. Enroll now and stay ahead in the AI era.",
         form: {
           title: "Inquire Now",
           name: "Parent Name",
@@ -394,10 +394,13 @@ const resources = {
       footer: {
         brand: "Bee Alpha",
         tagline:
-          "Empowering teens to build real apps with AI frictionlessly and master the future way of working.",
+          "Build real apps with AI and master the future way of working.",
         quickLinks: "Quick Links",
         contactUs: "Contact Us",
-        location: "New Zealand & Global Online",
+        locationZh:
+          "中国四川省成都市高新区成都高新孵化园 1 号楼 A 座",
+        locationNz:
+          "B:Hive, 74 Taharoto Road, Smales Farm, Takapuna, Auckland, New Zealand",
         rights: "All rights reserved.",
         empower: "Empowering the next generation with AI",
       },
@@ -419,13 +422,13 @@ const resources = {
         title_start: "让孩子无摩擦地",
         title_highlight: "用 AI 做出真实应用",
         description:
-          '不用编程基础，不靠死记硬背。从第一节课开始就能让 AI 帮他完成现实任务，从"会用 AI"进化成"能做出作品"。',
+          '不用编程基础，不靠死记硬背。从第一节课开始就能让 AI 帮您完成真实任务，从"会用 AI"进化成"能做出作品"。',
         cta_primary: "立即报名",
         cta_secondary: "了解更多",
       },
       outcome: {
         badge: "The Result",
-        title: "孩子能得到什么？",
+        title: "青少年能得到什么？",
         items: [
           {
             title: "可迁移的生产力",
@@ -527,7 +530,7 @@ const resources = {
         badge: "Why Choose Us",
         title: "为什么选择我们",
         subtitle:
-          "让孩子在 AI 时代不被动、不恐惧，而是有控制权",
+          "让青少年在 AI 时代不被动、不恐惧，而是有控制权",
         items: [
           {
             title: "真实产品导向",
@@ -535,7 +538,7 @@ const resources = {
           },
           {
             title: "小班制个性化",
-            desc: "12 人小班 + 1对1 陪练，导师能直接盯每个孩子的作品，确保都被看见",
+            desc: "12 人小班 + 1对1 陪练，导师能直接盯每个人的作品，确保都被看见",
           },
           {
             title: "全球化在线教学",
@@ -547,11 +550,11 @@ const resources = {
           },
           {
             title: "AI 时代刚需",
-            desc: "学校教育跟不上 AI 变革，孩子需要系统化的 AI 实战能力培养",
+            desc: "学校教育跟不上 AI 变革，青少年需要系统化的 AI 实战能力培养",
           },
           {
             title: "掌控权思维",
-            desc: "让孩子把 AI 当工具而非威胁，培养驯化 AI 的能力和思维模式",
+            desc: "让青少年把 AI 当工具而非威胁，培养驯化 AI 的能力和思维模式",
           },
         ],
       },
@@ -563,44 +566,44 @@ const resources = {
           {
             title: "反神秘化",
             subtitle: "Demystify AI",
-            desc: "不把 AI 当玄学，不吹用真实模型让孩子理解 AI 的逻辑。",
+            desc: "不把 AI 当玄学，用真实模型让您理解 AI 的逻辑。",
             example:
-              '孩子能解释 AI 为什么写错一句话，而不是只是说"AI 就是这样"。',
+              '能解释 AI 为什么写错一句话，而不是只是说"AI 就是这样"。',
           },
           {
             title: "用得出来",
             subtitle: "Hands-on First",
-            desc: "我们更关心孩子做出来什么，而不是学了多少知识点。",
+            desc: "我们更关心您做出来什么，而不是学了多少知识点。",
             example:
-              "课程结束孩子能做一个自己训练的 AI 项目，而不是一份 PPT。",
+              "课程结束后都能做一个自己训练的 AI 项目，而不是一份 PPT。",
           },
           {
             title: "AI 思维",
             subtitle: "AI Thinking",
             desc: "我们不是教工具，而是教思维模式——如何把一个问题分解，让 AI 接手重复性部分。",
             example:
-              "孩子懂得把论文查找、数据整理、文本生成交给 AI，而自己专注判断与创意。",
+              "懂得把论文查找、数据整理、文本生成交给 AI，而自己专注判断与创意。",
           },
           {
             title: "自信心建立",
             subtitle: "Confidence Building",
-            desc: '当孩子意识到 AI 被他控制，而不是控制他，会形成很强的"未来自信"。',
+            desc: '当青少年意识到 AI 被他控制，而不是控制他，会形成很强的"未来自信"。',
             example:
-              "孩子能在班级里展示 AI 项目，知道自己站在科技发展的前排。",
+              "能在班级里展示 AI 项目，知道自己站在科技发展的前排。",
           },
           {
             title: "小班互动 + 一对一陪练",
             subtitle: "Small Cohort with 1-on-1",
-            desc: "12 人小班，导师能直接盯每个孩子的作品。这是为了提高产出质量，不追求规模。",
+            desc: "12 人小班，导师能直接盯每个人的作品。这是为了提高产出质量，不追求规模。",
             example:
-              "这种高密度陪练，让孩子逐渐建立起对 AI 的掌控感。",
+              "这种高密度陪练，让青少年逐渐建立起对 AI 的掌控感。",
           },
           {
             title: "面向现实",
             subtitle: "Practical & Future-Oriented",
             desc: "课程完全围绕真实应用，不做无用的理论堆砌。",
             example:
-              '子做的项目能在家长或学校生活里直接使用，而不是"玩具项目"。',
+              '做的项目能在家长或学校生活里直接使用，而不是"玩具项目"。',
           },
         ],
         footer:
@@ -609,7 +612,7 @@ const resources = {
       studentWorks: {
         badge: "Showcase",
         title: "往期学员作品展示",
-        subtitle: "从 0 到 1，他们用 AI 创造了真实的价值",
+        subtitle: "从 0 到 1，学员们用 AI 创造了真实的价值",
         footer:
           "这些都是真实学员在训练营中完成的项目。每个孩子在结营 Demo Day 上展示自己的作品，建立起强大的自信心。",
         works: [
@@ -688,7 +691,7 @@ const resources = {
       teachers: {
         title: "导师团队",
         subtitle:
-          "我们不是'老师'，而是孩子的 AI 驯化教练和未来能力合伙人",
+          "我们不是'老师'，而是您的 AI 驯化教练和未来能力合伙人",
         tabs: {
           mentors: "项目导师",
           experts: "专业讲师",
@@ -697,7 +700,7 @@ const resources = {
           {
             name: "Pin Zhou",
             role: "创业导师 / AI 产品总经理",
-            desc: "连���创业者，BeeBee AI & 超加速学院人，AI 实战经验丰富，跨学科、跨产业、跨年龄……",
+            desc: "连续创业者，BeeBee AI & 超加速学院人，AI 实战经验丰富，跨学科、跨产业、跨年龄……",
           },
           {
             name: "Iris Hu",
@@ -730,48 +733,48 @@ const resources = {
       },
       faq: {
         title: "常见问题",
-        subtitle: "家长最关心的问题，我们都为您解答",
+        subtitle: "同学们最关心的问题，我们都为您解答",
         more: "还有其他问题？",
         contact: "立即咨询我们",
         items: [
           {
-            q: "孩子没有任何编程基础，能学会吗？",
-            a: "完全可以！Alpha 启航营（Genesis）专门为零基础学生设计。BEEBEE AI-Alpha 采用「无摩擦学习」方法，不需要编程基础。在启航营中，孩子从第一节课就能做出成果。约 15 小时的学习后，孩子就能完成一个真实的 AI 应用。远航营（Odyssey）则建议有一定编程或工程经验。",
+            q: "没有任何编程基础，能学会吗？",
+            a: "完全可以！Alpha 启航营（Genesis）专门为零基础学生设计。BEEBEE AI-Alpha 采用「无摩擦学习」方法，不需要编程基础。在启航营中，同学们从第一节课就能做出成果。约 15 小时的学习后，同学们就能完成一个真实的 AI 应用。远航营（Odyssey）则建议有一定编程或工程经验。",
           },
           {
             q: "课程是线上还是线下？",
-            a: "课程以线上为主，采用在线互动教学。这样可以打破地域限制，让全球华人家庭的孩子都能参与。启航营12人小班制，4人1组；\n\n远航营6-12人小班制。我们确保每个孩子都能得到充分的关注和指导。",
+            a: "课程以线上为主，采用在线互动教学。这样可以打破地域限制，让全球华人家庭的孩子都能参与。启航营12人小班制，4人1组；\n\n远航营6-12人小班制。我们确保每位同学都能得到充分的关注和指导。",
           },
           {
             q: "3 周（启航营）或 6 周（远航营）能学到什么程度？",
-            a: "启航营（3周）：孩子将能够：\n1) 独立完成一个真实可运行的 AI 应用；\n2) 理解 AI 工作流设计基础；\n3) 建立驯化 AI 为自己服务的兴趣；\n4) 在结营 Demo Day 上展示自己的作品。\n\n远航营（6周）：除以上外，孩子还将：\n1) 掌握 AI 辅助全栈开发；\n2) 完成收费闭环集成；\n3) 在 Product Hunt 上发布；\n4) 有机会获得种子投资；\n5) 获得适合升学作品的工业化标准项目证明。",
+            a: "启航营（3周）：同学们将能够：\n1) 独立完成一个真实可运行的 AI 应用；\n2) 理解 AI 工作流设计基础；\n3) 建立驯化 AI 为自己服务的兴趣；\n4) 在结营 Demo Day 上展示自己的作品。\n\n远航营（6周）：除以上外，同学们还将：\n1) 掌握 AI 辅助全栈开发；\n2) 完成收费闭环集成；\n3) 在 Product Hunt 上发布；\n4) 有机会获得种子投资；\n5) 获得适合升学作品的工业化标准项目证明。",
           },
           {
             q: "和其他编程/AI 课程有什么不同？",
-            a: '最大的不同是我们专注于\"做出来\"而不是\"学知识点\"。传统编程课往往从语法开始，很多孩子学了半年还做不出能用的东西。BEEBEE AI-Alpha 从第一节课就开始做项目，用真实的 AI 工具和模型，解决真实的问题。我们教的不是工具操作，而是 AI 思维和产品能力。',
+            a: '最大的不同是我们专注于\"做出来\"而不是\"学知识点\"。传统编程课往往从语法开始，很多人学了半年还做不出能用的东西。BEEBEE AI-Alpha 从第一节课就开始做项目，用真实的 AI 工具和模型，解决真实的问题。我们教的不是工具操作，而是 AI 思维和产品能力。',
           },
           {
-            q: "什么年龄段的孩子适合参加？",
-            a: "启航营：12-18 岁，对科技感兴趣，希望拥有自己独立产品的青少年（无需编程基础）。\n\n远航营：12-18 岁，有一定编程或工程经验，想获得明确升学或做出较高强度产品证明能力。\n\n我们更看重的是孩子的学习动力和对 AI/科技的兴趣，而不仅是年龄。如果孩子对技术好奇、喜欢动手创造、想要掌握未来技能，就很适合参加我们的训练营。",
+            q: "什么年龄段的青少年适合参加？",
+            a: "启航营：12-18 岁，对科技感兴趣，希望拥有自己独立产品的青少年（无需编程基础）。\n\n远航营：12-18 岁，有一定编程或工程经验，想获得明确升学或做出较高强度产品证明能力。\n\n我们更看重的是同学们对 AI/科技的兴趣，而不仅是年龄。如果您对技术好奇、喜欢动手创造、想要掌握未来技能，就很适合参加我们的训练营。",
           },
           {
             q: "上课时间如何安排？",
-            a: "启航营：3 周，每周 2 次主课（每次1.5小时）+ 1 次周中答疑课（1小时）。\n\n远航营：6 周，每周 2 次主课（每次1.5小时）+ 1 次周中答疑/作业检查（2小时）。\n\n我们会根据学员的时区安排最合适的上课时间。具体时间在开课前会和家长确认，确保不影响孩子的正常学习。",
+            a: "启航营：3 周，每周 2 次主课（每次1.5小时）+ 1 次周中答疑课（1小时）。\n\n远航营：6 周，每周 2 次主课（每次1.5小时）+ 1 次周中答疑/作业检查（2小时）。\n\n我们会根据同学们的时区安排最合适的上课时间。具体时间在开课前会和家长确认，确保不影响同学们的正常学习。",
           },
           {
-            q: "如果孩子中途有事缺课怎么办？",
-            a: "我们提供课程录像回放，如果孩子因故缺课可以观看录像补课。对答疑课，我们会根据情况协调补课时间。我们的目标是确保每个孩子都能完成学习并做出作品，所以会尽力配合家长和学生的实际情况。如果中途有事真的坚持不了，记得和我们沟通。有合理原因会退剩余学费，我们希望每个人都能有好体验！",
+            q: "如果中途有事缺课怎么办？",
+            a: "我们提供课程录像回放，如果因故缺课可以观看录像补课。对答疑课，我们会根据情况协调补课时间。我们的目标是确保每个同学都能完成学习并做出作品，所以会尽力配合家长和学生的实际情况。如果中途有事真的坚持不了，记得和我们沟通。有合理原因会退剩余学费，我们希望每个人都能有好体验！",
           },
           {
-            q: "结营后孩子能获得什么？",
-            a: "除了一个完整的 AI 应用作品，孩子还将获得：\n1) BEEBEE AI-Alpha 实习证明、推荐信；\n2) Demo Day 项目展示机会；\n3) 优秀远航营项目还有机会拿到种子投资；\n4) 最重要的是，建立起对 AI 的掌控感和未来自信心。",
+            q: "结营后能获得什么？",
+            a: "除了一个完整的 AI 应用作品，同学们还将获得：\n1) BEEBEE AI-Alpha 实习证明、推荐信；\n2) Demo Day 项目展示机会；\n3) 优秀远航营项目还有机会拿到种子投资；\n4) 最重要的是，建立起对 AI 的掌控感和未来自信心。",
           },
         ],
       },
       cta: {
-        title: "开始孩子的 AI 未来之旅",
+        title: "AI已至，未来可期",
         subtitle:
-          "名额有限，每期仅招收 12 人小班。立即报名，让孩子领先一步。",
+          "名额有限，每期仅招收 12 人小班。立即报名，在AI世界领先一步。",
         form: {
           title: "立即报名咨询",
           name: "家长姓名",
@@ -788,11 +791,13 @@ const resources = {
       },
       footer: {
         brand: "Bee Alpha",
-        tagline:
-          "让青少年无摩擦地用 AI 做出真实应用，掌握未来的工作方式。",
+        tagline: "用 AI 做出真实应用，掌握未来的工作方式。",
         quickLinks: "快速链接",
         contactUs: "联系我们",
-        location: "新西兰及全球在线",
+        locationZh:
+          "中国四川省成都市高新区成都高新孵化园 1 号楼 A 座",
+        locationNz:
+          "B:Hive, 74 Taharoto Road, Smales Farm, Takapuna, Auckland, New Zealand",
         rights: "All rights reserved.",
         empower: "Empowering the next generation with AI",
       },
