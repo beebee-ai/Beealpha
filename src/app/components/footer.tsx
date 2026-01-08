@@ -1,7 +1,8 @@
 import { Mail, MapPin, Globe } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
-const logo = "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-alpha/logo.png";
+const logo =
+  "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-alpha/logo.png";
 
 export function Footer() {
   const { t } = useTranslation();
@@ -20,46 +21,66 @@ export function Footer() {
                 className="w-8 h-8"
               />
               <span className="font-bold text-xl text-white">
-                {t('footer.brand')}
+                {t("footer.brand")}
               </span>
             </div>
             <p className="text-sm leading-relaxed">
-              {t('footer.tagline')}
+              {t("footer.tagline")}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-bold text-white mb-4">{t('footer.quickLinks')}</h3>
+            <h3 className="font-bold text-white mb-4">
+              {t("footer.quickLinks")}
+            </h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#outcome" className="hover:text-primary transition-colors">
-                  {t('navbar.outcome')}
+                <a
+                  href="#outcome"
+                  className="hover:text-primary transition-colors"
+                >
+                  {t("navbar.outcome")}
                 </a>
               </li>
               <li>
-                <a href="#course" className="hover:text-primary transition-colors">
-                  {t('navbar.course')}
+                <a
+                  href="#course"
+                  className="hover:text-primary transition-colors"
+                >
+                  {t("navbar.course")}
                 </a>
               </li>
               <li>
-                <a href="#student-works" className="hover:text-primary transition-colors">
-                  {t('navbar.works')}
+                <a
+                  href="#student-works"
+                  className="hover:text-primary transition-colors"
+                >
+                  {t("navbar.works")}
                 </a>
               </li>
               <li>
-                <a href="#teachers" className="hover:text-primary transition-colors">
-                  {t('navbar.teachers')}
+                <a
+                  href="#teachers"
+                  className="hover:text-primary transition-colors"
+                >
+                  {t("navbar.teachers")}
                 </a>
               </li>
               <li>
-                <a href="#about" className="hover:text-primary transition-colors">
-                  {t('navbar.aboutUs')}
+                <a
+                  href="#about"
+                  className="hover:text-primary transition-colors"
+                >
+                  {t("navbar.aboutUs")}
                 </a>
               </li>
               <li>
-                <a href="#faq" className="hover:text-primary transition-colors">
-                  {t('navbar.faq')}
+                <a
+                  href="#faq"
+                  className="hover:text-primary transition-colors"
+                >
+                  {t("navbar.faq")}
                 </a>
               </li>
             </ul>
@@ -67,15 +88,17 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-bold text-white mb-4">{t('footer.contactUs')}</h3>
+            <h3 className="font-bold text-white mb-4">
+              {t("footer.contactUs")}
+            </h3>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
                 <a
-                  href="mailto:internprogram@beebee.ai"
+                  href="mailto:nicho.shi@beebee.a"
                   className="hover:text-primary transition-colors"
                 >
-                  internprogram@beebee.ai
+                  nicho.shi@beebee.ai
                 </a>
               </li>
               <li className="flex items-start gap-2">
@@ -89,18 +112,11 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>{t('footer.location')}</span>
+                <span>{t("footer.locationZh")}</span>
               </li>
               <li className="flex items-start gap-2">
-                <Globe className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <a
-                  href="https://bee-alpha.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors"
-                >
-                  bee-alpha.com
-                </a>
+                <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>{t("footer.locationNz")}</span>
               </li>
             </ul>
           </div>
@@ -108,10 +124,11 @@ export function Footer() {
 
         <div className="pt-8 border-t border-gray-800 text-center text-sm">
           <p>
-            &copy; {currentYear} {t('footer.brand')}. {t('footer.rights')}
+            &copy; {currentYear} {t("footer.brand")}.{" "}
+            {t("footer.rights")}
           </p>
           <p className="mt-2 text-gray-500">
-            {t('footer.empower')}
+            {t("footer.empower")}
           </p>
         </div>
       </div>
