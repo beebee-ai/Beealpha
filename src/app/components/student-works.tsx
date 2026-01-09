@@ -1,11 +1,26 @@
 import { motion, AnimatePresence } from "motion/react";
-import { Trophy, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
+import {
+  Trophy,
+  ExternalLink,
+  ChevronLeft,
+  ChevronRight,
+  Monitor,
+  Smartphone,
+} from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useState, useEffect, useRef } from "react";
 import { studentWorks } from "../data/student-works";
 
 // LazyImage component using IntersectionObserver
-const LazyImage = ({ src, alt, className }: { src: string; alt: string; className?: string }) => {
+const LazyImage = ({
+  src,
+  alt,
+  className,
+}: {
+  src: string;
+  alt: string;
+  className?: string;
+}) => {
   const [imageSrc, setImageSrc] = useState<string>("");
   const imgRef = useRef<HTMLImageElement>(null);
 
@@ -19,7 +34,7 @@ const LazyImage = ({ src, alt, className }: { src: string; alt: string; classNam
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     if (imgRef.current) {
@@ -34,7 +49,7 @@ const LazyImage = ({ src, alt, className }: { src: string; alt: string; classNam
   return (
     <motion.img
       ref={imgRef}
-      src={imageSrc || undefined} // Avoid broken image icon while loading
+      src={imageSrc || undefined}
       alt={alt}
       initial={{ opacity: 0 }}
       animate={{ opacity: imageSrc ? 1 : 0 }}
@@ -45,55 +60,178 @@ const LazyImage = ({ src, alt, className }: { src: string; alt: string; classNam
   );
 };
 
-function CardImageCarousel({ images, title, url }: { images: string[], title: string, url: string }) {
+// Device Mockup Wrapper Component
+const DeviceMockup = ({
+  children,
+  type = "desktop",
+  backgroundImage,
+}: {
+  children: React.ReactNode;
+  type?: "desktop" | "mobile";
+  backgroundImage?: string;
+}) => {
+  if (type === "mobile") {
+    return (
+      <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
+        {/* Blurred Background */}
+        {backgroundImage && (
+          <div
+            className="absolute inset-0 w-full h-full"
+            style={{
+              backgroundImage: `url(${backgroundImage})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              filter: "blur(20px)",
+              transform: "scale(1.1)",
+              opacity: 0.6,
+            }}
+          />
+        )}
+
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/20 via-gray-800/20 to-gray-900/20" />
+
+        {/* Mobile Frame */}
+        <div className="relative mx-auto flex items-center justify-center z-10">
+          <div className="relative bg-gray-900 rounded-[2.2rem] p-2.5 shadow-2xl border-[5px] border-gray-800">
+            <div className="bg-gray-900 rounded-[1.8rem] overflow-hidden">
+              {/* Notch */}
+              <div className="h-6 bg-gray-900 flex items-center justify-center">
+                <div className="w-20 h-4 bg-gray-800 rounded-full"></div>
+              </div>
+              {/* Screen Content - with hidden scrollbar */}
+              <div className="bg-white w-[160px] h-[320px] overflow-y-auto scrollbar-hide">
+                {children}
+              </div>
+              {/* Bottom indicator */}
+              <div className="h-5 bg-gray-900 flex items-center justify-center">
+                <div className="w-16 h-1 bg-gray-700 rounded-full"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Desktop mockup
+  return (
+    <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
+      {/* Blurred Background */}
+      {backgroundImage && (
+        <div
+          className="absolute inset-0 w-full h-full"
+          style={{
+            backgroundImage: `url(${backgroundImage})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            filter: "blur(20px)",
+            transform: "scale(1.1)",
+            opacity: 0.6,
+          }}
+        />
+      )}
+
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-900/20 via-gray-800/20 to-gray-900/20" />
+
+      {/* Browser Frame */}
+      <div className="relative w-[96%] bg-gray-900 rounded-lg shadow-2xl border border-gray-700 z-10">
+        {/* Browser Chrome */}
+        <div className="h-7 bg-gray-800 rounded-t-lg flex items-center px-3 gap-2">
+          <div className="flex gap-1.5">
+            <div className="w-2 h-2 rounded-full bg-red-500"></div>
+            <div className="w-2 h-2 rounded-full bg-yellow-500"></div>
+            <div className="w-2 h-2 rounded-full bg-green-500"></div>
+          </div>
+          <div className="flex-1 h-4 bg-gray-700 rounded ml-2 flex items-center px-2">
+            <div className="w-1.5 h-1.5 rounded-full bg-gray-500 mr-1.5"></div>
+            <div className="h-1 bg-gray-600 rounded flex-1"></div>
+          </div>
+        </div>
+        {/* Screen Content */}
+        <div className="bg-white w-full overflow-hidden rounded-b-lg">
+          {children}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+function CardImageCarousel({
+  images,
+  title,
+  url,
+  isMobile,
+}: {
+  images: string[];
+  title: string;
+  url: string;
+  isMobile?: boolean;
+}) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const nextImage = (e: React.MouseEvent) => {
     e.preventDefault();
-    e.stopPropagation(); // Prevent card click
+    e.stopPropagation();
     setCurrentImageIndex((prev) => (prev + 1) % images.length);
   };
 
   const prevImage = (e: React.MouseEvent) => {
     e.preventDefault();
-    e.stopPropagation(); // Prevent card click
-    setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
+    e.stopPropagation();
+    setCurrentImageIndex(
+      (prev) => (prev - 1 + images.length) % images.length,
+    );
   };
 
   return (
-    <div className="relative h-48 overflow-hidden block group/carousel">
+    <div className="relative h-[400px] overflow-hidden block group/carousel bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
       <AnimatePresence mode="wait">
-        <LazyImage
-          key={currentImageIndex} // Re-mount LazyImage when index changes
-          src={images[currentImageIndex]}
-          alt={title}
-          className="w-full h-full object-cover absolute inset-0 group-hover:scale-110 transition-transform duration-500"
-        />
+        <DeviceMockup
+          type={isMobile ? "mobile" : "desktop"}
+          backgroundImage={images[currentImageIndex]}
+        >
+          <LazyImage
+            key={currentImageIndex}
+            src={images[currentImageIndex]}
+            alt={title}
+            className="w-full h-auto object-contain object-top"
+          />
+        </DeviceMockup>
       </AnimatePresence>
-      <div className="absolute inset-0 bg-gradient-to-t from-[#243447] to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
-      
+
+      {/* Device Type Indicator */}
+      <div className="absolute top-3 right-3 p-1.5 bg-black/50 backdrop-blur-sm rounded-lg z-20">
+        {isMobile ? (
+          <Smartphone size={14} className="text-primary" />
+        ) : (
+          <Monitor size={14} className="text-primary" />
+        )}
+      </div>
+
       {/* Navigation Arrows - Only show if multiple images */}
       {images.length > 1 && (
         <>
-          <button 
+          <button
             onClick={prevImage}
-            className="absolute left-2 top-1/2 -translate-y-1/2 p-1 bg-black/40 hover:bg-primary rounded-full text-white opacity-0 group-hover/carousel:opacity-100 transition-opacity z-10"
+            className="absolute left-2 top-1/2 -translate-y-1/2 p-1.5 bg-black/60 hover:bg-primary rounded-full text-white opacity-0 group-hover/carousel:opacity-100 transition-opacity z-10 backdrop-blur-sm"
           >
-            <ChevronLeft size={20} />
+            <ChevronLeft size={18} />
           </button>
-          <button 
+          <button
             onClick={nextImage}
-            className="absolute right-2 top-1/2 -translate-y-1/2 p-1 bg-black/40 hover:bg-primary rounded-full text-white opacity-0 group-hover/carousel:opacity-100 transition-opacity z-10"
+            className="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 bg-black/60 hover:bg-primary rounded-full text-white opacity-0 group-hover/carousel:opacity-100 transition-opacity z-10 backdrop-blur-sm"
           >
-            <ChevronRight size={20} />
+            <ChevronRight size={18} />
           </button>
-          
+
           {/* Dots Indicator */}
-          <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1 z-10">
+          <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
             {images.map((_, idx) => (
-              <div 
-                key={idx} 
-                className={`w-1.5 h-1.5 rounded-full transition-colors ${idx === currentImageIndex ? 'bg-primary' : 'bg-white/40'}`}
+              <div
+                key={idx}
+                className={`w-2 h-2 rounded-full transition-all ${idx === currentImageIndex ? "bg-primary w-4" : "bg-white/40"}`}
               />
             ))}
           </div>
@@ -105,7 +243,7 @@ function CardImageCarousel({ images, title, url }: { images: string[], title: st
 
 export function StudentWorks() {
   const { t } = useTranslation();
-  
+
   const [currentPage, setCurrentPage] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(6);
 
@@ -122,10 +260,13 @@ export function StudentWorks() {
 
     handleResize(); // Init
     window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    return () =>
+      window.removeEventListener("resize", handleResize);
   }, []);
 
-  const totalPages = Math.ceil(studentWorks.length / itemsPerPage);
+  const totalPages = Math.ceil(
+    studentWorks.length / itemsPerPage,
+  );
 
   // Ensure current page is valid after resize
   useEffect(() => {
@@ -139,16 +280,21 @@ export function StudentWorks() {
   };
 
   const prevPage = () => {
-    setCurrentPage((prev) => (prev - 1 + totalPages) % totalPages);
+    setCurrentPage(
+      (prev) => (prev - 1 + totalPages) % totalPages,
+    );
   };
 
   const currentWorks = studentWorks.slice(
     currentPage * itemsPerPage,
-    (currentPage + 1) * itemsPerPage
+    (currentPage + 1) * itemsPerPage,
   );
 
   return (
-    <section id="student-works" className="py-12 px-4 sm:px-6 lg:px-8 bg-[#0a0e14]">
+    <section
+      id="student-works"
+      className="py-12 px-4 sm:px-6 lg:px-8 bg-[#0a0e14]"
+    >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -189,13 +335,14 @@ export function StudentWorks() {
                 href={work.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative bg-[#1a1f2e] rounded-xl overflow-hidden border border-white/5 hover:border-primary/50 transition-colors cursor-pointer block"
+                className="group relative bg-gradient-to-br from-[#1a1f2e] to-[#151a27] rounded-xl overflow-hidden border border-white/5 hover:border-primary/50 transition-all duration-300 cursor-pointer block hover:shadow-2xl hover:shadow-primary/10 hover:scale-[1.02]"
               >
                 {/* Image Carousel */}
-                <CardImageCarousel 
-                  images={work.images} 
-                  title={`Student Work ${index + 1}`} 
+                <CardImageCarousel
+                  images={work.images}
+                  title={`Student Work ${index + 1}`}
                   url={work.url}
+                  isMobile={work.isMobile}
                 />
 
                 {/* Content */}
@@ -203,10 +350,16 @@ export function StudentWorks() {
                   <div className="flex justify-between items-start mb-4">
                     <div className="flex flex-col items-start gap-2">
                       <span className="inline-block px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20">
-                        {t(`studentWorks.works.${studentWorks.indexOf(work)}.role`, "Student Author")}
+                        {t(
+                          `studentWorks.works.${studentWorks.indexOf(work)}.role`,
+                          "Student Author",
+                        )}
                       </span>
                       <h3 className="text-lg font-bold text-white mb-1 group-hover:text-primary transition-colors">
-                        {t(`studentWorks.works.${studentWorks.indexOf(work)}.title`, `Project ${studentWorks.indexOf(work) + 1}`)}
+                        {t(
+                          `studentWorks.works.${studentWorks.indexOf(work)}.title`,
+                          `Project ${studentWorks.indexOf(work) + 1}`,
+                        )}
                       </h3>
                     </div>
                     <div
@@ -217,7 +370,10 @@ export function StudentWorks() {
                     </div>
                   </div>
                   <p className="text-sm text-gray-400 line-clamp-2 mb-4">
-                    {t(`studentWorks.works.${studentWorks.indexOf(work)}.desc`, "Project description goes here.")}
+                    {t(
+                      `studentWorks.works.${studentWorks.indexOf(work)}.desc`,
+                      "Project description goes here.",
+                    )}
                   </p>
                 </div>
               </a>
@@ -234,14 +390,16 @@ export function StudentWorks() {
           >
             <ChevronLeft size={24} />
           </button>
-          
+
           <div className="flex gap-2">
             {Array.from({ length: totalPages }).map((_, i) => (
               <button
                 key={i}
                 onClick={() => setCurrentPage(i)}
                 className={`w-3 h-3 rounded-full transition-all ${
-                  currentPage === i ? "bg-primary w-6" : "bg-gray-600 hover:bg-gray-500"
+                  currentPage === i
+                    ? "bg-primary w-6"
+                    : "bg-gray-600 hover:bg-gray-500"
                 }`}
               />
             ))}

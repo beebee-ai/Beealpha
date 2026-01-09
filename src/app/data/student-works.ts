@@ -1,4 +1,5 @@
-const S3_BASE_URL = "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-alpha/student-works/";
+const S3_BASE_URL =
+  "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-alpha/student-works/";
 
 const chineseWordSnackImg1 = `${S3_BASE_URL}wordSnack-1.png`;
 const chineseWordSnackImg2 = `${S3_BASE_URL}wordSnack-2.png`;
@@ -27,63 +28,65 @@ const smartCollegeImg = `${S3_BASE_URL}jay.png`;
 export interface StudentWork {
   images: string[];
   url: string;
+  isMobile?: boolean; // Optional flag to indicate if the project is mobile-focused
 }
 
 export const studentWorks: StudentWork[] = [
   {
     images: [chineseWordSnackImg1, chineseWordSnackImg2],
-    url: "https://chinesewordsnack.netlify.app/"
+    url: "https://chinesewordsnack.netlify.app/",
+    isMobile: true,
   },
   {
     images: [pdSelectionImg],
-    url: "https://www.pdselection.com/"
+    url: "https://www.pdselection.com/",
   },
   {
     images: [relabImg],
-    url: "https://relabai.netlify.app"
+    url: "https://relabai.netlify.app",
   },
   {
     images: [propertyAiImg],
-    url: "https://aipropertyagent.netlify.app/"
+    url: "https://aipropertyagent.netlify.app/",
   },
   {
     images: [projectEchoImg1],
-    url: "https://changepr0jectecho.uk"
+    url: "https://changepr0jectecho.uk",
   },
   {
     images: [rowingProImg, rowingProDashboardImg],
-    url: "https://crew-trainer.com"
+    url: "https://crew-trainer.com",
   },
   {
     images: [healthyEatingImg1, healthyEatingImg2],
-    url: "https://healthyeating365.netlify.app/"
+    url: "https://healthyeating365.netlify.app/",
   },
   {
     images: [lifeCalendarDemoImg, lifeCalendarUiImg],
-    url: "https://studycalender.netlify.app/"
+    url: "https://studycalender.netlify.app/",
   },
   {
     images: [traqrImg1, traqrImg2],
-    url: "https://mytraqr.com"
+    url: "https://mytraqr.com",
   },
   {
     images: [overflowImg1, overflowImg2],
-    url: "https://overflow.cash"
+    url: "https://overflow.cash",
   },
   {
     images: [yuqiaoGlobalImg, yuqiaoPianoImg],
-    url: "https://yuqiaochen.uk"
+    url: "https://yuqiaochen.uk",
   },
   {
     images: [aloftImg1, aloftImg2, aloftImg3],
-    url: "https://aloft.gift"
+    url: "https://aloft.gift",
   },
   {
     images: [eggPricingImg],
-    url: "https://eggpricingnz.netlify.app/"
+    url: "https://eggpricingnz.netlify.app/",
   },
   {
     images: [smartCollegeImg],
-    url: "https://smartcollegeadvisor.netlify.app/"
+    url: "https://smartcollegeadvisor.netlify.app/",
   },
 ];
