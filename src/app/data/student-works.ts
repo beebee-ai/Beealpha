@@ -1,16 +1,19 @@
 const S3_BASE_URL =
   "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-alpha/student-works/";
 
-const chineseWordSnackImg1 = `${S3_BASE_URL}wordSnack-1.png`;
-const chineseWordSnackImg2 = `${S3_BASE_URL}wordSnack-2.png`;
+const chineseWordSnackImg1 = `${S3_BASE_URL}wordSnack_1.png`;
+const chineseWordSnackImg2 = `${S3_BASE_URL}wordSnack_2.png`;
+const chineseWordSnackImg3 = `${S3_BASE_URL}wordSnack_3.png`;
 const pdSelectionImg = `${S3_BASE_URL}pdselection-1.png`;
 const relabImg = `${S3_BASE_URL}relabai.png`;
 const propertyAiImg = `${S3_BASE_URL}propertyAI-1.png`;
-const projectEchoImg1 = `${S3_BASE_URL}jaxsen.jpg`;
-const rowingProImg = `${S3_BASE_URL}rowingPro1.png`;
-const rowingProDashboardImg = `${S3_BASE_URL}rowingPro2.png`;
-const healthyEatingImg1 = `${S3_BASE_URL}healthyEating1.png`;
-const healthyEatingImg2 = `${S3_BASE_URL}healthyEating2.png`;
+const projectEchoImg1 = `${S3_BASE_URL}jaxsen_1.png`;
+const projectEchoImg2 = `${S3_BASE_URL}jaxsen_2.png`;
+const rowingProImg1 = `${S3_BASE_URL}rowingPro_1.png`;
+const rowingProImg2 = `${S3_BASE_URL}rowingPro_2.png`;
+const rowingProImg3 = `${S3_BASE_URL}rowingPro_3.png`;
+const healthyEatingImg1 = `${S3_BASE_URL}healthyEating_1.png`;
+const healthyEatingImg2 = `${S3_BASE_URL}healthyEating_2.png`;
 const lifeCalendarDemoImg = `${S3_BASE_URL}studycalender-1.png`;
 const lifeCalendarUiImg = `${S3_BASE_URL}studycalender-2.png`;
 const traqrImg1 = `${S3_BASE_URL}mytraqr1.png`;
@@ -33,12 +36,16 @@ export interface StudentWork {
 
 export const studentWorks: StudentWork[] = [
   {
-    images: [chineseWordSnackImg1, chineseWordSnackImg2],
+    images: [
+      chineseWordSnackImg1,
+      chineseWordSnackImg2,
+      chineseWordSnackImg2,
+    ],
     url: "https://chinesewordsnack.netlify.app/",
     isMobile: true,
   },
   {
-    images: [pdSelectionImg],
+    images: [projectEchoImg1, projectEchoImg2],
     url: "https://www.pdselection.com/",
   },
   {
@@ -46,20 +53,20 @@ export const studentWorks: StudentWork[] = [
     url: "https://relabai.netlify.app",
   },
   {
-    images: [propertyAiImg],
-    url: "https://aipropertyagent.netlify.app/",
-  },
-  {
     images: [projectEchoImg1],
     url: "https://changepr0jectecho.uk",
   },
   {
-    images: [rowingProImg, rowingProDashboardImg],
+    images: [rowingProImg1, rowingProImg2, rowingProImg3],
     url: "https://crew-trainer.com",
   },
   {
     images: [healthyEatingImg1, healthyEatingImg2],
     url: "https://healthyeating365.netlify.app/",
+  },
+  {
+    images: [propertyAiImg],
+    url: "https://aipropertyagent.netlify.app/",
   },
   {
     images: [lifeCalendarDemoImg, lifeCalendarUiImg],

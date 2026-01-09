@@ -117,7 +117,7 @@ export function CoursePaths() {
                             <Icon className="w-6 h-6 text-white" />
                           </div>
                           <div>
-                            <h3 className="text-2xl font-bold">{pathway.title}</h3>
+                            <h3 className="text-2xl font-bold text-[20px]">{pathway.title}</h3>
                             <p className="text-sm text-muted-foreground">
                               {pathway.subtitle}
                             </p>
