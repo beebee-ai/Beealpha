@@ -45,7 +45,7 @@ export const studentWorks: StudentWork[] = [
     isMobile: true,
   },
   {
-    images: [projectEchoImg1, projectEchoImg2],
+    images: [pdSelectionImg],
     url: "https://www.pdselection.com/",
   },
   {
@@ -53,7 +53,7 @@ export const studentWorks: StudentWork[] = [
     url: "https://relabai.netlify.app",
   },
   {
-    images: [projectEchoImg1],
+    images: [projectEchoImg1, projectEchoImg2],
     url: "https://changepr0jectecho.uk",
   },
   {

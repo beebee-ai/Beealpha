@@ -99,7 +99,7 @@ function CardImageCarousel({
   };
 
   return (
-    <div className="relative h-[180px] overflow-hidden block group/carousel bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+    <div className="relative aspect-video overflow-hidden block group/carousel bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
       {/* Blurred Background */}
       {images[currentImageIndex] && (
         <div
