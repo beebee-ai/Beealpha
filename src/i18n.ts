@@ -632,11 +632,6 @@ const resources = {
             desc: "ZERO启航营（Genesis）二期",
           },
           {
-            title: "新西兰首个AI驱动房产交易平台",
-            role: "H同学，0工程经验",
-            desc: "ZERO启航营（Genesis）一期",
-          },
-          {
             title: "PROJECT;echo 个人时间管理工具",
             role: "J同学，13岁，9年级",
             desc: "Alpha Odyssey — NZ CAMP C",
@@ -650,6 +645,11 @@ const resources = {
             title: "智能健康饮食助手",
             role: "Y同学，17岁",
             desc: "Alpha Odyssey — TN CAMP C",
+          },
+          {
+            title: "新西兰首个AI驱动房产交易平台",
+            role: "H同学，0工程经验",
+            desc: "ZERO启航营（Genesis）一期",
           },
           {
             title: "生活日历与知识盒",
