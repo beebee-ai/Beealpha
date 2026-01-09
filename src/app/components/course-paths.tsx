@@ -1,5 +1,12 @@
 import { motion } from "motion/react";
-import { Rocket, Users, Clock, Target, GraduationCap, CircleCheck } from "lucide-react";
+import {
+  Rocket,
+  Users,
+  Clock,
+  Target,
+  GraduationCap,
+  CircleCheck,
+} from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
@@ -70,15 +77,18 @@ export function CoursePaths() {
         t("coursePaths.path2.curriculum.7"),
         t("coursePaths.path2.curriculum.8"),
         t("coursePaths.path2.curriculum.9", ""),
-      ].filter(item => item !== ""),
+      ].filter((item) => item !== ""),
       gradient: "from-orange-50 to-red-50",
     },
   ];
 
   return (
-    <section id="course" className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
+    <section
+      id="course"
+      className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white"
+    >
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8 md:mb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -106,10 +116,15 @@ export function CoursePaths() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
+                transition={{
+                  duration: 0.6,
+                  delay: index * 0.2,
+                }}
               >
-                <Card className={`h-full bg-gradient-to-br ${pathway.gradient} border-2 flex flex-col`}>
-                  <CardContent className="p-8 flex-1 flex flex-col">
+                <Card
+                  className={`h-full bg-gradient-to-br ${pathway.gradient} border-2 flex flex-col`}
+                >
+                  <CardContent className="p-4 md:p-8 flex-1 flex flex-col">
                     <div className="flex items-start justify-between mb-6">
                       <div>
                         <div className="flex items-center gap-3 mb-2">
@@ -117,7 +132,9 @@ export function CoursePaths() {
                             <Icon className="w-6 h-6 text-white" />
                           </div>
                           <div>
-                            <h3 className="text-2xl font-bold text-[20px]">{pathway.title}</h3>
+                            <h3 className="text-2xl font-bold text-[20px]">
+                              {pathway.title}
+                            </h3>
                             <p className="text-sm text-muted-foreground">
                               {pathway.subtitle}
                             </p>
@@ -135,7 +152,9 @@ export function CoursePaths() {
                     <div className="mb-6">
                       <div className="flex items-center gap-2 text-muted-foreground">
                         <Clock className="w-5 h-5 text-primary flex-shrink-0" />
-                        <span className="font-semibold">{pathway.duration}</span>
+                        <span className="font-semibold">
+                          {pathway.duration}
+                        </span>
                       </div>
                     </div>
 
@@ -144,7 +163,11 @@ export function CoursePaths() {
                       <div className="flex items-start gap-2">
                         <Target className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                         <div>
-                          <h4 className="font-bold mb-1">{t('coursePaths.labels.targetAudience')}</h4>
+                          <h4 className="font-bold mb-1">
+                            {t(
+                              "coursePaths.labels.targetAudience",
+                            )}
+                          </h4>
                           <p className="text-sm text-muted-foreground leading-relaxed">
                             {pathway.targetAudience}
                           </p>
@@ -160,9 +183,14 @@ export function CoursePaths() {
                       </h4>
                       <div className="space-y-2">
                         {pathway.schedule.map((item, i) => (
-                          <div key={i} className="flex items-start gap-2">
+                          <div
+                            key={i}
+                            className="flex items-start gap-2"
+                          >
                             <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                            <span className="text-sm text-muted-foreground">{item}</span>
+                            <span className="text-sm text-muted-foreground">
+                              {item}
+                            </span>
                           </div>
                         ))}
                       </div>
@@ -171,12 +199,16 @@ export function CoursePaths() {
                     {/* 班级规模 */}
                     <div className="mb-6 bg-white/60 p-4 rounded-lg border border-border">
                       <p className="text-sm">
-                        <span className="font-semibold">{t('coursePaths.labels.classSize')}</span>
+                        <span className="font-semibold">
+                          {t("coursePaths.labels.classSize")}
+                        </span>
                         {pathway.classSize}
                       </p>
                       {pathway.selection && (
                         <p className="text-sm mt-2">
-                          <span className="font-semibold">{t('coursePaths.labels.selection')}</span>
+                          <span className="font-semibold">
+                            {t("coursePaths.labels.selection")}
+                          </span>
                           {pathway.selection}
                         </p>
                       )}
@@ -184,23 +216,32 @@ export function CoursePaths() {
 
                     {/* 课程结构 */}
                     <div className="mb-6 flex-1">
-                      <h4 className="font-bold mb-3">{pathway.curriculumTitle}</h4>
+                      <h4 className="font-bold mb-3">
+                        {pathway.curriculumTitle}
+                      </h4>
                       <div className="space-y-2">
                         {pathway.curriculum.map((item, i) => (
-                          <div key={i} className="flex items-start gap-2">
+                          <div
+                            key={i}
+                            className="flex items-start gap-2"
+                          >
                             <CircleCheck className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                            <span className="text-sm">{item}</span>
+                            <span className="text-sm">
+                              {item}
+                            </span>
                           </div>
                         ))}
                       </div>
                     </div>
 
                     {/* Inquiry Button */}
-                    <Button 
+                    <Button
                       className="w-full bg-gradient-to-r from-[#ff6b35] to-[#f7931e] hover:opacity-90 text-white font-bold py-6 text-lg rounded-xl shadow-lg hover:translate-y-[-2px] transition-all"
-                      onClick={() => handleInquire(pathway.title)}
+                      onClick={() =>
+                        handleInquire(pathway.title)
+                      }
                     >
-                      {t('navbar.cta')}
+                      {t("navbar.cta")}
                     </Button>
                   </CardContent>
                 </Card>
@@ -210,10 +251,10 @@ export function CoursePaths() {
         </div>
       </div>
 
-      <InquiryModal 
-        isOpen={isModalOpen} 
-        onClose={() => setIsModalOpen(false)} 
-        courseName={selectedCourse} 
+      <InquiryModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        courseName={selectedCourse}
       />
     </section>
   );
