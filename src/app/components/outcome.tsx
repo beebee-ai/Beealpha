@@ -29,9 +29,12 @@ export function Outcome() {
   ];
 
   return (
-    <section id="outcome" className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-orange-50/30 to-white">
+    <section
+      id="outcome"
+      className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-orange-50/30 to-white"
+    >
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8 md:mb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -41,7 +44,7 @@ export function Outcome() {
             <div className="text-primary text-sm font-semibold tracking-widest mb-3 uppercase">
               {t("outcome.badge")}
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold">
               {t("outcome.title")}
             </h2>
           </motion.div>
@@ -57,12 +60,20 @@ export function Outcome() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{
+                  duration: 0.6,
+                  delay: index * 0.1,
+                }}
                 className="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-shadow"
               >
                 <div className="flex items-center gap-4 mb-4 md:flex-col md:items-start md:gap-0 md:mb-6">
-                  <Icon className="w-12 h-12 text-primary flex-shrink-0" strokeWidth={1.5} />
-                  <h3 className="font-bold text-lg md:mt-6">{outcome.title}</h3>
+                  <Icon
+                    className="w-12 h-12 text-primary flex-shrink-0"
+                    strokeWidth={1.5}
+                  />
+                  <h3 className="font-bold text-lg md:mt-6">
+                    {outcome.title}
+                  </h3>
                 </div>
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   {outcome.description}

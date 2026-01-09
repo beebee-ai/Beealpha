@@ -467,7 +467,7 @@ const resources = {
           selection: "选拔方式：",
         },
         path1: {
-          title: "Alpha 启航营（Genesis）",
+          title: "Alpha 启航营 (Genesis)",
           subtitle: "AI 核心认知与工程实践",
           duration: "3 周 · 约 15 小时",
           targetAudience:
@@ -494,7 +494,7 @@ const resources = {
           ],
         },
         path2: {
-          title: "ALPHA 远航营（Odyssey）",
+          title: "ALPHA 远航营 (Odyssey)",
           subtitle: "独立产品创造高阶课",
           duration: "6 周 · 约 27 小时",
           targetAudience:

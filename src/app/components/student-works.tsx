@@ -4,8 +4,6 @@ import {
   ExternalLink,
   ChevronLeft,
   ChevronRight,
-  Monitor,
-  Smartphone,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useState, useEffect, useRef } from "react";
@@ -54,107 +52,9 @@ const LazyImage = ({
       initial={{ opacity: 0 }}
       animate={{ opacity: imageSrc ? 1 : 0 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 0.3 }}
+      transition={{ duration: 0.5 }}
       className={className}
     />
-  );
-};
-
-// Device Mockup Wrapper Component
-const DeviceMockup = ({
-  children,
-  type = "desktop",
-  backgroundImage,
-}: {
-  children: React.ReactNode;
-  type?: "desktop" | "mobile";
-  backgroundImage?: string;
-}) => {
-  if (type === "mobile") {
-    return (
-      <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
-        {/* Blurred Background */}
-        {backgroundImage && (
-          <div
-            className="absolute inset-0 w-full h-full"
-            style={{
-              backgroundImage: `url(${backgroundImage})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              filter: "blur(20px)",
-              transform: "scale(1.1)",
-              opacity: 0.6,
-            }}
-          />
-        )}
-
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/20 via-gray-800/20 to-gray-900/20" />
-
-        {/* Mobile Frame */}
-        <div className="relative mx-auto flex items-center justify-center z-10">
-          <div className="relative bg-gray-900 rounded-[2.2rem] p-2.5 shadow-2xl border-[5px] border-gray-800">
-            <div className="bg-gray-900 rounded-[1.8rem] overflow-hidden">
-              {/* Notch */}
-              <div className="h-6 bg-gray-900 flex items-center justify-center">
-                <div className="w-20 h-4 bg-gray-800 rounded-full"></div>
-              </div>
-              {/* Screen Content - with hidden scrollbar */}
-              <div className="bg-white w-[160px] h-[320px] overflow-y-auto scrollbar-hide">
-                {children}
-              </div>
-              {/* Bottom indicator */}
-              <div className="h-5 bg-gray-900 flex items-center justify-center">
-                <div className="w-16 h-1 bg-gray-700 rounded-full"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  // Desktop mockup
-  return (
-    <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
-      {/* Blurred Background */}
-      {backgroundImage && (
-        <div
-          className="absolute inset-0 w-full h-full"
-          style={{
-            backgroundImage: `url(${backgroundImage})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            filter: "blur(20px)",
-            transform: "scale(1.1)",
-            opacity: 0.6,
-          }}
-        />
-      )}
-
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900/20 via-gray-800/20 to-gray-900/20" />
-
-      {/* Browser Frame */}
-      <div className="relative w-[96%] bg-gray-900 rounded-lg shadow-2xl border border-gray-700 z-10">
-        {/* Browser Chrome */}
-        <div className="h-7 bg-gray-800 rounded-t-lg flex items-center px-3 gap-2">
-          <div className="flex gap-1.5">
-            <div className="w-2 h-2 rounded-full bg-red-500"></div>
-            <div className="w-2 h-2 rounded-full bg-yellow-500"></div>
-            <div className="w-2 h-2 rounded-full bg-green-500"></div>
-          </div>
-          <div className="flex-1 h-4 bg-gray-700 rounded ml-2 flex items-center px-2">
-            <div className="w-1.5 h-1.5 rounded-full bg-gray-500 mr-1.5"></div>
-            <div className="h-1 bg-gray-600 rounded flex-1"></div>
-          </div>
-        </div>
-        {/* Screen Content */}
-        <div className="bg-white w-full overflow-hidden rounded-b-lg">
-          {children}
-        </div>
-      </div>
-    </div>
   );
 };
 
@@ -176,8 +76,10 @@ function CardImageCarousel({
     if (images.length <= 1) return; // Don't auto-play if only one image
 
     const interval = setInterval(() => {
-      setCurrentImageIndex((prev) => (prev + 1) % images.length);
-    }, 3000); // Change image every 3 seconds
+      setCurrentImageIndex(
+        (prev) => (prev + 1) % images.length,
+      );
+    }, 5000); // Change image every 5 seconds
 
     return () => clearInterval(interval);
   }, [images.length]);
@@ -197,28 +99,35 @@ function CardImageCarousel({
   };
 
   return (
-    <div className="relative h-[400px] overflow-hidden block group/carousel bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
-      <AnimatePresence mode="wait">
-        <DeviceMockup
-          type={isMobile ? "mobile" : "desktop"}
-          backgroundImage={images[currentImageIndex]}
-        >
+    <div className="relative h-[180px] overflow-hidden block group/carousel bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+      {/* Blurred Background */}
+      {images[currentImageIndex] && (
+        <div
+          className="absolute inset-0 w-full h-full transition-all duration-500"
+          style={{
+            backgroundImage: `url(${images[currentImageIndex]})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            filter: "blur(20px)",
+            transform: "scale(1.1)",
+            opacity: 0.6,
+          }}
+        />
+      )}
+
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-900/30 via-gray-800/30 to-gray-900/30" />
+
+      {/* Main Image with crossfade */}
+      <div className="relative w-full h-full flex items-center justify-center z-10">
+        <AnimatePresence initial={false}>
           <LazyImage
             key={currentImageIndex}
             src={images[currentImageIndex]}
             alt={title}
-            className="w-full h-auto object-contain object-top"
+            className={`absolute w-full h-full ${isMobile ? "object-contain" : "object-cover"}`}
           />
-        </DeviceMockup>
-      </AnimatePresence>
-
-      {/* Device Type Indicator */}
-      <div className="absolute top-3 right-3 p-1.5 bg-black/50 backdrop-blur-sm rounded-lg z-20">
-        {isMobile ? (
-          <Smartphone size={14} className="text-primary" />
-        ) : (
-          <Monitor size={14} className="text-primary" />
-        )}
+        </AnimatePresence>
       </div>
 
       {/* Navigation Arrows - Only show if multiple images */}
