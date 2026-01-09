@@ -77,31 +77,45 @@ export function AboutUs() {
 
              <div className="bg-[#111] p-8 sm:p-12 rounded-2xl border border-gray-800 hover:border-[#f7931e]/30 transition-colors space-y-12">
                
-               {/* Header Profile */}
-               <div className="flex flex-col sm:flex-row items-center sm:items-start gap-8">
-                 <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden border-4 border-[#f7931e]/20 flex-shrink-0">
-                   <img 
-                     src="https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-beta/pacer/cartoon_pin.png" 
-                     alt="Pin Zhou"
-                     className="w-full h-full object-cover"
-                   />
-                 </div>
-                 
-                 <div className="text-center sm:text-left flex-1">
-                   <h4 className="text-2xl font-bold text-white mb-2">
-                     {isEn ? "Pin Zhou" : "周品"}
-                   </h4>
-                   <div className="text-[#f7931e] font-medium mb-6">
-                     {isEn ? "Founder & CEO" : "创始人 & CEO"}
-                   </div>
-                   <p className="text-gray-400 leading-relaxed text-sm sm:text-base">
-                     {isEn
-                       ? "Mr. Pin Zhou is a serial entrepreneur with over 20 years of experience in IT and internet product operations. As one of the first entrepreneurs in the global GPT era, he has 8 years of relevant experience in the field of AI and has always maintained a strong curiosity for new technologies."
-                       : "周品先生是一位拥有超过20年IT和互联网产品运营创业经验的连续创业者，作为全球第一批GPT时代的创业者，他在人工智能领域拥有8年的相关经验，始终保持着对新技术的强烈好奇心。"
-                     }
-                   </p>
-                 </div>
-               </div>
+                {/* Header Profile */}
+                <div className="flex flex-row items-start gap-6">
+                  {/* Left Side: Image (mobile: + Name + Title, desktop: image only) */}
+                  <div className="flex flex-col items-center text-center flex-shrink-0">
+                    <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-[#f7931e]/20 mb-4 md:mb-0">
+                      <img 
+                        src="https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-beta/pacer/cartoon_pin.png" 
+                        alt="Pin Zhou"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    {/* Mobile only: Name + Title */}
+                    <h4 className="text-lg sm:text-xl font-bold text-white mb-2 md:hidden">
+                      {isEn ? "Pin Zhou" : "周品"}
+                    </h4>
+                    <div className="text-[#f7931e] font-medium text-sm sm:text-base md:hidden">
+                      {isEn ? "Founder & CEO" : "创始人 & CEO"}
+                    </div>
+                  </div>
+                  
+                  {/* Right Side: mobile (description only), desktop (name + title + description) */}
+                  <div className="flex-1 text-left">
+                    {/* Desktop only: Name + Title */}
+                    <h4 className="hidden md:block text-2xl font-bold text-white mb-2">
+                      {isEn ? "Pin Zhou" : "周品"}
+                    </h4>
+                    <div className="hidden md:block text-[#f7931e] font-medium mb-6">
+                      {isEn ? "Founder & CEO" : "创始人 & CEO"}
+                    </div>
+                    
+                    {/* Description for all screens */}
+                    <p className="text-gray-400 leading-relaxed text-sm sm:text-base">
+                      {isEn
+                        ? "Mr. Pin Zhou is a serial entrepreneur with over 20 years of experience in IT and internet product operations. As one of the first entrepreneurs in the global GPT era, he has 8 years of relevant experience in the field of AI and has always maintained a strong curiosity for new technologies."
+                        : "周品先生是一位拥有超过20年IT和互联网产品运营创业经验的连续创业者，作为全球第一批GPT时代的创业者，他在人工智能领域拥有8年的相关经验，始终保持着对新技术的强烈好奇心。"
+                      }
+                    </p>
+                  </div>
+                </div>
 
                {/* Professional Experience */}
                <div className="bg-[#0a0a0a] rounded-xl p-6 sm:p-8 border border-gray-800/50">

@@ -9,7 +9,8 @@ import {
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 
-const logo = "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-alpha/logo.png";
+const logo =
+  "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-alpha/logo.png";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,9 @@ export function Navbar() {
   };
 
   // 更准确的语言判断，支持 zh-CN, zh-TW 等变体
-  const currentLanguageLabel = i18n.language?.startsWith('zh') ? '中文' : 'English';
+  const currentLanguageLabel = i18n.language?.startsWith("zh")
+    ? "中文"
+    : "English";
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -42,17 +45,31 @@ export function Navbar() {
   const LanguageSelector = () => (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="sm" className="flex items-center gap-2 px-2">
+        <Button
+          variant="ghost"
+          size="sm"
+          className="flex items-center gap-2 px-2"
+        >
           <Globe className="w-4 h-4" />
           <span>{currentLanguageLabel}</span>
           <ChevronDown className="w-4 h-4 opacity-50" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => changeLanguage('zh')} className={i18n.language?.startsWith('zh') ? 'bg-accent' : ''}>
+        <DropdownMenuItem
+          onClick={() => changeLanguage("zh")}
+          className={
+            i18n.language?.startsWith("zh") ? "bg-accent" : ""
+          }
+        >
           中文
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => changeLanguage('en')} className={i18n.language?.startsWith('en') ? 'bg-accent' : ''}>
+        <DropdownMenuItem
+          onClick={() => changeLanguage("en")}
+          className={
+            i18n.language?.startsWith("en") ? "bg-accent" : ""
+          }
+        >
           English
         </DropdownMenuItem>
       </DropdownMenuContent>
@@ -68,12 +85,12 @@ export function Navbar() {
             onClick={() => scrollToSection("hero")}
             className="flex items-center space-x-2 group"
           >
-            <img 
-              src={logo} 
-              alt="BEEBEE AI-Alpha Logo" 
+            <img
+              src={logo}
+              alt="BEEBEE AI-Alpha Logo"
               className="w-10 h-10 transition-transform group-hover:scale-105"
             />
-            <span className="font-bold text-xl">Bee Alpha</span>
+            <span className="font-bold text-xl">BEE ALPHA</span>
           </button>
 
           {/* Desktop Navigation */}
@@ -87,10 +104,12 @@ export function Navbar() {
                 {item.label}
               </button>
             ))}
-            
+
             <LanguageSelector />
-            
-            <Button onClick={() => scrollToSection("cta")}>{t("navbar.cta")}</Button>
+
+            <Button onClick={() => scrollToSection("cta")}>
+              {t("navbar.cta")}
+            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -100,7 +119,11 @@ export function Navbar() {
               className="md:hidden ml-2"
               onClick={() => setIsOpen(!isOpen)}
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </button>
           </div>
         </div>

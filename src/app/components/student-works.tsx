@@ -171,6 +171,17 @@ function CardImageCarousel({
 }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+  // Auto-play carousel for multiple images
+  useEffect(() => {
+    if (images.length <= 1) return; // Don't auto-play if only one image
+
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % images.length);
+    }, 3000); // Change image every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   const nextImage = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
