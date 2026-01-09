@@ -1,5 +1,12 @@
 import { motion } from "motion/react";
-import { AlertCircle, Target, Globe, Lightbulb, Users, Sparkles } from "lucide-react";
+import {
+  AlertCircle,
+  Target,
+  Globe,
+  Lightbulb,
+  Users,
+  Sparkles,
+} from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 export function WhyWhat() {
@@ -57,7 +64,10 @@ export function WhyWhat() {
   ];
 
   return (
-    <section id="why-what" className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-orange-50/30">
+    <section
+      id="why-what"
+      className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-orange-50/30"
+    >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -69,7 +79,9 @@ export function WhyWhat() {
           >
             <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full mb-4">
               <Sparkles className="w-5 h-5 text-primary" />
-              <span className="text-primary font-semibold">{t("whyWhat.badge")}</span>
+              <span className="text-primary font-semibold">
+                {t("whyWhat.badge")}
+              </span>
             </div>
             <h2 className="text-4xl sm:text-5xl font-bold mb-4">
               {t("whyWhat.title")}
@@ -89,13 +101,17 @@ export function WhyWhat() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`group ${value.bgColor} border-2 ${value.borderColor} rounded-2xl p-6 hover:shadow-xl hover:scale-[1.02] transition-all duration-300`}
+              className={`group ${value.bgColor} border-2 ${value.borderColor} rounded-2xl p-4 md:p-6 hover:shadow-xl hover:scale-[1.02] transition-all duration-300`}
             >
               <div className="flex items-center gap-4 mb-4 md:flex-col md:items-start md:gap-0">
-                <div className={`w-12 h-12 bg-gradient-to-br ${value.color} rounded-xl flex items-center justify-center text-white flex-shrink-0 group-hover:scale-110 transition-transform`}>
+                <div
+                  className={`w-8 h-8 md:w-12 md:h-12 bg-gradient-to-br ${value.color} rounded-xl flex items-center justify-center text-white flex-shrink-0 group-hover:scale-110 transition-transform`}
+                >
                   {value.icon}
                 </div>
-                <h3 className="font-bold text-xl md:mt-4">{value.title}</h3>
+                <h3 className="font-bold text-xl md:mt-4">
+                  {value.title}
+                </h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
                 {value.description}
