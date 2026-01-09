@@ -392,7 +392,7 @@ const resources = {
         },
       },
       footer: {
-        brand: "Bee Alpha",
+        brand: "BEE ALPHA",
         tagline:
           "Build real apps with AI and master the future way of working.",
         quickLinks: "Quick Links",
@@ -790,7 +790,7 @@ const resources = {
         },
       },
       footer: {
-        brand: "Bee Alpha",
+        brand: "BEE ALPHA",
         tagline: "用 AI 做出真实应用，掌握未来的工作方式。",
         quickLinks: "快速链接",
         contactUs: "联系我们",

@@ -102,14 +102,17 @@ export function CoreValues() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className={`bg-gradient-to-br ${value.color} p-6 rounded-2xl border border-border hover:shadow-lg transition-all`}
               >
-                <div className={`w-12 h-12 ${value.iconBg} rounded-xl flex items-center justify-center mb-4`}>
-                  <Icon className={`w-6 h-6 ${value.iconColor}`} />
+                <div className="flex items-center gap-4 mb-4 md:flex-col md:items-start md:gap-0">
+                  <div className={`w-12 h-12 ${value.iconBg} rounded-xl flex items-center justify-center flex-shrink-0`}>
+                    <Icon className={`w-6 h-6 ${value.iconColor}`} />
+                  </div>
+                  <div className="md:mt-4">
+                    <h3 className="font-bold text-lg mb-1">{value.title}</h3>
+                    <p className="text-xs text-primary font-semibold uppercase tracking-wide">
+                      {value.subtitle}
+                    </p>
+                  </div>
                 </div>
-                
-                <h3 className="font-bold text-lg mb-1">{value.title}</h3>
-                <p className="text-xs text-primary font-semibold mb-3 uppercase tracking-wide">
-                  {value.subtitle}
-                </p>
                 
                 <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
                   {value.description}

@@ -16,7 +16,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="pt-32 pb-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-orange-50/40 to-orange-50/60 relative"
+      className="py-12 pt-24 md:pt-32 md:pb-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-orange-50/40 to-orange-50/60 relative"
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-4xl mx-auto">

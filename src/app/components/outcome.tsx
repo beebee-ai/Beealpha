@@ -60,10 +60,10 @@ export function Outcome() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-shadow"
               >
-                <div className="mb-6">
-                  <Icon className="w-12 h-12 text-primary" strokeWidth={1.5} />
+                <div className="flex items-center gap-4 mb-4 md:flex-col md:items-start md:gap-0 md:mb-6">
+                  <Icon className="w-12 h-12 text-primary flex-shrink-0" strokeWidth={1.5} />
+                  <h3 className="font-bold text-lg md:mt-6">{outcome.title}</h3>
                 </div>
-                <h3 className="font-bold text-lg mb-3">{outcome.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   {outcome.description}
                 </p>

@@ -91,10 +91,12 @@ export function WhyWhat() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className={`group ${value.bgColor} border-2 ${value.borderColor} rounded-2xl p-6 hover:shadow-xl hover:scale-[1.02] transition-all duration-300`}
             >
-              <div className={`w-12 h-12 bg-gradient-to-br ${value.color} rounded-xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform`}>
-                {value.icon}
+              <div className="flex items-center gap-4 mb-4 md:flex-col md:items-start md:gap-0">
+                <div className={`w-12 h-12 bg-gradient-to-br ${value.color} rounded-xl flex items-center justify-center text-white flex-shrink-0 group-hover:scale-110 transition-transform`}>
+                  {value.icon}
+                </div>
+                <h3 className="font-bold text-xl md:mt-4">{value.title}</h3>
               </div>
-              <h3 className="font-bold text-xl mb-3">{value.title}</h3>
               <p className="text-muted-foreground leading-relaxed">
                 {value.description}
               </p>
