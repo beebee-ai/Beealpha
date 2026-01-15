@@ -7,18 +7,18 @@ export function SEO() {
 
   const seoData = {
     zh: {
-      title: 'Bee Alpha - 让青少年无摩擦地用 AI 做出真实应用',
-      description: 'BEEBEE AI-Alpha 青少年 AI 产品训练营，6周训练营让孩子从零基础到独立完成真实 AI 应用。不用编程基础，不靠死记硬背。12人小班教学，1对1专属陪练。培养 AI 思维，掌握未来工作方式。新西兰及全球在线。',
+      title: 'BEE ALPHA - 用 AI 做出真实应用',
+      description: '不用编程基础，不靠死记硬背。从第一节课开始就能让 AI 帮您完成真实任务，从"会用 AI"进化成"能做出作品"',
       keywords: '青少年AI课程,少儿AI编程,AI训练营,青少年编程,AI产品开发,中学生AI课程,零基础AI学习,AI思维培养,新西兰AI教育,在线AI课程,青少年STEM教育,AI实战课程,无代码AI开发,Bee Alpha,BEEBEE AI',
-      ogTitle: 'Bee Alpha - 青少年 AI 产品训练营',
-      ogDescription: '6周训练营，让孩子用 AI 做出真实应用。零基础可学，12人小班，1对1陪练。培养未来竞争力。',
+      ogTitle: 'BEE ALPHA - 用 AI 做出真实应用',
+      ogDescription: '不用编程基础，不靠死记硬背。从第一节课开始就能让 AI 帮您完成真实任务，从"会用 AI"进化成"能做出作品"',
     },
     en: {
-      title: 'Bee Alpha - Empower Teens to Build Real Apps with AI Frictionlessly',
-      description: 'BEEBEE AI-Alpha is a 6-week AI product bootcamp for teens. From zero to real AI apps without coding background. Small class of 12 students with 1-on-1 coaching. Cultivate AI thinking and master future work methods. New Zealand & Global Online.',
+      title: 'BEE ALPHA - Build Real Apps with AI',
+      description: 'No coding background needed. No rote memorization. Start building real apps with AI from day one. Evolve from "using AI" to "creating products"',
       keywords: 'teen AI course,youth AI programming,AI bootcamp,teen coding,AI product development,middle school AI,beginner AI learning,AI thinking training,New Zealand AI education,online AI course,teen STEM education,practical AI course,no-code AI,Bee Alpha,BEEBEE AI',
-      ogTitle: 'Bee Alpha - AI Product Bootcamp for Teens',
-      ogDescription: '6-week bootcamp to build real AI apps. Zero coding background needed. Small class of 12 with 1-on-1 coaching. Build future competitiveness.',
+      ogTitle: 'BEE ALPHA - Build Real Apps with AI',
+      ogDescription: 'No coding background needed. Start building real apps with AI from day one. Evolve from "using AI" to "creating products"',
     },
   };
 
