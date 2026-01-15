@@ -34,7 +34,7 @@ export function SEO() {
       
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://beealpha.nz/" />
+      <meta property="og:url" content="https://bee-alpha.com/" />
       <meta property="og:title" content={data.ogTitle} />
       <meta property="og:description" content={data.ogDescription} />
       <meta property="og:site_name" content="Bee Alpha" />
@@ -42,7 +42,7 @@ export function SEO() {
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://beealpha.nz/" />
+      <meta property="twitter:url" content="https://bee-alpha.com/" />
       <meta property="twitter:title" content={data.ogTitle} />
       <meta property="twitter:description" content={data.ogDescription} />
 
@@ -54,16 +54,16 @@ export function SEO() {
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       
       {/* Canonical Link */}
-      <link rel="canonical" href="https://beealpha.nz/" />
+      <link rel="canonical" href="https://bee-alpha.com/" />
       
       {/* Favicon */}
       <link rel="icon" type="image/png" href="https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-alpha/logo.png" />
       <link rel="apple-touch-icon" href="https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-alpha/logo.png" />
       
       {/* Language Alternates */}
-      <link rel="alternate" hrefLang="zh" href="https://beealpha.nz/?lang=zh" />
-      <link rel="alternate" hrefLang="en" href="https://beealpha.nz/?lang=en" />
-      <link rel="alternate" hrefLang="x-default" href="https://beealpha.nz/" />
+      <link rel="alternate" hrefLang="zh" href="https://bee-alpha.com/?lang=zh" />
+      <link rel="alternate" hrefLang="en" href="https://bee-alpha.com/?lang=en" />
+      <link rel="alternate" hrefLang="x-default" href="https://bee-alpha.com/" />
     </Helmet>
   );
 }
