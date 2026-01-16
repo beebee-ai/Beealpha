@@ -8,10 +8,10 @@ export function SEO() {
   const seoData = {
     zh: {
       title: 'BEE ALPHA - 用 AI 做出真实应用',
-      description: '不用编程基础，不靠死记硬背。从第一节课开始就能让 AI 帮您完成真实任务，从"会用 AI"进化成"能做出作品"',
-      keywords: '青少年AI课程,少儿AI编程,AI训练营,青少年编程,AI产品开发,中学生AI课程,零基础AI学习,AI思维培养,新西兰AI教育,在线AI课程,青少年STEM教育,AI实战课程,无代码AI开发,Bee Alpha,BEEBEE AI',
+      description: 'BEE ALPHA 是面向青少年的 AI 教育训练营，无需编程基础，从第一节课起就用语言驱动 AI 完成真实项目。课程强调小班陪练、真实产出导向和可迁移的未来能力，帮助学员理解 AI、设计工作流，并独立完成可展示的 AI 应用。',
+      keywords: '青少年 AI 学习, BEE ALPHA, AI 教育训练营, AI 项目实战, 小班陪练, 无摩擦学习, AI 驯化, 可迁移能力, 真实作品产出, AI 学习闭环, BEEBEE AI',
       ogTitle: 'BEE ALPHA - 用 AI 做出真实应用',
-      ogDescription: '不用编程基础，不靠死记硬背。从第一节课开始就能让 AI 帮您完成真实任务，从"会用 AI"进化成"能做出作品"',
+      ogDescription: 'BEE ALPHA 是面向青少年的 AI 教育训练营，无需编程基础，从第一节课起就用语言驱动 AI 完成真实项目。课程强调小班陪练、真实产出导向和可迁移的未来能力，帮助学员理解 AI、设计工作流，并独立完成可展示的 AI 应用。',
     },
     en: {
       title: 'BEE ALPHA - Build Real Apps with AI',
