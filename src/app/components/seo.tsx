@@ -37,6 +37,9 @@ export function SEO() {
       <meta property="og:url" content="https://bee-alpha.com/" />
       <meta property="og:title" content={data.ogTitle} />
       <meta property="og:description" content={data.ogDescription} />
+      <meta property="og:image" content="https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-alpha/logo.png" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
       <meta property="og:site_name" content="Bee Alpha" />
       <meta property="og:locale" content={isEn ? 'en_US' : 'zh_CN'} />
 
@@ -45,6 +48,7 @@ export function SEO() {
       <meta property="twitter:url" content="https://bee-alpha.com/" />
       <meta property="twitter:title" content={data.ogTitle} />
       <meta property="twitter:description" content={data.ogDescription} />
+      <meta property="twitter:image" content="https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-alpha/logo.png" />
 
       {/* Additional Meta Tags */}
       <meta name="robots" content="index, follow" />
