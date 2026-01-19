@@ -33,44 +33,17 @@ export function SEO() {
       <meta name="keywords" content={data.keywords} />
       
       {/* Open Graph / Facebook */}
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://bee-alpha.com/" />
       <meta property="og:title" content={data.ogTitle} />
       <meta property="og:description" content={data.ogDescription} />
-      <meta property="og:image" content="https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-alpha/logo.png" />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
-      <meta property="og:site_name" content="BEE ALPHA" />
       <meta property="og:locale" content={isEn ? 'en_US' : 'zh_CN'} />
 
       {/* Twitter */}
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://bee-alpha.com/" />
       <meta property="twitter:title" content={data.ogTitle} />
       <meta property="twitter:description" content={data.ogDescription} />
-      <meta property="twitter:image" content="https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-alpha/logo.png" />
 
       {/* Additional Meta Tags */}
-      <meta name="robots" content="index, follow" />
       <meta name="language" content={isEn ? 'English' : 'Chinese'} />
       <meta name="author" content="BEE ALPHA" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-      
-      {/* Canonical Link */}
-      <link rel="canonical" href="https://bee-alpha.com/" />
-      
-      {/* Favicon */}
-      <link rel="icon" type="image/x-icon" href="https://beebee-s3-sit.s3.us-west-2.amazonaws.com/beebee-ai/icons/favicon.ico" />
-      <link rel="icon" type="image/svg+xml" href="https://beebee-s3-sit.s3.us-west-2.amazonaws.com/beebee-ai/icons/favicon.svg" />
-      <link rel="icon" type="image/png" sizes="96x96" href="https://beebee-s3-sit.s3.us-west-2.amazonaws.com/beebee-ai/icons/favicon-96x96.png" />
-      <link rel="apple-touch-icon" sizes="180x180" href="https://beebee-s3-sit.s3.us-west-2.amazonaws.com/beebee-ai/icons/apple-touch-icon.png" />
-      <link rel="icon" type="image/png" sizes="512x512" href="https://beebee-s3-sit.s3.us-west-2.amazonaws.com/beebee-ai/icons/web-app-manifest-512x512.png" />
-      
-      {/* Language Alternates */}
-      <link rel="alternate" hrefLang="zh" href="https://bee-alpha.com/?lang=zh" />
-      <link rel="alternate" hrefLang="en" href="https://bee-alpha.com/?lang=en" />
-      <link rel="alternate" hrefLang="x-default" href="https://bee-alpha.com/" />
     </Helmet>
   );
 }
