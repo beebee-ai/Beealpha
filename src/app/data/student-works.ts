@@ -4,6 +4,8 @@ const S3_BASE_URL =
 const chineseWordSnackImg1 = `${S3_BASE_URL}wordSnack_1.png`;
 const chineseWordSnackImg2 = `${S3_BASE_URL}wordSnack_2.png`;
 const chineseWordSnackImg3 = `${S3_BASE_URL}wordSnack_3.png`;
+const chineseWordSnackImg4 = `${S3_BASE_URL}wordSnack_4.png`;
+const chineseWordSnackImg5 = `${S3_BASE_URL}wordSnack_5.png`;
 const pdSelectionImg = `${S3_BASE_URL}pdselection-1.png`;
 const relabImg = `${S3_BASE_URL}relabai.png`;
 const propertyAiImg = `${S3_BASE_URL}propertyAI-1.png`;
@@ -37,12 +39,11 @@ export interface StudentWork {
 export const studentWorks: StudentWork[] = [
   {
     images: [
-      chineseWordSnackImg1,
-      chineseWordSnackImg2,
-      chineseWordSnackImg2,
+      chineseWordSnackImg4,
+      chineseWordSnackImg5
     ],
     url: "https://chinesewordsnack.netlify.app/",
-    isMobile: true,
+    isMobile: false,
   },
   {
     images: [pdSelectionImg],
