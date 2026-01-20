@@ -16,7 +16,7 @@ export function SEO() {
     en: {
       title: 'BEE ALPHA - Build Real Apps with AI',
       description: 'No coding background needed. No rote memorization. Start building real apps with AI from day one. Evolve from "using AI" to "creating products"',
-      keywords: 'teen AI course,youth AI programming,AI bootcamp,teen coding,AI product development,middle school AI,beginner AI learning,AI thinking training,New Zealand AI education,online AI course,teen STEM education,practical AI course,no-code AI,Bee Alpha,BEEBEE AI',
+      keywords: 'teen AI course,youth AI programming,AI bootcamp,teen coding,AI product development,middle school AI,beginner AI learning,AI thinking training,New Zealand AI education,online AI course,teen STEM education,practical AI course,no-code AI,BEE ALPHA,BEEBEE AI',
       ogTitle: 'BEE ALPHA - Build Real Apps with AI',
       ogDescription: 'No coding background needed. Start building real apps with AI from day one. Evolve from "using AI" to "creating products"',
     },

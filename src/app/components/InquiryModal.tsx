@@ -33,7 +33,7 @@ export function InquiryModal({ isOpen, onClose, courseName }: InquiryModalProps)
   
   const { register, handleSubmit, reset, formState: { errors } } = useForm<InquiryFormData>({
     defaultValues: {
-      message: i18n.language === 'zh' ? "我想咨询BEE Alpha课程，请联系我。" : "I would like to inquire about BEE Alpha courses, please contact me."
+      message: i18n.language === 'zh' ? "我想咨询BEE ALPHA课程，请联系我。" : "I would like to inquire about BEE ALPHA courses, please contact me."
     }
   });
 
@@ -104,8 +104,8 @@ export function InquiryModal({ isOpen, onClose, courseName }: InquiryModalProps)
           </DialogDescription>
         </DialogHeader>
         
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 py-4">
-          <div className="font-bold text-primary mb-4 text-center">
+        <form onSubmit={handleSubmit(onSubmit)} className="py-4 space-y-4">
+          <div className="mb-4 font-bold text-center text-primary">
             {courseName}
           </div>
 
@@ -169,12 +169,12 @@ export function InquiryModal({ isOpen, onClose, courseName }: InquiryModalProps)
             />
           </div>
 
-          <DialogFooter className="gap-2 sm:gap-0 mt-6">
+          <DialogFooter className="gap-2 mt-6 sm:gap-0">
             <Button
               type="button"
               variant="secondary"
               onClick={onClose}
-              className="w-full sm:w-1/2 bg-gray-200 hover:bg-gray-300 text-gray-800"
+              className="w-full text-gray-800 bg-gray-200 sm:w-1/2 hover:bg-gray-300"
             >
               {i18n.language === 'zh' ? '取消' : 'Cancel'}
             </Button>

@@ -35,8 +35,8 @@ export function CTA() {
   } = useForm<InquiryFormData>({
     defaultValues: {
       message: isEn
-        ? "I would like to inquire about BEE Alpha courses, please contact me."
-        : "我想咨询BEE Alpha课程，请联系我。",
+        ? "I would like to inquire about BEE ALPHA courses, please contact me."
+        : "我想咨询BEE ALPHA课程，请联系我。",
     },
   });
 
@@ -118,28 +118,28 @@ export function CTA() {
   return (
     <section
       id="cta"
-      className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/5 via-orange-50/30 to-white"
+      className="px-4 py-12 bg-gradient-to-br to-white sm:px-6 lg:px-8 from-primary/5 via-orange-50/30"
     >
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-16 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+            <h2 className="mb-4 text-3xl font-bold sm:text-4xl">
               {isEn
                 ? "AI is here. The future looks bright"
                 : "AI已至，未来可期"}
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="mx-auto max-w-2xl text-xl text-muted-foreground">
               {t("cta.subtitle")}
             </p>
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 gap-12 items-start lg:grid-cols-2">
           {/* Registration Consultation Form */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -147,8 +147,8 @@ export function CTA() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="bg-white p-8 rounded-2xl border border-border shadow-lg">
-              <h3 className="text-2xl font-bold mb-6 text-center">
+            <div className="p-8 bg-white rounded-2xl border shadow-lg border-border">
+              <h3 className="mb-6 text-2xl font-bold text-center">
                 {isEn
                   ? "Registration Consultation"
                   : "报名咨询"}
@@ -259,29 +259,29 @@ export function CTA() {
             className="space-y-6 lg:mt-0"
           >
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold mb-6">
+              <h3 className="mb-6 text-2xl font-bold">
                 {isEn ? "Contact Methods" : "联系方式"}
               </h3>
 
-              <div className="bg-white rounded-xl border border-border p-6 shadow-sm hover:shadow-md transition-shadow">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="p-2 bg-primary/10 rounded-lg">
+              <div className="p-6 bg-white rounded-xl border shadow-sm transition-shadow border-border hover:shadow-md">
+                <div className="flex gap-3 items-center mb-6">
+                  <div className="p-2 rounded-lg bg-primary/10">
                     <Mail className="w-5 h-5 text-primary" />
                   </div>
-                  <h4 className="font-bold text-lg">
+                  <h4 className="text-lg font-bold">
                     {isEn ? "Contact Email" : "联系邮箱"}
                   </h4>
                 </div>
-                <div className="space-y-4 pl-0 sm:pl-12">
+                <div className="pl-0 space-y-4 sm:pl-12">
                   {contactEmails.map((email, idx) => (
                     <div
                       key={idx}
-                      className="flex items-center gap-2"
+                      className="flex gap-2 items-center"
                     >
                       <Send className="w-4 h-4 text-gray-400" />
                       <a
                         href={`mailto:${email}`}
-                        className="text-primary hover:underline font-medium text-lg"
+                        className="text-lg font-medium text-primary hover:underline"
                       >
                         {email}
                       </a>
