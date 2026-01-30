@@ -176,31 +176,6 @@ export const homeMentors: Mentor[] = [
     category: "project",
   },
   {
-    id: 7,
-    name: "Bobby W",
-    title: {
-      en: "Senior Frontend Engineer",
-      zh: "资深前端工程师",
-    },
-    bio: {
-      en: "8 years multi-platform experience across Uniapp, Vue, and enterprise-scale frontend architecture.",
-      zh: "8 年多端实战，精通 Uniapp、Vue、前端架构与复杂商业项目交付。",
-    },
-    expertise: {
-      en: [
-        "Frontend",
-        "Vue",
-        "Uniapp",
-        "Components",
-        "Engineering",
-      ],
-      zh: ["前端", "Vue", "Uniapp", "组件设计", "工程化"],
-    },
-    image:
-      "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-beta/pacer/cartoon_bobby.png",
-    category: "project",
-  },
-  {
     id: 998,
     name: "",
     title: { en: "", zh: "" },
@@ -1076,89 +1051,6 @@ export const detailedMentors: Mentor[] = [
     },
     image:
       "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-beta/pacer/cartoon_charlie.png",
-    category: "project",
-  },
-  {
-    id: "mentor-bobby",
-    name: "Bobby W",
-    title: {
-      en: "Senior Frontend Engineer",
-      zh: "资深前端工程师",
-    },
-    bio: {
-      en: "Senior frontend engineer with 8 years of experience, skilled in multi-platform development across WeChat Mini Programs, H5, PC, and mobile apps. Strong in frontend architecture, component design, and modern JavaScript frameworks.",
-      zh: "拥有 8 年前端开发经验，精通多端研发与现代前端技术栈。具备从微信小程序、H5、PC 到 App 的全平台项目经验，熟悉前端架构、组件封装与高质量工程实践。",
-    },
-    details: {
-      en: `
-<p>Bobby Wang is a senior frontend engineer with deep experience in multi-platform development and modern frontend architecture. He focuses on building reliable, scalable frontends across different ecosystems.</p>
-
-<h4>Technical Expertise</h4>
-<ul>
-  <li>Uniapp cross-platform development: write once, run on multiple clients</li>
-  <li>Vue ecosystem (Vue2 / Vue3 / Nuxt SSR)</li>
-  <li>Strong understanding of JavaScript internals and reactive development</li>
-  <li>WebSocket-based real-time communication</li>
-  <li>Frontend architecture, component design, and engineering best practices</li>
-</ul>
-
-<h4>Project Experience</h4>
-<ul>
-  <li>Worked on e-commerce platforms, admin systems, SaaS tools, data dashboards and more</li>
-  <li>Experienced in full-cycle development: planning, architecture, implementation, deployment</li>
-  <li>Seasoned in multi-platform adaptation and complex UI/UX interactions</li>
-</ul>
-
-<h4>Teaching Philosophy</h4>
-<ul>
-  <li>Focuses on practical application and clean code, built on real commercial experience</li>
-  <li>Uses real-world examples to explain core frontend concepts and best practices</li>
-  <li>Helps students build strong engineering intuition through clear and structured teaching</li>
-</ul>
-`,
-      zh: `
-<p>Bobby Wang，资深前端工程师，长期从事多端研发与前端架构设计工作。对多平台生态、性能优化和工程规范有成熟经验，能将前端技术有效落地到稳定的商业产品中。</p>
-
-<h4>技术专长</h4>
-<ul>
-  <li>Uniapp 跨平台开发：一套代码多端运行的完整实践</li>
-  <li>Vue 全家桶（Vue2 / Vue3 / Nuxt SSR）</li>
-  <li>深入理解 JavaScript 核心机制与响应式开发模式</li>
-  <li>WebSocket 实时通信与数据交互</li>
-  <li>前端架构设计、组件封装与工程化规范</li>
-</ul>
-
-<h4>项目经验</h4>
-<ul>
-  <li>负责在线商城、后台管理系统、SaaS 工具、数据大屏等多个商业级项目</li>
-  <li>完整参与从需求、架构、开发到上线的全流程</li>
-  <li>对多端适配与复杂交互开发有丰富实战积累</li>
-</ul>
-
-<h4>教学方式与理念</h4>
-<ul>
-  <li>基于丰富的商业项目经验，强调实战能力与代码质量培养</li>
-  <li>善用真实案例说明前端关键概念与最佳实践</li>
-  <li>以清晰直观的方式带学生构建扎实的前端工程思维</li>
-</ul>
-`,
-    },
-    quote: {
-      en: "Frontend is not about stacking code, but building solid engineering and great experiences.",
-      zh: "前端不是堆代码，而是把体验和工程做到位。",
-    },
-    expertise: {
-      en: [
-        "Frontend",
-        "Vue",
-        "Uniapp",
-        "Components",
-        "Engineering",
-      ],
-      zh: ["前端", "Vue", "Uniapp", "组件设计", "工程化"],
-    },
-    image:
-      "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-beta/pacer/cartoon_bobby.png",
     category: "project",
   },
   {
