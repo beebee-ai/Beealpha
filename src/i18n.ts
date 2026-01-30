@@ -223,9 +223,9 @@ const resources = {
             desc: "ALPHA Genesis Camp Cohort 1",
           },
           {
-            title: "VoiceAI",
-            role: "3-Student Team, NZ, Ages 12-22",
-            desc: "ALPHA Genesis Camp Cohort 1",
+            title: "Word Snack",
+            role: "Student T, 0 Engineering Exp",
+            desc: "ZERO Camp Cohort 3",
           },
           {
             title: "Lumina Academy",
@@ -233,9 +233,9 @@ const resources = {
             desc: "ALPHA Genesis Camp Cohort 1",
           },
           {
-            title: "Word Snack",
-            role: "Student T, 0 Engineering Exp",
-            desc: "ZERO Camp Cohort 3",
+            title: "VoiceAI",
+            role: "3-Student Team, NZ, Ages 12-22",
+            desc: "ALPHA Genesis Camp Cohort 1",
           },
           {
             title: "Vegan Selection",
@@ -637,9 +637,9 @@ const resources = {
             desc: "ALPHA启航营（Genesis）一期",
           },
           {
-            title: "VoiceAI",
-            role: "三人小组作品（新西兰，12-22岁，零代码基础）",
-            desc: "ALPHA启航营（Genesis）一期",
+            title: "字在午餐",
+            role: "T同学，0工程经验",
+            desc: "ZERO 三期",
           },
           {
             title: "Lumina Academy",
@@ -647,9 +647,9 @@ const resources = {
             desc: "ALPHA启航营（Genesis）一期",
           },
           {
-            title: "字在午餐",
-            role: "T同学，0工程经验",
-            desc: "ZERO 三期",
+            title: "VoiceAI",
+            role: "三人小组作品（新西兰，12-22岁，零代码基础）",
+            desc: "ALPHA启航营（Genesis）一期",
           },
           {
             title: "纯素甄选",

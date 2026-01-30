@@ -213,7 +213,7 @@ export function StudentWorks() {
   return (
     <section
       id="student-works"
-      className="py-12 px-4 sm:px-6 lg:px-8 bg-[#0a0e14]"
+      className="py-12 px-4 sm:px-6 lg:px-8 bg-[#151a22]"
     >
       <div className="max-w-7xl mx-auto">
         {/* Header */}

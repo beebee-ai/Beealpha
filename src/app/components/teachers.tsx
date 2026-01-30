@@ -1,8 +1,16 @@
 import { motion, AnimatePresence } from "motion/react";
 import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
+import {
+  ChevronLeft,
+  ChevronRight,
+  ArrowRight,
+} from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { homeMentors, homeExperts, Mentor } from "../data/mentors";
+import {
+  homeMentors,
+  homeExperts,
+  Mentor,
+} from "../data/mentors";
 
 interface TeachersProps {
   onViewAll?: () => void;
@@ -10,13 +18,16 @@ interface TeachersProps {
 
 export function Teachers({ onViewAll }: TeachersProps) {
   const { t, i18n } = useTranslation();
-  const [activeTab, setActiveTab] = useState<"mentors" | "experts">("mentors");
+  const [activeTab, setActiveTab] = useState<
+    "mentors" | "experts"
+  >("mentors");
   const [currentPage, setCurrentPage] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(6);
-  
-  const isEn = i18n.language === 'en';
 
-  const currentTeam: Mentor[] = activeTab === "mentors" ? homeMentors : homeExperts;
+  const isEn = i18n.language === "en";
+
+  const currentTeam: Mentor[] =
+    activeTab === "mentors" ? homeMentors : homeExperts;
 
   // Handle Resize for itemsPerPage
   useEffect(() => {
@@ -32,11 +43,14 @@ export function Teachers({ onViewAll }: TeachersProps) {
 
     handleResize(); // Init
     window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    return () =>
+      window.removeEventListener("resize", handleResize);
   }, []);
 
   // Calculate pages
-  const totalPages = Math.ceil(currentTeam.length / itemsPerPage);
+  const totalPages = Math.ceil(
+    currentTeam.length / itemsPerPage,
+  );
 
   // Reset page when tab changes
   useEffect(() => {
@@ -55,18 +69,20 @@ export function Teachers({ onViewAll }: TeachersProps) {
   };
 
   const prevPage = () => {
-    setCurrentPage((prev) => (prev - 1 + totalPages) % totalPages);
+    setCurrentPage(
+      (prev) => (prev - 1 + totalPages) % totalPages,
+    );
   };
 
   const currentItems = currentTeam.slice(
     currentPage * itemsPerPage,
-    (currentPage + 1) * itemsPerPage
+    (currentPage + 1) * itemsPerPage,
   );
 
   return (
     <section
       id="teachers"
-      className="py-12 px-4 sm:px-6 lg:px-8 bg-[#0a0e14]"
+      className="py-12 px-4 sm:px-6 lg:px-8 bg-[#151a22]"
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
@@ -123,25 +139,27 @@ export function Teachers({ onViewAll }: TeachersProps) {
           >
             {currentItems.map((member, index) => {
               if (member.isInviteCard) {
-                 return (
+                return (
                   <div
                     key={`invite-${index}`}
                     onClick={onViewAll}
                     className="group relative bg-[#1a1f2e] rounded-2xl overflow-hidden hover:transform hover:scale-[1.02] transition-all duration-300 flex flex-col justify-center items-center text-center p-8 border border-dashed border-gray-700 hover:border-primary/50 h-full min-h-[240px] cursor-pointer"
                   >
-                     <div className="mb-4 p-4 bg-primary/10 rounded-full group-hover:bg-primary/20 transition-colors">
-                       <ArrowRight className="w-8 h-8 text-primary" />
-                     </div>
-                     <h3 className="text-xl font-bold text-white mb-2">
-                       {isEn ? "View All Mentors" : "查看所有导师"}
-                     </h3>
-                     <p className="text-sm text-gray-400">
-                       {isEn 
-                         ? "Click to see detailed profiles of our full mentor team." 
-                         : "点击查看导师团队详细介绍"}
-                     </p>
+                    <div className="mb-4 p-4 bg-primary/10 rounded-full group-hover:bg-primary/20 transition-colors">
+                      <ArrowRight className="w-8 h-8 text-primary" />
+                    </div>
+                    <h3 className="text-xl font-bold text-white mb-2">
+                      {isEn
+                        ? "View All Mentors"
+                        : "查看所有导师"}
+                    </h3>
+                    <p className="text-sm text-gray-400">
+                      {isEn
+                        ? "Click to see detailed profiles of our full mentor team."
+                        : "点击查看导师团队详细介绍"}
+                    </p>
                   </div>
-                 );
+                );
               }
 
               return (
@@ -171,24 +189,29 @@ export function Teachers({ onViewAll }: TeachersProps) {
                         {isEn ? member.bio.en : member.bio.zh}
                       </p>
                     </div>
-                    
+
                     {/* Tags */}
                     <div className="flex flex-wrap gap-1.5 mt-auto">
-                      {(isEn ? member.expertise.en : member.expertise.zh).slice(0, 3).map((tag, i) => { 
-                        const colors = [
-                          "bg-yellow-500/10 text-yellow-400 border-yellow-500/20",
-                          "bg-green-500/10 text-green-400 border-green-500/20",
-                          "bg-blue-500/10 text-blue-400 border-blue-500/20",
-                        ];
-                        return (
-                          <span
-                            key={i}
-                            className={`text-[10px] px-1.5 py-0.5 rounded border ${colors[i % colors.length]} whitespace-nowrap`}
-                          >
-                            {tag}
-                          </span>
-                        );
-                      })}
+                      {(isEn
+                        ? member.expertise.en
+                        : member.expertise.zh
+                      )
+                        .slice(0, 3)
+                        .map((tag, i) => {
+                          const colors = [
+                            "bg-yellow-500/10 text-yellow-400 border-yellow-500/20",
+                            "bg-green-500/10 text-green-400 border-green-500/20",
+                            "bg-blue-500/10 text-blue-400 border-blue-500/20",
+                          ];
+                          return (
+                            <span
+                              key={i}
+                              className={`text-[10px] px-1.5 py-0.5 rounded border ${colors[i % colors.length]} whitespace-nowrap`}
+                            >
+                              {tag}
+                            </span>
+                          );
+                        })}
                       {/* Removed the +N badge logic here */}
                     </div>
                   </div>
@@ -207,14 +230,16 @@ export function Teachers({ onViewAll }: TeachersProps) {
           >
             <ChevronLeft size={24} />
           </button>
-          
+
           <div className="flex gap-2">
             {Array.from({ length: totalPages }).map((_, i) => (
               <button
                 key={i}
                 onClick={() => setCurrentPage(i)}
                 className={`w-3 h-3 rounded-full transition-all ${
-                  currentPage === i ? "bg-primary w-6" : "bg-gray-600 hover:bg-gray-500"
+                  currentPage === i
+                    ? "bg-primary w-6"
+                    : "bg-gray-600 hover:bg-gray-500"
                 }`}
               />
             ))}
