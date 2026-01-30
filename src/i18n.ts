@@ -218,54 +218,54 @@ const resources = {
           "These are real projects from real students. Every child presents their work on Demo Day, building strong confidence.",
         works: [
           {
+            title: "Infinite Challenge Generator",
+            role: "Student N, 15, New Zealand, Zero Coding Base",
+            desc: "ALPHA Genesis Camp Cohort 1",
+          },
+          {
+            title: "VoiceAI",
+            role: "3-Student Team, NZ, Ages 12-22",
+            desc: "ALPHA Genesis Camp Cohort 1",
+          },
+          {
+            title: "Lumina Academy",
+            role: "Student W (New Zealand, 12, Zero Coding Base)",
+            desc: "ALPHA Genesis Camp Cohort 1",
+          },
+          {
             title: "Word Snack",
             role: "Student T, 0 Engineering Exp",
-            desc: "ZERO Genesis Camp Cohort 3",
+            desc: "ZERO Camp Cohort 3",
           },
           {
             title: "Vegan Selection",
             role: "Student Z, 0 Engineering Exp",
-            desc: "ZERO Genesis Camp Cohort 3",
-          },
-          {
-            title: "Relab SEO",
-            role: "Student K, No Engineering Exp",
-            desc: "ZERO Genesis Camp Cohort 2",
-          },
-          {
-            title: "PropertyAI NZ",
-            role: "Student H, 0 Engineering Exp",
-            desc: "ZERO Genesis Camp Cohort 1",
-          },
-          {
-            title: "PROJECT;echo",
-            role: "Student J, 13, Grade 9",
-            desc: "Alpha Odyssey — NZ CAMP C",
+            desc: "ZERO Camp Cohort 3",
           },
           {
             title: "RowingPro",
             role: "Student V, 16",
-            desc: "Alpha Odyssey — US CAMP C",
+            desc: "ALPHA Odyssey — US CAMP C",
           },
           {
-            title: "Healthy Eating Assistant",
-            role: "Student Y, 17",
-            desc: "Alpha Odyssey — TN CAMP C",
+            title: "PropertyAI NZ",
+            role: "Student H, 0 Engineering Exp",
+            desc: "ZERO Camp Cohort 1",
           },
           {
             title: "Life Calendar & Knowledge Box",
             role: "Student Y, 15, Zero Coding Base",
-            desc: "Alpha Odyssey — TN CAMP C",
+            desc: "ALPHA Odyssey — TN CAMP C",
           },
           {
             title: "AI Golf Performance Analysis",
             role: "Student P, 14, Grade 9",
-            desc: "Alpha Odyssey — NZ CAMP C",
+            desc: "ALPHA Odyssey — NZ CAMP C",
           },
           {
             title: "Overflow",
             role: "Student P, 14, Grade 9",
-            desc: "Alpha Odyssey — NZ CAMP C",
+            desc: "ALPHA Odyssey — NZ CAMP C",
           },
           {
             title: "Music Learner's Personal Website",
@@ -275,17 +275,32 @@ const resources = {
           {
             title: "AI Gift Recommendation",
             role: "Student I, 14, Grade 9",
-            desc: "Alpha Odyssey — NZ CAMP C",
+            desc: "ALPHA Odyssey — NZ CAMP C",
           },
           {
             title: "Egg Prices NZ",
             role: "Student T, 13, Grade 9",
-            desc: "Alpha Odyssey — NZ CAMP C",
+            desc: "ALPHA Odyssey — NZ CAMP C",
           },
           {
             title: "AI College Planning Assistant",
             role: "Student J, 12, Grade 8",
-            desc: "Alpha Odyssey — NZ CAMP C",
+            desc: "ALPHA Odyssey — NZ CAMP C",
+          },
+          {
+            title: "Relab SEO",
+            role: "Student K, No Engineering Exp",
+            desc: "ZERO Camp Cohort 2",
+          },
+          {
+            title: "PROJECT;echo",
+            role: "Student J, 13, Grade 9",
+            desc: "ALPHA Odyssey — NZ CAMP C",
+          },
+          {
+            title: "Healthy Eating Assistant",
+            role: "Student Y, 17",
+            desc: "ALPHA Odyssey — TN CAMP C",
           },
         ],
       },
@@ -498,7 +513,7 @@ const resources = {
           subtitle: "独立产品创造高阶课",
           duration: "6 周 · 约 27 小时",
           targetAudience:
-            "12-18 岁，有一定编程或工程经验，想获得明确升学或做出较高强度产品证明能力",
+            "12-18 岁，有一定编程或工程经验，获得明确升学或做出较高强度产品证明能力",
           description:
             "用AI开发出自己的产品并市场化，实现个人兴趣落地。此项目完全以工业化标准设立，完成后可用于升学作品，职业转型，创业起点。导师和创始人均可为成功结营的学生背书。",
           scheduleTitle: "课程设置",
@@ -617,74 +632,89 @@ const resources = {
           "这些都是真实学员在训练营中完成的项目。每个孩子在结营 Demo Day 上展示自己的作品，建立起强大的自信心。",
         works: [
           {
+            title: "Infinite Challenge Generator",
+            role: "N同学，15岁，新西兰，零代码基础",
+            desc: "ALPHA启航营（Genesis）一期",
+          },
+          {
+            title: "VoiceAI",
+            role: "三人小组作品（新西兰，12-22岁，零代码基础）",
+            desc: "ALPHA启航营（Genesis）一期",
+          },
+          {
+            title: "Lumina Academy",
+            role: "W同学（新西兰，12岁，零代码基础）",
+            desc: "ALPHA启航营（Genesis）一期",
+          },
+          {
             title: "字在午餐",
             role: "T同学，0工程经验",
-            desc: "ZERO启航营（Genesis）三期",
+            desc: "ZERO 三期",
           },
           {
             title: "纯素甄选",
             role: "Z同学，0工程经验",
-            desc: "ZERO启航营（Genesis）三期",
-          },
-          {
-            title: "内容集群和 AI 工具",
-            role: "K同学，无工程经验",
-            desc: "ZERO启航营（Genesis）二期",
-          },
-          {
-            title: "PROJECT;echo 个人时间管理工具",
-            role: "J同学，13岁，9年级",
-            desc: "Alpha Odyssey — NZ CAMP C",
+            desc: "ZERO 三期",
           },
           {
             title: "RowingPro",
             role: "V同学，16岁",
-            desc: "Alpha Odyssey — US CAMP C",
-          },
-          {
-            title: "智能健康饮食助手",
-            role: "Y同学，17岁",
-            desc: "Alpha Odyssey — TN CAMP C",
+            desc: "ALPHA Odyssey — US CAMP C",
           },
           {
             title: "新西兰首个AI驱动房产交易平台",
             role: "H同学，0工程经验",
-            desc: "ZERO启航营（Genesis）一期",
+            desc: "ZERO 一期",
           },
           {
             title: "生活日历与知识盒",
             role: "Y同学，15岁，0代码基础",
-            desc: "Alpha Odyssey — TN CAMP C",
+            desc: "ALPHA Odyssey — TN CAMP C",
           },
           {
             title: "AI高尔夫成绩分析",
             role: "P同学，14岁，9年级",
-            desc: "Alpha Odyssey — NZ CAMP C",
+            desc: "ALPHA Odyssey — NZ CAMP C",
           },
           {
             title: "一个帮助年轻人实现梦想的众筹网站",
             role: "P同学，14岁，9年级",
-            desc: "Alpha Odyssey — NZ CAMP C",
+            desc: "ALPHA Odyssey — NZ CAMP C",
           },
           {
             title: "音乐生的自我介绍网站",
             role: "Y同学，17岁，12年级",
-            desc: "Alpha Odyssey — NZ CAMP C",
+            desc: "ALPHA Odyssey — NZ CAMP C",
           },
           {
             title: "AI自动礼物推荐",
             role: "I同学，14岁，9年级",
-            desc: "Alpha Odyssey — NZ CAMP C",
+            desc: "ALPHA Odyssey — NZ CAMP C",
           },
           {
             title: "Egg Prices NZ 鸡蛋比价网站",
-            role: "T同学，13岁，9年级",
-            desc: "Alpha Odyssey — NZ CAMP C",
+            role: "T同学，13，9年级",
+            desc: "ALPHA Odyssey — NZ CAMP C",
           },
           {
             title: "AI升学规划助手",
             role: "J同学，12岁，8年级",
-            desc: "Alpha Odyssey — NZ CAMP C",
+            desc: "ALPHA Odyssey — NZ CAMP C",
+          },
+          {
+            title: "内容集群和 AI 工具",
+            role: "K同学，无工程经验",
+            desc: "ZERO 二期",
+          },
+          {
+            title: "PROJECT;echo 个人时间管理工具",
+            role: "J同学，13岁，9年级",
+            desc: "ALPHA Odyssey — NZ CAMP C",
+          },
+          {
+            title: "智能健康饮食助手",
+            role: "Y同学，17岁",
+            desc: "ALPHA Odyssey — TN CAMP C",
           },
         ],
       },
