@@ -1,9 +1,22 @@
 const S3_BASE_URL =
   "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-alpha/student-works/";
 
+// New Genesis Camp Cohort 1 works
+const nicolasChallengeRandomizer1 = `${S3_BASE_URL}nicolas-challenge-randomizer-01.jpg`;
+const nicolasChallengeRandomizer2 = `${S3_BASE_URL}nicolas-challenge-randomizer-02.jpg`;
+const nicolasChallengeRandomizer3 = `${S3_BASE_URL}nicolas-challenge-randomizer-03.jpg`;
+const teamVoiceAi1 = `${S3_BASE_URL}team-voice-ai-01.jpg`;
+const teamVoiceAi2 = `${S3_BASE_URL}team-voice-ai-02.jpg`;
+const teamVoiceAi3 = `${S3_BASE_URL}team-voice-ai-03.jpg`;
+const weiyaLuminaAcademy1 = `${S3_BASE_URL}weiya-lumina-academy-01.jpg`;
+const weiyaLuminaAcademy2 = `${S3_BASE_URL}weiya-lumina-academy-02.jpg`;
+const weiyaLuminaAcademy3 = `${S3_BASE_URL}weiya-lumina-academy-03.jpg`;
+
 const chineseWordSnackImg1 = `${S3_BASE_URL}wordSnack_1.png`;
 const chineseWordSnackImg2 = `${S3_BASE_URL}wordSnack_2.png`;
 const chineseWordSnackImg3 = `${S3_BASE_URL}wordSnack_3.png`;
+const chineseWordSnackImg4 = `${S3_BASE_URL}wordSnack_4.png`;
+const chineseWordSnackImg5 = `${S3_BASE_URL}wordSnack_5.png`;
 const pdSelectionImg = `${S3_BASE_URL}pdselection-1.png`;
 const relabImg = `${S3_BASE_URL}relabai.png`;
 const propertyAiImg = `${S3_BASE_URL}propertyAI-1.png`;
@@ -35,34 +48,32 @@ export interface StudentWork {
 }
 
 export const studentWorks: StudentWork[] = [
+  // Genesis Camp Cohort 1 - Top 3 newest works
   {
-    images: [
-      chineseWordSnackImg1,
-      chineseWordSnackImg2,
-      chineseWordSnackImg2,
-    ],
+    images: [nicolasChallengeRandomizer1, nicolasChallengeRandomizer2, nicolasChallengeRandomizer3],
+    url: "https://challengerandomizer.netlify.app/",
+  },
+  {
+    images: [teamVoiceAi1, teamVoiceAi2, teamVoiceAi3],
+    url: "https://stalwart-bavarois-92bfc5.netlify.app/",
+  },
+  {
+    images: [weiyaLuminaAcademy1, weiyaLuminaAcademy2, weiyaLuminaAcademy3],
+    url: "https://luminacadamey.netlify.app/",
+  },
+  // Other works
+  {
+    images: [chineseWordSnackImg4, chineseWordSnackImg5],
     url: "https://chinesewordsnack.netlify.app/",
-    isMobile: true,
+    isMobile: false,
   },
   {
     images: [pdSelectionImg],
     url: "https://www.pdselection.com/",
   },
   {
-    images: [relabImg],
-    url: "https://relabai.netlify.app",
-  },
-  {
-    images: [projectEchoImg1, projectEchoImg2],
-    url: "https://changepr0jectecho.uk",
-  },
-  {
     images: [rowingProImg1, rowingProImg2, rowingProImg3],
     url: "https://crew-trainer.com",
-  },
-  {
-    images: [healthyEatingImg1, healthyEatingImg2],
-    url: "https://healthyeating365.netlify.app/",
   },
   {
     images: [propertyAiImg],
@@ -95,5 +106,18 @@ export const studentWorks: StudentWork[] = [
   {
     images: [smartCollegeImg],
     url: "https://smartcollegeadvisor.netlify.app/",
+  },
+  // Moved to page 2
+  {
+    images: [relabImg],
+    url: "https://relabai.netlify.app",
+  },
+  {
+    images: [projectEchoImg1, projectEchoImg2],
+    url: "https://changepr0jectecho.uk",
+  },
+  {
+    images: [healthyEatingImg1, healthyEatingImg2],
+    url: "https://healthyeating365.netlify.app/",
   },
 ];
