@@ -1489,6 +1489,10 @@ export const detailedExperts: Mentor[] = [
       en: "Serial founder with 3 years of applied Al experience across product, operations, game design and supply.",
       zh: "连续创业者，在产品、运营、游戏设计和供应链等领域拥有三年人工智能应用经验",
     },
+    details:{
+      zh: `<p>Andy C，专注独立游戏与应用开发，拥有奥克兰理工大学软件开发研究生背景。曾参与BEEBEEAI美国Infinity项目教学支持，并在新西兰长期开展青少年AI开发课程，深度参与全流程课程管理与教学实践。</p>`,
+      en: `<p>Andy C, Focused on independent game and application development, Andy holds a postgraduate degree in Software Development from Auckland University of Technology. He has contributed to the BEEBEE AI Infinity Program in the United States as a teaching support mentor, and has long been engaged in delivering AI development courses for teenagers in New Zealand. Andy is deeply involved in end-to-end curriculum management and hands-on teaching practice.</p>`,
+    },
     expertise: {
       en: ["Product", "AI Applications", "Game Design"],
       zh: ["产品", "人工智能应用", "游戏设计"],
