@@ -48,24 +48,30 @@ export interface StudentWork {
 }
 
 export const studentWorks: StudentWork[] = [
-  // Genesis Camp Cohort 1 - Top 3 newest works
   {
-    images: [nicolasChallengeRandomizer1, nicolasChallengeRandomizer2, nicolasChallengeRandomizer3],
+    images: [
+      nicolasChallengeRandomizer1,
+      nicolasChallengeRandomizer2,
+      nicolasChallengeRandomizer3,
+    ],
     url: "https://challengerandomizer.netlify.app/",
   },
-  {
-    images: [teamVoiceAi1, teamVoiceAi2, teamVoiceAi3],
-    url: "https://stalwart-bavarois-92bfc5.netlify.app/",
-  },
-  {
-    images: [weiyaLuminaAcademy1, weiyaLuminaAcademy2, weiyaLuminaAcademy3],
-    url: "https://luminacadamey.netlify.app/",
-  },
-  // Other works
   {
     images: [chineseWordSnackImg4, chineseWordSnackImg5],
     url: "https://chinesewordsnack.netlify.app/",
     isMobile: false,
+  },
+  {
+    images: [
+      weiyaLuminaAcademy1,
+      weiyaLuminaAcademy2,
+      weiyaLuminaAcademy3,
+    ],
+    url: "https://luminacadamey.netlify.app/",
+  },
+  {
+    images: [teamVoiceAi1, teamVoiceAi2, teamVoiceAi3],
+    url: "https://stalwart-bavarois-92bfc5.netlify.app/",
   },
   {
     images: [pdSelectionImg],
