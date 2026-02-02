@@ -532,7 +532,7 @@ export const detailedMentors: Mentor[] = [
     details: {
       en: `
 <p>Fangzhong Liu is a senior data scientist with a strong background in financial mathematics and applied machine learning. He specializes in marketing analytics, ML modeling, RAG systems, and end-to-end AI productization.</p>
-<h4>Education</h4>
+<h4>Academic Background & Awards</h4>
 <ul>
   <li>BEEBEE AI Infinity Best Engineering Award</li>
   <li>MS in Financial Mathematics, Chicago University</li>
@@ -575,7 +575,7 @@ export const detailedMentors: Mentor[] = [
 `,
       zh: `
 <p>Fangzhong Liu 是兼具金融数学背景与数据科学经验的资深算法负责人。他在机器学习、应用 AI、营销策略建模与 RAG 系统方面有深入实践，擅长把"模型如何影响业务"讲清楚，用严谨方法支持真正的业务增长。</p>
-<h4>教育背景</h4>
+<h4>教育背景与奖项</h4>
 <ul>
   <li>BEEBEE AI Infinity 全栈工程优秀奖</li>
   <li>芝加哥大学 · 金融数学硕士</li>
@@ -649,7 +649,7 @@ export const detailedMentors: Mentor[] = [
     details: {
       en: `
 <p>Mingxi is a full-stack engineer and AI application builder who bridges LLM technologies with real system engineering. He has strong hands-on ability across frontend, backend, automation and AI system design.</p>
-<h4>Education</h4>
+<h4>Academic Background & Awards</h4>
 <ul>
   <li>BEEBEE AI Infinity Best Product Award</li>
   <li>BS in Computer Science, Stony Brook University</li>
@@ -691,7 +691,7 @@ export const detailedMentors: Mentor[] = [
 `,
       zh: `
 <p>Mingxi Chen 是一名全栈工程师与 AI 应用开发者，具备扎实的工程底层能力，能把大模型技术与真实业务系统快速结合。他擅长从零搭建可用产品，在同龄工程师中兼具逆向、爬虫、RAG、全栈和自动化能力。</p>
-<h4>教育背景</h4>
+<h4>教育背景与奖项</h4>
 <ul>
   <li>BEEBEE AI Infinity 最佳产品奖</li>
   <li>纽约州立大学石溪分校 · 计算机科学专业</li>
@@ -773,7 +773,7 @@ export const detailedMentors: Mentor[] = [
       en: `
 <p>Hong Shu has extensive experience building mission-critical systems across major NYC financial institutions, working on trading engines, asset management workflows, and fund settlement pipelines.</p>
 
-<h4>Education</h4>
+<h4>Academic Background & Awards</h4>
 <ul>
   <li>BEEBEE AI Infinity Best Engineering Award</li>
   <li>MS in Operations Research, Columbia University</li>
@@ -811,7 +811,7 @@ export const detailedMentors: Mentor[] = [
       zh: `
 <p>Hong Shu 深耕纽约金融科技行业多年，负责资产管理、交易系统与核心资金结算平台的工程落地，长期在高要求、高可靠的场景里搭建生产系统。</p>
 
-<h4>教育背景</h4>
+<h4>教育背景与奖项</h4>
 <ul>
   <li>BEEBEE AI Infinity 全栈工程优秀奖</li>  
   <li>哥伦比亚大学 · 运筹学硕士（MS OR）</li>
