@@ -170,9 +170,9 @@ export function AllMentors({ onClose }: AllMentorsProps) {
         <div className="z-40 p-8 w-full bg-white border-r border-gray-100 lg:w-64 lg:fixed lg:h-full lg:overflow-y-auto">
            <div className="mb-10">
              <h2 className="mb-2 text-2xl font-bold">{isEn ? "Mentor Team" : "培训导师团队"}</h2>
-             <p className="text-xs text-gray-400 whitespace-nowrap">
+             {/* <p className="text-xs text-gray-400 whitespace-nowrap">
                {isEn ? "Gathering top AI experts to guide exploration." : "汇聚顶尖AI专家，引领探索实践之路"}
-             </p>
+             </p> */}
            </div>
            
            <nav className="space-y-6">

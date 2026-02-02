@@ -1404,13 +1404,59 @@ export const detailedExperts: Mentor[] = [
       zh: "连续创业者，在产品、运营、游戏设计和供应链等领域拥有三年人工智能应用经验",
     },
     details:{
-      zh: `<p>Andy C，专注独立游戏与应用开发，拥有奥克兰理工大学软件开发研究生背景。曾参与BEEBEEAI美国Infinity项目教学支持，并在新西兰长期开展青少年AI开发课程，深度参与全流程课程管理与教学实践。</p>`,
-      en: `<p>Andy C, Focused on independent game and application development, Andy holds a postgraduate degree in Software Development from Auckland University of Technology. He has contributed to the BEEBEE AI Infinity Program in the United States as a teaching support mentor, and has long been engaged in delivering AI development courses for teenagers in New Zealand. Andy is deeply involved in end-to-end curriculum management and hands-on teaching practice.</p>`,
+      zh: `<p>Andy C，专注独立游戏与应用开发，并已获得天使投资支持。毕业于奥克兰理工大研究生学位，主修软件开发方向，拥有扎实的软件开发背景。曾参与BEEBEEAI美国Infinity项目教学支持，并在新西兰长期开展青少年AI开发课程，深度参与全流程课程管理与教学实践。</p>
+      <h4>教育背景</h4>
+<ul>
+  <li>奥克兰理工大学软件开发方向研究生学位</li>
+</ul>
+
+<h4>专业经验与工程实践</h4>
+<ul>
+  <li>专注独立游戏与应用开发，具备从概念设计到产品交付的完整开发经验</li>
+  <li>独立游戏项目获得天使投资支持，具备初创与商业化实践背景</li>
+  <li>参与并支持 BEEBEE AI 美国 Infinity 项目，承担教学与项目协作工作</li>
+  <li>主导与参与多项个人及团队项目，涵盖游戏开发、网站与应用构建等领域</li>
+  <li>长期关注 AI 技术发展，持续研读相关博客与论文，并探索其在教育与产品中的落地方式</li>
+</ul>
+
+<h4>教学侧重点与理念</h4>
+<ul>
+  <li>强调项目驱动学习，通过真实开发流程培养学生的实践能力</li>
+  <li>注重从想法到实现的完整路径，帮助学生建立系统化的工程思维</li>
+  <li>善于将复杂技术问题拆解为清晰、可执行的学习任务</li>
+  <li>长期从事青少年 AI 开发课程教学，深度参与课程设计、教学实施与管理全过程</li>
+</ul>`,
+      en: `<p>Andy C is an independent game and application developer whose projects have received angel investment support. He holds a postgraduate degree in Software Development from Auckland University of Technology and has a strong foundation in software engineering. He has contributed teaching support to the BEEBEE AI Infinity Program in the United States and has long been involved in delivering AI development courses for youth in New Zealand, with deep participation across the full cycle of curriculum design, instruction, and program management.</p>
+<h4>Academic Background</h4>
+<ul>
+  <li>MSc in Software Development, Auckland University of Technology</li>
+</ul>
+<h4>Professional Experience & Engineering Practice</h4>
+<ul>
+  <li>Specializes in independent game and application development, with experience across the full lifecycle from concept design to product release</li>
+  <li>Independent game projects supported by angel investment, with hands-on startup and commercialization experience</li>
+  <li>Provided teaching and project support for the BEEBEE AI Infinity Program (United States)</li>
+  <li>Led and participated in multiple individual and team-based projects, covering game development, web platforms, and application development</li>
+  <li>Long-term observer and researcher of AI advancements, actively studying technical blogs and academic papers and exploring AI’s real-world applications in education and product development</li>
+</ul>
+
+<h4>Teaching Style & Philosophy</h4>
+<ul>
+  <li>Advocates project-based learning, helping students build practical skills through real development workflows</li>
+  <li>Emphasizes the complete path from idea to implementation, fostering structured engineering thinking</li>
+  <li>Skilled at breaking down complex technical challenges into clear, actionable learning steps</li>
+  <li>Extensive experience delivering AI development courses for youth in New Zealand, with deep involvement in curriculum design, instruction, and program management</li>
+</ul>
+      `,
     },
     expertise: {
       en: ["Product", "AI Applications", "Game Design"],
       zh: ["产品", "人工智能应用", "游戏设计"],
     },
+    quote: {
+      en: "Building through practice is the shortest path from idea to impact.",
+      zh: "在实践中构建，是从想法走向影响力的最短路径。",
+    },    
     image:
       "https://beebee-s3-sit.s3.us-west-2.amazonaws.com/bee-alpha/pacer/cartoon_andy.png",
     category: "project",
