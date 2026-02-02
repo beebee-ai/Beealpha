@@ -88,17 +88,17 @@ export function AllMentors({ onClose }: AllMentorsProps) {
       <div 
         key={mentor.id}
         id={String(mentor.id)}
-        className={`rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-white`}
+        className={`overflow-hidden bg-white rounded-2xl border border-gray-100 shadow-lg`}
       >
         {/* Header Section with Gradient */}
-        <div className={`bg-gradient-to-br ${gradientFrom} ${gradientTo} p-1`}>
-           <div className={`bg-white/95 backdrop-blur-sm rounded-xl p-6 sm:p-8`}>
-             <div className="flex flex-col md:flex-row gap-8 items-start">
-                <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 border-white shadow-lg overflow-hidden flex-shrink-0 bg-gray-100">
+        <div className={`p-1 bg-gradient-to-br ${gradientFrom} ${gradientTo}`}>
+           <div className={`p-6 rounded-xl backdrop-blur-sm bg-white/95 sm:p-8`}>
+             <div className="flex flex-col gap-8 items-start md:flex-row">
+                <div className="overflow-hidden flex-shrink-0 w-32 h-32 bg-gray-100 rounded-full border-4 border-white shadow-lg sm:w-40 sm:h-40">
                   <img 
                     src={mentor.image} 
                     alt={mentor.name} 
-                    className="w-full h-full object-cover"
+                    className="object-cover w-full h-full"
                   />
                 </div>
                 
@@ -109,7 +109,7 @@ export function AllMentors({ onClose }: AllMentorsProps) {
                   <p className="font-bold mb-4 text-sm sm:text-base uppercase tracking-wide text-[#FF9D42]">
                      {title}
                   </p>
-                  <p className="text-gray-600 leading-relaxed mb-4 text-sm sm:text-base">
+                  <p className="mb-4 text-sm leading-relaxed text-gray-600 sm:text-base">
                     {bio}
                   </p>
                   
@@ -132,21 +132,17 @@ export function AllMentors({ onClose }: AllMentorsProps) {
 
         {/* Detailed HTML Content */}
         {details && (
-          <div className="p-8 sm:p-10 bg-white border-t border-gray-100">
+          <div className="p-8 bg-white border-t border-gray-100 sm:p-10">
              <div 
-               className="prose prose-slate max-w-none 
-                 prose-headings:font-bold prose-headings:text-gray-900 prose-headings:mb-4 prose-headings:mt-8
-                 prose-p:text-gray-600 prose-p:leading-relaxed prose-p:mb-4
-                 prose-ul:list-disc prose-ul:pl-5 prose-ul:mb-6 prose-li:text-gray-600 prose-li:mb-2
-                 prose-strong:text-gray-900 prose-strong:font-semibold"
-               dangerouslySetInnerHTML={{ __html: details }} 
+               className="max-w-none prose prose-slate prose-headings:font-bold prose-headings:text-gray-900 prose-headings:mb-4 prose-headings:mt-8 prose-p:text-gray-600 prose-p:leading-relaxed prose-p:mb-4 prose-ul:list-disc prose-ul:pl-5 prose-ul:mb-6 prose-li:text-gray-600 prose-li:mb-2 prose-strong:text-gray-900 prose-strong:font-semibold"
+               dangerouslySetInnerHTML={{ __html: details }}
              />
              
              {/* Quote Section */}
              {quote && (
-               <div className="mt-10 relative pl-8 py-2">
+               <div className="relative py-2 pl-8 mt-10">
                  <Quote className="absolute top-0 left-0 w-6 h-6 text-orange-400 opacity-50" />
-                 <p className="text-lg font-medium text-gray-700 italic leading-relaxed">
+                 <p className="text-lg italic font-medium leading-relaxed text-gray-700">
                    "{quote}"
                  </p>
                </div>
@@ -160,20 +156,20 @@ export function AllMentors({ onClose }: AllMentorsProps) {
   return (
     <div ref={scrollContainerRef} className="fixed inset-0 z-50 bg-[#f8f9fa] overflow-y-auto">
       {/* Header / Close Button */}
-      <div className="fixed top-0 right-0 p-6 z-50">
+      <div className="fixed top-0 right-0 z-50 p-6">
         <button 
           onClick={onClose}
-          className="bg-white/80 backdrop-blur-md p-2 rounded-full shadow-sm hover:bg-gray-100 transition-colors"
+          className="p-2 rounded-full shadow-sm backdrop-blur-md transition-colors bg-white/80 hover:bg-gray-100"
         >
           <X className="w-6 h-6 text-gray-600" />
         </button>
       </div>
 
-      <div className="flex flex-col lg:flex-row min-h-screen">
+      <div className="flex flex-col min-h-screen lg:flex-row">
         {/* Sidebar Navigation */}
-        <div className="w-full lg:w-64 bg-white border-r border-gray-100 p-8 lg:fixed lg:h-full lg:overflow-y-auto z-40">
+        <div className="z-40 p-8 w-full bg-white border-r border-gray-100 lg:w-64 lg:fixed lg:h-full lg:overflow-y-auto">
            <div className="mb-10">
-             <h2 className="text-2xl font-bold mb-2">{isEn ? "Mentor Team" : "培训导师团队"}</h2>
+             <h2 className="mb-2 text-2xl font-bold">{isEn ? "Mentor Team" : "培训导师团队"}</h2>
              <p className="text-xs text-gray-400 whitespace-nowrap">
                {isEn ? "Gathering top AI experts to guide exploration." : "汇聚顶尖AI专家，引领探索实践之路"}
              </p>
@@ -182,7 +178,7 @@ export function AllMentors({ onClose }: AllMentorsProps) {
            <nav className="space-y-6">
              {/* Project Mentors Section */}
              <div>
-               <h3 className="text-sm font-bold text-gray-900 mb-3 uppercase tracking-wide">
+               <h3 className="mb-3 text-sm font-bold tracking-wide text-gray-900 uppercase">
                  {isEn ? "Project Mentors" : "项目导师"}
                </h3>
                <ul className="space-y-2">
@@ -206,7 +202,7 @@ export function AllMentors({ onClose }: AllMentorsProps) {
 
              {/* Expert Mentors Section */}
              <div>
-               <h3 className="text-sm font-bold text-gray-900 mb-3 uppercase tracking-wide">
+               <h3 className="mb-3 text-sm font-bold tracking-wide text-gray-900 uppercase">
                  {isEn ? "Expert Mentors" : "专家导师"}
                </h3>
                <ul className="space-y-2">
@@ -231,12 +227,12 @@ export function AllMentors({ onClose }: AllMentorsProps) {
         </div>
 
         {/* Main Content */}
-        <div className="flex-1 lg:ml-64 p-4 sm:p-8 lg:p-16">
-          <div className="max-w-4xl mx-auto space-y-20">
+        <div className="flex-1 p-4 lg:ml-64 sm:p-8 lg:p-16">
+          <div className="mx-auto space-y-20 max-w-4xl">
             
             {/* Project Mentors Section */}
             <section id="project-mentors">
-              <h2 className="text-3xl font-bold mb-10 text-center text-gray-900">
+              <h2 className="mb-10 text-3xl font-bold text-center text-gray-900">
                 {isEn ? "Project Mentors" : "项目导师"}
               </h2>
               <div className="space-y-12">
@@ -248,7 +244,7 @@ export function AllMentors({ onClose }: AllMentorsProps) {
 
             {/* Professional Mentors Section */}
             <section id="professional-mentors">
-              <h2 className="text-3xl font-bold mb-10 text-center text-gray-900">
+              <h2 className="mb-10 text-3xl font-bold text-center text-gray-900">
                 {isEn ? "Expert Mentors" : "专家导师"}
               </h2>
               <div className="space-y-12">

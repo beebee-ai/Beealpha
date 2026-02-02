@@ -1,7 +1,185 @@
-@import './fonts.css';
-@import './tailwind.css';
-@import './theme.css';
+@import "./fonts.css";
+@import "./tailwind.css";
+@import "./theme.css";
 
 html {
   scroll-behavior: smooth;
+}
+
+.prose :where(a) {
+  color: var(--theme-color);
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+}
+.prose :where(a strong) {
+  color: inherit;
+}
+.prose :where(strong) {
+  font-weight: 600;
+}
+.prose :where(b) {
+  font-weight: 600;
+}
+
+.prose :where(p) {
+  margin-bottom: 0.5rem;
+  margin-block: 0.25rem;
+}
+.prose :where(p):first-child {
+  margin-top: 0;
+}
+.prose :where(p):not(:first-child) {
+  margin-top: 0.5rem;
+}
+.prose :where(p):is(.prose p + p) {
+  margin-block: 1rem;
+}
+.prose :where(p) + :where(ol, ul) {
+  margin-top: 0;
+}
+
+.prose :where(li) {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.prose :where(ol, ul) > li > :first-child {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.prose :where(ol, ul) > li > :last-child {
+  margin-bottom: 0;
+}
+
+.prose :where(ol) {
+  list-style-type: decimal;
+  padding-inline-start: 1.625em;
+}
+.prose :where(ol[type="A"]) {
+  list-style-type: upper-alpha;
+}
+.prose :where(ol[type="a"]) {
+  list-style-type: lower-alpha;
+}
+.prose :where(ol[type="A s"]) {
+  list-style-type: upper-alpha;
+}
+.prose :where(ol[type="a s"]) {
+  list-style-type: lower-alpha;
+}
+.prose :where(ol[type="I"]) {
+  list-style-type: upper-roman;
+}
+.prose :where(ol[type="i"]) {
+  list-style-type: lower-roman;
+}
+.prose :where(ol[type="I s"]) {
+  list-style-type: upper-roman;
+}
+.prose :where(ol[type="i s"]) {
+  list-style-type: lower-roman;
+}
+.prose :where(ol[type="1"]) {
+  list-style-type: decimal;
+}
+
+.prose :where(ol > li) {
+  padding-inline-start: 0.375em;
+}
+
+.prose :where(ul) {
+  list-style-type: disc;
+  padding-inline-start: 1.625em;
+}
+
+.prose :where(ul > li) {
+  padding-inline-start: 0.375em;
+}
+
+.prose ul li,
+.prose ol li {
+  margin-block: 0;
+}
+
+.prose li::marker {
+  font-weight: 700;
+}
+
+.prose :where(hr) {
+  border-color: rgba(0, 0, 0, 0.25);
+  border-top-width: 1px;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+}
+.prose :where(hr + *) {
+  margin-top: 0;
+}
+.prose :where(h1) {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.33333;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.prose h1 {
+  font-weight: 600;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.prose h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 0.25rem;
+  margin-top: 1rem;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.prose h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.55556;
+  margin-bottom: 0.25rem;
+  margin-top: 1rem;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.prose h4 {
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 0;
+  margin-top: 1rem;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.prose :where(img) {
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.prose h5 {
+  font-weight: 600;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.prose :where(.prose > :first-child) {
+  margin-top: 0;
+}
+
+.prose :where(.prose > :last-child) {
+  margin-bottom: 0;
 }
