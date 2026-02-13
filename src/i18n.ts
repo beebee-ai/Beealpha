@@ -482,7 +482,7 @@ const resources = {
           selection: "选拔方式：",
         },
         path1: {
-          title: "Alpha 启航营 (Genesis)",
+          title: "ALPHA 启航营 (Genesis)",
           subtitle: "AI 核心认知与工程实践",
           duration: "3 周 · 约 15 小时",
           targetAudience:
