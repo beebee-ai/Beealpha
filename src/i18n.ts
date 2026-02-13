@@ -426,7 +426,7 @@ const resources = {
       navbar: {
         outcome: "课程价值",
         course: "课程介绍",
-        works: "学员作品",
+        works: "学员产品",
         teachers: "导师团队",
         faq: "常见问题",
         aboutUs: "关于我们",
@@ -626,7 +626,7 @@ const resources = {
       },
       studentWorks: {
         badge: "Showcase",
-        title: "往期学员作品展示",
+        title: "往期学员产品展示",
         subtitle: "从 0 到 1，学员们用 AI 创造了真实的价值",
         footer:
           "这些都是真实学员在训练营中完成的项目。每个孩子在结营 Demo Day 上展示自己的作品，建立起强大的自信心。",
