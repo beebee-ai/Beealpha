@@ -70,7 +70,7 @@ const resources = {
           subtitle: "AI Core Cognition & Engineering Practice",
           duration: "3 Weeks · ~15 Hours",
           durationNote:
-            "(The exact timing distribution of the 6 sessions will be finalized based on each camp cohort.)",
+            "(The schedule for the 6 sessions will be finalized based on each cohort.)",
           targetAudience:
             "Ages 12-18, interested in technology, aspiring to create independent products (no coding background required)",
           description:
@@ -100,7 +100,7 @@ const resources = {
             "Advanced Independent Product Creation Course",
           duration: "6 Weeks · ~27 Hours",
           durationNote:
-            "(The exact timing distribution of the 12 sessions will be finalized based on each camp cohort.)",
+            "(The schedule for the 12 sessions will be finalized based on each cohort.)",
           targetAudience:
             "Ages 12-18, with coding/engineering experience, seeking college portfolio or high-intensity product proof",
           description:
