@@ -69,6 +69,8 @@ const resources = {
           title: "Alpha Genesis Camp",
           subtitle: "AI Core Cognition & Engineering Practice",
           duration: "3 Weeks · ~15 Hours",
+          durationNote:
+            "(The exact timing distribution of the 6 sessions will be finalized based on each camp cohort.)",
           targetAudience:
             "Ages 12-18, interested in technology, aspiring to create independent products (no coding background required)",
           description:
@@ -76,7 +78,7 @@ const resources = {
           scheduleTitle: "Course Schedule",
           schedule: [
             "Main Classes: 2 sessions/week, 6 sessions total, 1.5h each (includes hands-on practice)",
-            "Q&A Sessions: Mid-week session, 3 sessions total, 1h each, ensure smooth setup and bug-free code",
+            "Q&A Sessions: Arranged weekly based on student needs to ensure all questions are resolved before the next class",
             "Demo Day: Separate from 6 main classes, team-based online product demo, ~2 hours",
           ],
           classSize:
@@ -97,6 +99,8 @@ const resources = {
           subtitle:
             "Advanced Independent Product Creation Course",
           duration: "6 Weeks · ~27 Hours",
+          durationNote:
+            "(The exact timing distribution of the 12 sessions will be finalized based on each camp cohort.)",
           targetAudience:
             "Ages 12-18, with coding/engineering experience, seeking college portfolio or high-intensity product proof",
           description:
@@ -104,7 +108,7 @@ const resources = {
           scheduleTitle: "Course Schedule",
           schedule: [
             "Main Course: 2 sessions/week, 12 sessions total, 1.5h each",
-            "Q&A + Homework Review: Mid-week session, 6 sessions total, 2h each, ensure smooth setup and bug-free code",
+            "Q&A Sessions: Arranged weekly based on student needs to ensure all questions are resolved before the next class",
             "Demo Day: Separate from main classes, team-based online product demo, ~3 hours, chance for CVC/BEEBEE seed investment",
           ],
           classSize: "6-12 person small class",
@@ -485,6 +489,8 @@ const resources = {
           title: "ALPHA 启航营 (Genesis)",
           subtitle: "AI 核心认知与工程实践",
           duration: "3 周 · 约 15 小时",
+          durationNote:
+            "（6次课具体时间分布根据各营期情况待定）",
           targetAudience:
             "12-18 岁，对科技感兴趣，希望拥有自己独立产品的青少年（无需编程基础）",
           description:
@@ -492,7 +498,7 @@ const resources = {
           scheduleTitle: "课程设置",
           schedule: [
             "主课安排：每周 2 次线上课，共 6 次，每次 1.5 小时授课（含实操演练）",
-            "答疑课：每周中 1 次线上答疑课，共 3 次，每次 1 小时，确保环境跑通、代码无 Bug",
+            "答疑课：每周根据学生需要安排答疑，保证所有问题在下节课前得以解决。",
             "Demo Day：6次主课之外单独举行，以小组为单位进行团队线上产品演示，约 2 小时",
           ],
           classSize:
@@ -512,6 +518,8 @@ const resources = {
           title: "ALPHA 远航营 (Odyssey)",
           subtitle: "独立产品创造高阶课",
           duration: "6 周 · 约 27 小时",
+          durationNote:
+            "（12次课具体时间分布根据各营期情况待定）",
           targetAudience:
             "12-18 岁，有一定编程或工程经验，获得明确升学或做出较高强度产品证明能力",
           description:
@@ -519,7 +527,7 @@ const resources = {
           scheduleTitle: "课程设置",
           schedule: [
             "主课安排：每周 2 次线上课，共 12 次，每次 1.5 小时互动课程",
-            "答疑课：每周中 1 次线上答疑+作业检查，共 6 次，每次 2 小时，确保环境跑通、代码无 Bug",
+            "答疑课：每周根据学生需要安排答疑，保证所有问题在下节课前得以解决。",
             "Demo Day：主课之外单独举行，以小组为单位进行团队线上产品演示，约 3 小时，有机会获得CVC/BEEBEE 种子投资",
           ],
           classSize: "6-12人小班制",

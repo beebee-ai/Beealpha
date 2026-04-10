@@ -29,6 +29,7 @@ export function CoursePaths() {
       subtitle: t("coursePaths.path1.subtitle"),
       icon: Users,
       duration: t("coursePaths.path1.duration"),
+      durationNote: t("coursePaths.path1.durationNote"),
       targetAudience: t("coursePaths.path1.targetAudience"),
       description: t("coursePaths.path1.description"),
       scheduleTitle: t("coursePaths.path1.scheduleTitle"),
@@ -55,6 +56,7 @@ export function CoursePaths() {
       subtitle: t("coursePaths.path2.subtitle"),
       icon: Rocket,
       duration: t("coursePaths.path2.duration"),
+      durationNote: t("coursePaths.path2.durationNote"),
       targetAudience: t("coursePaths.path2.targetAudience"),
       description: t("coursePaths.path2.description"),
       scheduleTitle: t("coursePaths.path2.scheduleTitle"),
@@ -156,6 +158,9 @@ export function CoursePaths() {
                           {pathway.duration}
                         </span>
                       </div>
+                      <p className="mt-2 pl-7 text-xs leading-relaxed text-muted-foreground">
+                        {pathway.durationNote}
+                      </p>
                     </div>
 
                     {/* 适用人群 */}
