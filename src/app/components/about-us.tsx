@@ -51,8 +51,8 @@ export function AboutUs() {
             <div className="space-y-6 text-gray-400 leading-relaxed">
               <p>
                 {isEn
-                  ? "BEEBEE AI LTD is a New Zealand based international tech company with teams distributed across New Zealand, UK, Canada, USA, Thailand, and China. Focused on GenAI intelligent product development, it was founded in 2022 by veterans with over 20 years of internet/IT experience and 8 years of AI full-modal application development experience."
-                  : "BEEBEE AI LTD 是一家总部位于新西兰的国际科技公司，团队分布在新西兰、英国、加拿大、美国、泰国、中国。公司专注于GenAI智能产品开发，由具有20年以上互联网/IT经验及8年AI全模态应用开发经验的资深人士于2022年创立。"}
+                  ? "BEEBEE AI LTD is a New Zealand based international tech company with teams distributed across New Zealand, UK, Canada, USA, Thailand, and China. Focused on GenAI intelligent product development, it was founded in 2022 by veterans with over 25 years of internet/IT experience and 8 years of AI full-modal application development experience."
+                  : "BEEBEE AI LTD 是一家总部位于新西兰的国际科技公司，团队分布在新西兰、英国、加拿大、美国、泰国、中国。公司专注于GenAI智能产品开发，由具有25年以上互联网/IT经验及8年AI全模态应用开发经验的资深人士于2022年创立。"}
               </p>
               <p>
                 {isEn
@@ -115,8 +115,8 @@ export function AboutUs() {
                   {/* Description for all screens */}
                   <p className="text-gray-400 leading-relaxed text-sm sm:text-base">
                     {isEn
-                      ? "Mr. Pin Zhou is a serial entrepreneur with over 20 years of experience in IT and internet product operations. As one of the first entrepreneurs in the global GPT era, he has 8 years of relevant experience in the field of AI and has always maintained a strong curiosity for new technologies."
-                      : "周品先生是一位拥有超过20年IT和互联网产品运营创业经验的连续创业者，作为全球第一批GPT时代的创业者，他在人工智能领域拥有8年的相关经验，始终保持着对新技术的强烈好奇心。"}
+                      ? "Mr. Pin Zhou is a serial entrepreneur with over 25 years of experience in IT and internet product operations. As one of the first entrepreneurs in the global GPT era, he has 8 years of relevant experience in the field of AI and has always maintained a strong curiosity for new technologies."
+                      : "周品先生是一位拥有超过25年IT和互联网产品运营创业经验的连续创业者，作为全球第一批GPT时代的创业者，他在人工智能领域拥有8年的相关经验，始终保持着对新技术的强烈好奇心。"}
                   </p>
                 </div>
               </div>
