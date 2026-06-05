@@ -3,8 +3,22 @@ import { Button } from "./ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
+function renderPunctuationWrappedText(text: string) {
+  return text.split("\n").map((line, lineIndex, lines) => (
+    <span key={lineIndex}>
+      {line.split(/(?<=[，。])/).map((segment, segmentIndex) => (
+        <span key={segmentIndex} className="whitespace-nowrap">
+          {segment}
+        </span>
+      ))}
+      {lineIndex < lines.length - 1 && <br />}
+    </span>
+  ));
+}
+
 export function Hero() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isZh = i18n.language?.startsWith("zh");
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -46,9 +60,11 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto"
+            className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto whitespace-pre-line leading-relaxed"
           >
-            {t("hero.description")}
+            {isZh
+              ? renderPunctuationWrappedText(t("hero.description"))
+              : t("hero.description")}
           </motion.p>
 
           <motion.div

@@ -72,7 +72,7 @@ const resources = {
           durationNote:
             "The \"6+2\" structure: 1 one-on-one diagnostic + 6 main classes + 1 Demo Day; exact class timing is arranged per cohort",
           targetAudience:
-            "Ages 12-18 interested in AI, study efficiency, application portfolios, or personal projects; no coding background required",
+            "Ages 13-19 interested in AI, study efficiency, application portfolios, or personal projects; no coding background required",
           description:
             "Around your own interest, university direction, or future scenario, define a real task and use Claude, Codex, and other frontier AI tools to complete a full workflow — from prompting and breakdown, to outcome design, research, building, and showcase.",
           scheduleTitle: "Course Setup",
@@ -102,7 +102,7 @@ const resources = {
           durationNote:
             "(The schedule for the 12 sessions will be finalized based on each cohort.)",
           targetAudience:
-            "Ages 12-18, with coding/engineering experience, seeking college portfolio or high-intensity product proof",
+            "Ages 13-19, with coding/engineering experience, seeking college portfolio or high-intensity product proof",
           description:
             "Develop your own product with AI and bring it to market, realizing personal interests. Industrial-standard project suitable for college applications, career transition, or startup. Mentors and founders can endorse successful graduates.",
           scheduleTitle: "Course Schedule",
@@ -504,7 +504,7 @@ const resources = {
           durationNote:
             "（6次课具体时间分布根据各营期情况待定）",
           targetAudience:
-            "12-18 岁，对 AI、学习效率、升学作品或兴趣项目感兴趣的青少年，无需编程基础",
+            "13-19 岁，对 AI、学习效率、升学作品或兴趣项目感兴趣的青少年，无需编程基础",
           description:
             "围绕学习、升学与真实工作场景中的任务，用 Claude、Codex 等前沿 AI 工具，完成从提问拆解、成果设计、资料整理到搭建展示的完整工作流。",
           scheduleTitle: "课程设置",
@@ -533,7 +533,7 @@ const resources = {
           durationNote:
             "（12次课具体时间分布根据各营期情况待定）",
           targetAudience:
-            "12-18 岁，有一定编程或工程经验，获得明确升学或做出较高强度产品证明能力",
+            "13-19 岁，有一定编程或工程经验，获得明确升学或做出较高强度产品证明能力",
           description:
             "用AI开发出自己的产品并市场化，实现个人兴趣落地。此项目完全以工业化标准设立，完成后可用于升学作品，职业转型，创业起点。导师和创始人均可为成功结营的学生背书。",
           scheduleTitle: "课程设置",

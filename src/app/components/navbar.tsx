@@ -83,18 +83,18 @@ export function Navbar() {
           {/* Logo */}
           <button
             onClick={() => scrollToSection("hero")}
-            className="flex items-center space-x-2 group"
+            className="flex items-center space-x-2 group shrink-0"
           >
             <img
               src={logo}
               alt="BEEBEE AI-Alpha Logo"
               className="w-10 h-10 transition-transform group-hover:scale-105"
             />
-            <span className="font-bold text-xl">BEE ALPHA</span>
+            <span className="font-bold text-xl whitespace-nowrap">BEE ALPHA</span>
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
               <button
                 key={item.id}
@@ -113,10 +113,10 @@ export function Navbar() {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden flex items-center gap-2">
+          <div className="lg:hidden flex items-center gap-2">
             <LanguageSelector />
             <button
-              className="md:hidden ml-2"
+              className="lg:hidden ml-2"
               onClick={() => setIsOpen(!isOpen)}
             >
               {isOpen ? (
@@ -131,7 +131,7 @@ export function Navbar() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden border-t border-border">
+        <div className="lg:hidden border-t border-border">
           <div className="px-4 py-4 space-y-3">
             {navItems.map((item) => (
               <button
