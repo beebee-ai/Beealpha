@@ -95,10 +95,10 @@ export function Footer() {
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
                 <a
-                  href="mailto:nicho.shi@beebee.a"
+                  href="mailto:service@beebee.ai"
                   className="hover:text-primary transition-colors"
                 >
-                  nicho.shi@beebee.ai
+                  service@beebee.ai
                 </a>
               </li>
               <li className="flex items-start gap-2">

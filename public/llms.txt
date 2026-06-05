@@ -4,7 +4,7 @@ version: 1.0
 
 site: https://bee-alpha.com/
 owner: BeeBee AI
-contact: mailto: nicho.shi@beebee.ai
+contact: mailto: service@beebee.ai
 
 # 全局策略（对所有 LLM / AI 服务生效）
 [policy]

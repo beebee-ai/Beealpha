@@ -111,7 +111,7 @@ export function CTA() {
   };
 
   const contactEmails = [
-    "nicho.shi@beebee.ai",
+    "service@beebee.ai",
     "brinny@beebee.ai",
   ];
 
