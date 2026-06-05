@@ -7,18 +7,18 @@ export function SEO() {
 
   const seoData = {
     zh: {
-      title: 'BEE ALPHA - 用 AI 做出真实应用',
-      description: 'BEE ALPHA 是面向青少年的 AI 教育训练营，无需编程基础，从第一节课起就用语言驱动 AI 完成真实项目。课程强调小班陪练、真实产出导向和可迁移的未来能力，帮助学员理解 AI、设计工作流，并独立完成可展示的 AI 应用。',
-      keywords: '青少年 AI 学习, BEE ALPHA, AI 教育训练营, AI 项目实战, 小班陪练, 无摩擦学习, AI 驯化, 可迁移能力, 真实作品产出, AI 学习闭环, BEEBEE AI',
-      ogTitle: 'BEE ALPHA - 用 AI 做出真实应用',
-      ogDescription: 'BEE ALPHA 是面向青少年的 AI 教育训练营，无需编程基础，从第一节课起就用语言驱动 AI 完成真实项目。课程强调小班陪练、真实产出导向和可迁移的未来能力，帮助学员理解 AI、设计工作流，并独立完成可展示的 AI 应用。',
+      title: 'BEE ALPHA - 用 AI 搭建真实工作流',
+      description: 'BEE ALPHA 是面向青少年的 AI 教育训练营，围绕学习、升学与真实工作场景中的任务，帮助学员理解真实问题、学习 AI 工具使用与工作流搭建，并形成可展示的真实产出。',
+      keywords: '青少年 AI 学习, BEE ALPHA, AI 教育训练营, AI 工作流搭建, AI 工具使用, 真实任务实训, 学习工作流, 升学项目作品, AI 项目实战, 真实作品产出, AI 学习闭环, BEEBEE AI',
+      ogTitle: 'BEE ALPHA - 用 AI 搭建真实工作流',
+      ogDescription: 'BEE ALPHA 是面向青少年的 AI 教育训练营，帮助学员围绕学习、升学与真实工作场景中的任务，学习使用 AI 工具搭建工作流，并形成可展示的真实产出。',
     },
     en: {
-      title: 'BEE ALPHA - Build Real Apps with AI',
-      description: 'No coding background needed. No rote memorization. Start building real apps with AI from day one. Evolve from "using AI" to "creating products"',
-      keywords: 'teen AI course,youth AI programming,AI bootcamp,teen coding,AI product development,middle school AI,beginner AI learning,AI thinking training,New Zealand AI education,online AI course,teen STEM education,practical AI course,no-code AI,BEE ALPHA,BEEBEE AI',
-      ogTitle: 'BEE ALPHA - Build Real Apps with AI',
-      ogDescription: 'No coding background needed. Start building real apps with AI from day one. Evolve from "using AI" to "creating products"',
+      title: 'BEE ALPHA - Build Real Workflows with AI',
+      description: 'BEE ALPHA is an AI education bootcamp for teens, built around tasks from learning, school admissions, and real work scenarios. It helps students understand real problems, learn to use AI tools, build workflows, and create demonstrable real outputs.',
+      keywords: 'teen AI course,youth AI education,AI bootcamp,AI workflow building,AI tools for students,real-world task training,learning workflows,school admissions portfolio,AI project practice,demonstrable student outputs,online AI course,teen STEM education,BEE ALPHA,BEEBEE AI',
+      ogTitle: 'BEE ALPHA - Build Real Workflows with AI',
+      ogDescription: 'BEE ALPHA is an AI education bootcamp for teens, helping students learn to use AI tools to build workflows around tasks from learning, school admissions, and real work scenarios, and create demonstrable real outputs.',
     },
   };
 

@@ -18,9 +18,9 @@ const resources = {
         badge:
           "Empower teens to master the future way of working",
         title_start: "Frictionless for kids to",
-        title_highlight: "Build Real Apps with AI",
+        title_highlight: "Build Real Workflows with AI",
         description:
-          "No coding background needed, no rote memorization. From the first lesson, let AI help you complete real tasks, evolving from 'using AI' to 'creating products'.",
+          "Not just learning AI tools, and not only building apps.\nBuilt around tasks from learning, school admissions, and real work scenarios, learners practice using AI to build real workflows.",
         cta_primary: "Join Now",
         cta_secondary: "Learn More",
       },
@@ -33,8 +33,8 @@ const resources = {
             desc: "Master task decomposition, use AI to solve 80% of repetitive work.",
           },
           {
-            title: "Real MVP Portfolio",
-            desc: "Own a running, demonstrable AI application that solves real problems.",
+            title: "Build a Complete Workflow",
+            desc: "Not a one-off demo app, but a reusable AI workflow that keeps driving real tasks across study, university applications, and work.",
           },
           {
             title: "Master Future Work",
@@ -67,31 +67,31 @@ const resources = {
         },
         path1: {
           title: "Alpha Genesis Camp",
-          subtitle: "AI Core Cognition & Engineering Practice",
-          duration: "3 Weeks · ~15 Hours",
+          subtitle: "AI Workflow Foundations & Real-Task Practice",
+          duration: "~6 Weeks · ~18 Hours",
           durationNote:
-            "(The schedule for the 6 sessions will be finalized based on each cohort.)",
+            "The \"6+2\" structure: 1 one-on-one diagnostic + 6 main classes + 1 Demo Day; exact class timing is arranged per cohort",
           targetAudience:
-            "Ages 12-18, interested in technology, aspiring to create independent products (no coding background required)",
+            "Ages 12-18 interested in AI, study efficiency, application portfolios, or personal projects; no coding background required",
           description:
-            "Experience the complete journey from AI 'magic' to 'engineering' through hands-on practice. From inspiration validation with Google AI Studio to full-stack development with Cursor. No boring theory, only cool products. Demystify AI for teens, build interest in taming AI to serve them, and gain real engineering confidence.",
-          scheduleTitle: "Course Schedule",
+            "Around your own interest, university direction, or future scenario, define a real task and use Claude, Codex, and other frontier AI tools to complete a full workflow — from prompting and breakdown, to outcome design, research, building, and showcase.",
+          scheduleTitle: "Course Setup",
           schedule: [
-            "Main Classes: 2 sessions/week, 6 sessions total, 1.5h each (includes hands-on practice)",
-            "Q&A Sessions: Arranged weekly based on student needs to ensure all questions are resolved before the next class",
-            "Demo Day: Separate from 6 main classes, team-based online product demo, ~2 hours",
+            "Main Classes: 6 sessions, 1.5h each, advancing the \"6+2\" workflow step by step (with instruction, demos, and hands-on practice)",
+            "Q&A Sessions: a weekly 1-hour Office Hour, 6 in total, ensuring questions are resolved before the next class",
+            "Demo Day: held separately from the 6 main classes — each presents solo + review, ~2 hours",
           ],
           classSize:
-            "12-person premium class, 4-person groups led by camp leader",
+            "Supports both 1-on-1 private customization and Golden Group (up to 8); identical curriculum in both, each student ships an independent project",
           curriculumTitle: "Course Checklist",
           curriculum: [
-            "Google AI Studio Discovery",
-            "CRAFT Questioning Framework + Vibe Coding Intro",
-            "JSK Product Design Model Practice",
-            "API Enhancement Plugin Connection",
-            "Online Independent Domain Deployment",
-            "Product Hunt Launch · Closed-Loop Practice",
-            "Demo Day · Results Presentation & Defense",
+            "Frontier AI tools: how Claude, Claude Code, and Codex split the workflow",
+            "CRAFT framework: turn vague ideas into tasks AI can execute",
+            "JSK outcome design: use JTBD / Four Forces / Kano to decide what to build, for whom, and what comes first",
+            "Research & judgment: generate with AI, and learn to verify and correct",
+            "Build with Codex: turn the workflow into a page or tool you can open and demo",
+            "Polish & Demo prep: explain how you used AI to advance a real task",
+            "Demo Day: solo presentation, defense, and retrospective",
           ],
         },
         path2: {
@@ -137,12 +137,12 @@ const resources = {
           "Don't let teens be passive or fearful in the AI era, give them control.",
         items: [
           {
-            title: "Real Product Oriented",
-            desc: "Build a running AI app in 6 weeks. No empty theory, just real products.",
+            title: "Real Task Oriented",
+            desc: "Start by building an app; prove it by completing a real task with AI.",
           },
           {
             title: "Small Class Personalized",
-            desc: "12 students + 1-on-1 coaching. Mentors track everyone's work.",
+            desc: "Two formats — 1-on-1 customized or Golden Group (up to 8). Every learner ships an independent project.",
           },
           {
             title: "Global Online",
@@ -170,48 +170,48 @@ const resources = {
           {
             title: "Demystify AI",
             subtitle: "Demystify AI",
-            desc: "Not magic. Use real models to let you understand AI logic.",
+            desc: "Not magic. Use real models and tasks to help students understand AI's logic.",
             example:
-              "Can explain why AI wrote a sentence wrong, not just say 'AI is like that'.",
+              "Can explain why AI gave a certain result, and know when to follow up, verify, or adjust.",
           },
           {
             title: "Hands-on First",
             subtitle: "Hands-on First",
             desc: "We care about what you make, not how many points they memorized.",
             example:
-              "Finish with an AI project they trained, not a PPT.",
+              "Finish with an AI workflow built around a real task, not a PPT.",
           },
           {
             title: "AI Thinking",
             subtitle: "AI Thinking",
             desc: "We teach thinking patterns—how to decompose a problem and let AI handle the repetitive parts.",
             example:
-              "Delegate research and drafting to AI, focusing on judgment and creativity.",
+              "Organize information gathering, content generation, data processing, and presentation into a clear flow, focusing on judgment and decisions.",
           },
           {
             title: "Confidence Building",
             subtitle: "Confidence Building",
-            desc: "When teens realize they control AI, they build strong 'future confidence'.",
+            desc: 'When teens realize they can direct AI to drive tasks instead of being pulled along by new tech, they build strong "future confidence".',
             example:
-              "Present AI projects in class, knowing they stand at the tech forefront.",
+              "Can showcase their AI workflow and explain how a real task was broken down, advanced, and completed.",
           },
           {
             title: "Small Cohort + 1-on-1",
             subtitle: "Small Cohort with 1-on-1",
-            desc: "12 students max. Mentors track everyone's work. Quality over scale.",
+            desc: "Up to 8 students. Mentors track everyone's work. Quality over scale.",
             example:
               "High-density coaching helps teens build control over AI.",
           },
           {
             title: "Practical & Future-Oriented",
             subtitle: "Practical & Future-Oriented",
-            desc: "Curriculum revolves around real applications, no useless theory.",
+            desc: "Courses focus entirely on real tasks, no useless theory.",
             example:
-              "Projects can be used in family or school life, not 'toy projects'.",
+              'Projects address tasks from study, university applications, or real work, not "toy projects".',
           },
         ],
         footer:
-          "These values are not slogans, but real reflections in every lesson, project, and feedback.",
+          "These values aren't slogans—they're embodied in every task breakdown, tool call, project iteration, and showcase.",
       },
       studentWorks: {
         badge: "Showcase",
@@ -359,36 +359,48 @@ const resources = {
         contact: "Contact Us",
         items: [
           {
-            q: "Can I learn without any coding background?",
-            a: "Absolutely! Alpha Genesis Camp is designed for zero-foundation students. BEEBEE AI-Alpha uses a 'frictionless learning' method that doesn't require coding background. In Genesis Camp, students can create real outputs from the first lesson. After about 15 hours of learning, students can complete a real AI application. For Odyssey Camp, we recommend some coding or engineering experience.",
+            q: "Can students join without any coding background?",
+            a: "Yes. The BEE ALPHA Genesis Camp is built for students with zero coding background, and hands-on work starts from lesson one. We teach how to use AI tools to build workflows, not traditional programming that begins with syntax — what matters is the thinking, not coding skills.",
           },
           {
             q: "Is the course online or offline?",
-            a: "Courses are primarily online with interactive teaching. This breaks geographic barriers and allows teens from Chinese families worldwide to participate. Genesis Camp has 12-student small classes with 4-person groups; Odyssey Camp has 6-12 person small classes. We ensure everyone gets sufficient attention and guidance.",
+            a: "Primarily online, so families across the global Chinese community can join. Every student gets a 1-on-1 diagnostic session, and the Golden Group format is capped at 8 students so every learner is seen by the mentor team directly.",
           },
           {
-            q: "What can achieve after 3 weeks (Genesis) or 6 weeks (Odyssey)?",
-            a: "Genesis Camp (3 weeks): Student will be able to: \n1) Complete a real runnable AI application independently; \n2) Understand AI workflow design basics; \n3) Build interest in taming AI to serve them; \n4) Present their work on Demo Day. \n\nOdyssey Camp (6 weeks): In addition to the above, Student will: \n1) Master AI-assisted full-stack development; \n2) Complete payment loop integration; \n3) Launch on Product Hunt; \n4) Have a chance for seed investment; \n5) Get industrial-standard project proof suitable for college applications.",
+            q: "How do I choose between 1-on-1 and the Golden Group?",
+            a: "Both share the same curriculum; they differ in pace and interaction density. 1-on-1 private customization suits students with a clear direction who want the mentor team's full attention. The Golden Group seats up to 8 students, each still delivering an independent project — a fit for learners who want peers driving the work alongside them.",
+          },
+          {
+            q: "Which AI tools does the course use?",
+            a: "Mainly Claude, Codex, and other international frontier AI tools. Students plug into the international mainstream environment from day one, not the locally restricted alternatives.",
+          },
+          {
+            q: "What does the course actually teach?",
+            a: "Students learn to use Claude, Codex, and other international frontier AI tools. Starting from each student's own interest, university direction, or future career scenario, they define a real problem and complete a full AI workflow: breaking down the task, designing the approach, calling tools, generating content, processing data, building the app, and shipping — with learning judged by a final result that can be demonstrated, explained, and used by others.",
+          },
+          {
+            q: "What's the course structure?",
+            a: "The 6+2 structure: 1 personal diagnostic session + 6 main classes + 1 Demo Day, with weekly Office Hours for Q&A.",
           },
           {
             q: "How is this different from other coding/AI courses?",
-            a: 'The biggest difference is we focus on "making things" rather than "learning knowledge points." Traditional coding courses often start with syntax, and many students still can\'t make useful things after half a year. BEEBEE AI-Alpha starts with real projects from day one, using real AI tools and models to solve real problems. We don\'t just teach tool operation, but AI thinking and product capability.',
+            a: "A direct comparison with typical AI camps:\n• Teaching to build an app/software → Teaching to build an AI workflow\n• Tool-making as the finish line → Problem-solving as the finish line\n• Output: a demo product → Output: a reusable workflow\n• Using lagging domestic AI → Using Claude, Codex, and other international frontier tools\n• Skills hard to apply → Directly relevant to university applications and real work",
           },
           {
-            q: "What age range is suitable?",
-            a: "Genesis Camp: Ages 12-18, interested in technology, aspiring to create independent products (no coding background required). \n\nOdyssey Camp: Ages 12-18, with coding/engineering experience, seeking college portfolio or high-intensity product proof. \n\nWe value interest in AI/tech over just age. If you are curious about technology, likes hands-on creation, and wants to master future skills, they're a great fit.",
+            q: "What age range is the camp for?",
+            a: "Mainly 12–18-year-olds curious about AI and tech, especially well-suited to families with study-abroad plans or backgrounds. We look at genuine interest in study, university applications, or a student's own direction more than at age alone.",
           },
           {
-            q: "How is the class schedule arranged?",
-            a: "Genesis Camp: 3 weeks, 2 main sessions per week (1.5h each) + 1 mid-week Q&A session (1h). \n\nOdyssey Camp: 6 weeks, 2 main sessions per week (1.5h each) + 1 mid-week Q&A/homework review (2h). \n\nWe arrange the most suitable class times based on students' time zones. Specific times will be confirmed with parents before the course starts to ensure it doesn't affect the student's regular studies.",
+            q: "How is the schedule arranged?",
+            a: "1-on-1 customization opens whenever the student is ready — sessions are aligned directly between mentor and family. Golden Group cohorts are scheduled by enrollment. Each week includes Office Hours, fixed time windows where students can dial in and get answers from multiple mentors live.",
           },
           {
-            q: "What if I needs to miss a class?",
-            a: "We provide course recordings. If you misses class for a reason, you can watch the recording to catch up. For Q&A sessions, we'll coordinate makeup times based on circumstances. Our goal is to ensure every student completes their learning and creates their work, so we'll do our best to accommodate parents and students' actual situations. If something really comes up and you can't continue, please communicate with us. We'll refund remaining tuition for reasonable causes—we want everyone to have a good experience!",
+            q: "What if a student has to miss a class?",
+            a: "Recordings are provided for any missed sessions, and Office Hours are flexible for catch-up. Our goal is for every student to complete their own workflow delivery. If circumstances truly prevent finishing, we'll talk it through and refund the remaining tuition.",
           },
           {
-            q: "What will get after the camp?",
-            a: "In addition to a complete AI application portfolio, students will receive: \n1) BEEBEE AI-Alpha internship certificate and recommendation letter; \n2) Demo Day project presentation opportunity; \n3) Outstanding Odyssey projects may receive seed investment; \n4) Most importantly, build a sense of control over AI and future confidence.",
+            q: "What do students take away after graduation?",
+            a: "Beyond a reusable AI workflow of their own, students receive: 1) a complete Project Card portfolio with every step from diagnostic to Demo recorded; 2) a BEE ALPHA internship certificate and recommendation letter; 3) a Demo Day showcase; 4) ongoing access to the AI Talk learning community.",
           },
         ],
       },
@@ -439,9 +451,9 @@ const resources = {
       hero: {
         badge: "让青少年掌握未来的工作方式",
         title_start: "让孩子无摩擦地",
-        title_highlight: "用 AI 做出真实应用",
+        title_highlight: "用 AI 搭建真实工作流",
         description:
-          '不用编程基础，不靠死记硬背。从第一节课开始就能让 AI 帮您完成真实任务，从"会用 AI"进化成"能做出作品"。',
+          "不止于学会 AI 工具，也不只是做出应用。\n围绕学习、升学与真实工作场景中的任务，学习用 AI 搭建真实工作流。",
         cta_primary: "立即报名",
         cta_secondary: "了解更多",
       },
@@ -454,8 +466,8 @@ const resources = {
             desc: "掌握任务拆解，用 AI 解决 80% 的重复性工作。",
           },
           {
-            title: "真实的 MVP 作品",
-            desc: "拥有一个可运行、可展示、能解决实际问题的 AI 应用。",
+            title: "搭建完整工作流",
+            desc: "搭建一套可复用的 AI 工作流，能持续推进学习、升学与工作中的真实任务。",
           },
           {
             title: "掌握未来工作方式",
@@ -487,31 +499,31 @@ const resources = {
         },
         path1: {
           title: "ALPHA 启航营 (Genesis)",
-          subtitle: "AI 核心认知与工程实践",
-          duration: "3 周 · 约 15 小时",
+          subtitle: "AI 工作流启蒙与真实任务实践",
+          duration: "6 周 · 约 18 小时",
           durationNote:
             "（6次课具体时间分布根据各营期情况待定）",
           targetAudience:
-            "12-18 岁，对科技感兴趣，希望拥有自己独立产品的青少年（无需编程基础）",
+            "12-18 岁，对 AI、学习效率、升学作品或兴趣项目感兴趣的青少年，无需编程基础",
           description:
-            '通过亲手实践 AI 的"魔法"到"工程"的全过程，从 Google AI Studio 的灵感验证到 Cursor 的全栈开发。不讲枯燥理论，只做酷炫产品。让青少年对 AI 祛魅，建立驯化 AI 为自己服务的兴趣，并拥有真正的工程自信。',
+            "围绕学习、升学与真实工作场景中的任务，用 Claude、Codex 等前沿 AI 工具，完成从提问拆解、成果设计、资料整理到搭建展示的完整工作流。",
           scheduleTitle: "课程设置",
           schedule: [
-            "主课安排：每周 2 次线上课，共 6 次，每次 1.5 小时授课（含实操演练）",
+            "主课安排：每周一次线上课，共 6 次，每次 1.5 小时",
             "答疑课：每周根据学生需要安排答疑，保证所有问题在下节课前得以解决",
-            "Demo Day：6次主课之外单独举行，以小组为单位进行团队线上产品演示，约 2 小时",
+            "Demo Day：6 节正课之外单独举行，每人独立路演 + 评审，约 2 小时",
           ],
           classSize:
-            "12 人精品小班制，4人1组，由营长带领学习团队配合",
+            "支持 1 对 1 私人定制与黄金组团（最多 8 人），两种形式课程内容一致，每人独立交付项目",
           curriculumTitle: "课程清单",
           curriculum: [
-            "Google AI Studio 探秘",
-            "CRAFT 提问框架 + Vibe Coding 初体验",
-            "JSK 产品设计模型实操",
-            "API 增强外挂连接",
-            "线上独立域名部署",
-            "Product Hunt 发布 · 闭环实战",
-            "Demo Day · 成果路演与答辩",
+            "前沿 AI 工具认知",
+            "CRAFT 提问框架",
+            "JSK 成果设计",
+            "资料整理与结果判断",
+            "用 AI 工具搭建可展示成果",
+            "成果完善与 Demo 准备",
+            "Demo Day",
           ],
         },
         path2: {
@@ -556,12 +568,12 @@ const resources = {
           "让青少年在 AI 时代不被动、不恐惧，而是有控制权",
         items: [
           {
-            title: "真实产品导向",
-            desc: "6 周做出一个真实、可运行的 AI 应用，不教空理论，只做实战产品",
+            title: "真实任务导向",
+            desc: "以做出应用为起点，以用 AI 完成一项真实任务为检验",
           },
           {
             title: "小班制个性化",
-            desc: "12 人小班 + 1对1 陪练，导师能直接盯每个人的作品，确保都被看见",
+            desc: "1对1 定制与黄金组团两种形式，最多 8 人，每人独立交付项目",
           },
           {
             title: "全球化在线教学",
@@ -589,48 +601,48 @@ const resources = {
           {
             title: "反神秘化",
             subtitle: "Demystify AI",
-            desc: "不把 AI 当玄学，用真实模型让您理解 AI 的逻辑。",
+            desc: "不把 AI 当玄学，用真实模型让学员理解 AI 的逻辑。",
             example:
-              '能解释 AI 为什么写错一句话，而不是只是说"AI 就是这样"。',
+              "能解释 AI 为什么给出某个结果，也能判断什么时候需要继续追问、验证或调整。",
           },
           {
             title: "用得出来",
             subtitle: "Hands-on First",
             desc: "我们更关心您做出来什么，而不是学了多少知识点。",
             example:
-              "课程结束后都能做一个自己训练的 AI 项目，而不是一份 PPT。",
+              "课程结束后能展示一套围绕真实任务搭建的 AI 工作流成果，而不是一份 PPT。",
           },
           {
             title: "AI 思维",
             subtitle: "AI Thinking",
             desc: "我们不是教工具，而是教思维模式——如何把一个问题分解，让 AI 接手重复性部分。",
             example:
-              "懂得把论文查找、数据整理、文本生成交给 AI，而自己专注判断与创意。",
+              "懂得把信息搜集、内容生成、数据整理、方案表达等环节组织成流程，自己专注判断与决策。",
           },
           {
             title: "自信心建立",
             subtitle: "Confidence Building",
-            desc: '当青少年意识到 AI 被他控制，而不是控制他，会形成很强的"未来自信"。',
+            desc: "当青少年意识到自己可以指挥 AI 推进任务，而不是被新技术牵着走，会形成很强的未来自信。",
             example:
-              "能在班级里展示 AI 项目，知道自己站在科技发展的前排。",
+              "能展示自己的 AI 工作流成果，并说明一个真实任务是如何被拆解、推进和完成的。",
           },
           {
             title: "小班互动 + 一对一陪练",
             subtitle: "Small Cohort with 1-on-1",
-            desc: "12 人小班，导师能直接盯每个人的作品。这是为了提高产出质量，不追求规模。",
+            desc: "最多 8 人小班，导师能直接盯每个人的作品。这是为了提高产出质量，不追求规模。",
             example:
               "这种高密度陪练，让青少年逐渐建立起对 AI 的掌控感。",
           },
           {
             title: "面向现实",
             subtitle: "Practical & Future-Oriented",
-            desc: "课程完全围绕真实应用，不做无用的理论堆砌。",
+            desc: "课程完全围绕真实任务，不做无用的理论堆砌。",
             example:
-              '做的项目能在家长或学校生活里直接使用，而不是"玩具项目"。',
+              '做的项目能回应学习、升学或真实工作场景中的任务，而不是"玩具项目"。',
           },
         ],
         footer:
-          "这些价值不是口号，而是每节课、每个项目、每次反馈中的真实体现。",
+          "这些价值不是口号，而是每次任务拆解、工具调用、项目推进与成果展示中的真实体现。",
       },
       studentWorks: {
         badge: "Showcase",
@@ -777,42 +789,54 @@ const resources = {
         items: [
           {
             q: "没有任何编程基础，能学会吗？",
-            a: "完全可以！Alpha 启航营（Genesis）专门为零基础学生设计。BEEBEE AI-Alpha 采用「无摩擦学习」方法，不需要编程基础。在启航营中，同学们从第一节课就能做出成果。约 15 小时的学习后，同学们就能完成一个真实的 AI 应用。远航营（Odyssey）则建议有一定编程或工程经验。",
+            a: "完全可以。BEE ALPHA 启航营专为零基础学员设计，第一节课就开始动手。我们教的是用 AI 工具搭建工作流，而不是从语法开始的传统编程，关键在思路，而不是代码功底。",
           },
           {
             q: "课程是线上还是线下？",
-            a: "课程以线上为主，采用在线互动教学。这样可以打破地域限制，让全球华人家庭的孩子都能参与。启航营12人小班制，4人1组；\n\n远航营6-12人小班制。我们确保每位同学都能得到充分的关注和指导。",
+            a: "以线上交付为主，便于全球华人家庭参与。每位学员都有 1 对 1 前置诊断，黄金组团形式最多 8 人，确保每位学员都能被导师直接看到。",
           },
           {
-            q: "3 周（启航营）或 6 周（远航营）能学到什么程度？",
-            a: "启航营（3周）：同学们将能够：\n1) 独立完成一个真实可运行的 AI 应用；\n2) 理解 AI 工作流设计基础；\n3) 建立驯化 AI 为自己服务的兴趣；\n4) 在结营 Demo Day 上展示自己的作品。\n\n远航营（6周）：除以上外，同学们还将：\n1) 掌握 AI 辅助全栈开发；\n2) 完成收费闭环集成；\n3) 在 Product Hunt 上发布；\n4) 有机会获得种子投资；\n5) 获得适合升学作品的工业化标准项目证明。",
+            q: "1 对 1 定制和黄金组团（Golden Group）怎么选？",
+            a: "两种形式课程内容一致，区别在节奏与互动密度。1 对 1 私人定制适合方向明确、希望全程独享导师注意力的学员；黄金组团最多 8 人，每位学员仍独立交付自己的项目，适合希望有同伴一起推进的学员。",
+          },
+          {
+            q: "课程会用哪些 AI 工具？",
+            a: "主用 Claude、Codex 等国际前沿 AI 工具。学员入营即接轨国际，使用海外主流环境，不被国内滞后版本限制。",
+          },
+          {
+            q: "课程主要教什么？",
+            a: "课程中教学员使用 Claude、Codex 等国际前沿 AI 工具，从个人的兴趣、升学方向或未来职业场景出发，先定义一个真实问题，再用 AI 工具完成完整工作流：拆解任务、设计方案、调用工具、生成内容、处理数据、搭建应用、上线展示，最后用一个可以演示、可以解释、可以被别人使用的成果来检验学习效果。",
+          },
+          {
+            q: "课程结构是什么？",
+            a: "课程采用「6+2」结构——1 节 1 对 1 前置诊断 + 6 节正课 + 1 节 Demo Day，配套每周 Office Hour 答疑。",
           },
           {
             q: "和其他编程/AI 课程有什么不同？",
-            a: '最大的不同是我们专注于\"做出来\"而不是\"学知识点\"。传统编程课往往从语法开始，很多人学了半年还做不出能用的东西。BEEBEE AI-Alpha 从第一节课就开始做项目，用真实的 AI 工具和模型，解决真实的问题。我们教的不是工具操作，而是 AI 思维和产品能力。',
+            a: "对比市面普通 AI 营：\n• 教做 App/软件 → 教搭 AI 工作流\n• 造工具为终点 → 解决问题为终点\n• 成果是 Demo 产品 → 成果是可复用工作流方案\n• 用国内滞后 AI → 用 Claude、Codex 等国际前沿\n• 技能难落地 → 直接对接升学与职场实际需求",
           },
           {
             q: "什么年龄段的青少年适合参加？",
-            a: "启航营：12-18 岁，对科技感兴趣，希望拥有自己独立产品的青少年（无需编程基础）。\n\n远航营：12-18 岁，有一定编程或工程经验，想获得明确升学或做出较高强度产品证明能力。\n\n我们更看重的是同学们对 AI/科技的兴趣，而不仅是年龄。如果您对技术好奇、喜欢动手创造、想要掌握未来技能，就很适合参加我们的训练营。",
+            a: "主要面向 12–18 岁、对 AI 与科技感兴趣的青少年，特别适合有留学背景或计划的家庭。我们看重的是对学习、升学或自己感兴趣方向的真实需求，而不仅是年龄。",
           },
           {
             q: "上课时间如何安排？",
-            a: "启航营：3 周，每周 2 次主课（每次1.5小时）+ 1 次周中答疑课（1小时）。\n\n远航营：6 周，每周 2 次主课（每次1.5小时）+ 1 次周中答疑/作业检查（2小时）。\n\n我们会根据同学们的时区安排最合适的上课时间。具体时间在开课前会和家长确认，确保不影响同学们的正常学习。",
+            a: "1 对 1 定制随时可开课，时间由导师与学员家庭直接对齐；黄金组团按报名进度排期。每周配套 Office Hour 答疑窗口，学员可在固定时段拨入与多位老师在线交流。",
           },
           {
             q: "如果中途有事缺课怎么办？",
-            a: "我们提供课程录像回放，如果因故缺课可以观看录像补课。对答疑课，我们会根据情况协调补课时间。我们的目标是确保每位同学都能完成学习并做出作品，所以会尽力配合家长和学生的实际情况。如果中途有事真的坚持不了，记得和我们沟通。有合理原因会退剩余学费，我们希望每个人都能有好体验！",
+            a: "我们提供课程录像回放，因故缺课可观看录像补课；Office Hour 答疑可灵活补出席。我们的目标是确保每位学员完成自己的工作流交付，如果中途真的坚持不了，可沟通退还剩余学费。",
           },
           {
             q: "结营后能获得什么？",
-            a: "除了一个完整的 AI 应用作品，同学们还将获得：\n1) BEEBEE AI-Alpha 实习证明、推荐信；\n2) Demo Day 项目展示机会；\n3) 优秀远航营项目还有机会拿到种子投资；\n4) 最重要的是，建立起对 AI 的掌控感和未来自信心。",
+            a: "除了一套属于自己的可复用 AI 工作流方案，学员还将获得：1）从前置诊断到 Demo 全程留痕的项目共建卡卷宗；2）BEE ALPHA 实习证明与推荐信；3）Demo Day 项目展示机会；4）持续参与 AI Talk 学习社群。",
           },
         ],
       },
       cta: {
         title: "AI已至，未来可期",
         subtitle:
-          "名额有限，每期仅招收 12 人小班。立即报名，在AI世界领先一步。",
+          "名额有限，每期最多招收 8 人。立即报名，在AI世界领先一步。",
         form: {
           title: "立即报名咨询",
           name: "家长姓名",
@@ -829,7 +853,7 @@ const resources = {
       },
       footer: {
         brand: "BEE ALPHA",
-        tagline: "用 AI 做出真实应用，掌握未来的工作方式。",
+        tagline: "用 AI 搭建真实工作流，掌握未来的工作方式。",
         quickLinks: "快速链接",
         contactUs: "联系我们",
         locationZh:

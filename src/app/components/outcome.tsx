@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { PenTool, Trophy, Globe, Zap } from "lucide-react";
+import { PenTool, Workflow, Globe, Zap } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 export function Outcome() {
@@ -12,7 +12,7 @@ export function Outcome() {
       description: t("outcome.items.0.desc"),
     },
     {
-      icon: Trophy,
+      icon: Workflow,
       title: t("outcome.items.1.title"),
       description: t("outcome.items.1.desc"),
     },
