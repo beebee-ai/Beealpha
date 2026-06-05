@@ -68,30 +68,31 @@ const resources = {
         path1: {
           title: "Alpha Genesis Camp",
           subtitle: "AI Workflow Foundations & Real-Task Practice",
-          duration: "~6 Weeks · ~18 Hours",
+          duration: "6 Weeks · ~18 Hours",
           durationNote:
-            "The \"6+2\" structure: 1 one-on-one diagnostic + 6 main classes + 1 Demo Day; exact class timing is arranged per cohort",
+            "(The schedule for the 6 sessions will be finalized based on each cohort.)",
           targetAudience:
             "Ages 13-19 interested in AI, study efficiency, application portfolios, or personal projects; no coding background required",
           description:
             "Around your own interest, university direction, or future scenario, define a real task and use Claude, Codex, and other frontier AI tools to complete a full workflow — from prompting and breakdown, to outcome design, research, building, and showcase.",
           scheduleTitle: "Course Setup",
           schedule: [
-            "Main Classes: 6 sessions, 1.5h each, advancing the \"6+2\" workflow step by step (with instruction, demos, and hands-on practice)",
-            "Q&A Sessions: a weekly 1-hour Office Hour, 6 in total, ensuring questions are resolved before the next class",
-            "Demo Day: held separately from the 6 main classes — each presents solo + review, ~2 hours",
+            "Diagnostic: a 1-on-1 session before the main classes",
+            "Main Classes: one online session per week, 6 in total, 1.5h each",
+            "Q&A Sessions: arranged weekly as students need, ensuring every question is resolved before the next class",
+            "Demo Day: held separately from the 6 main classes — each presents solo, with review, ~2 hours",
           ],
           classSize:
             "Supports both 1-on-1 private customization and Golden Group (up to 8); identical curriculum in both, each student ships an independent project",
           curriculumTitle: "Course Checklist",
           curriculum: [
-            "Frontier AI tools: how Claude, Claude Code, and Codex split the workflow",
-            "CRAFT framework: turn vague ideas into tasks AI can execute",
-            "JSK outcome design: use JTBD / Four Forces / Kano to decide what to build, for whom, and what comes first",
-            "Research & judgment: generate with AI, and learn to verify and correct",
-            "Build with Codex: turn the workflow into a page or tool you can open and demo",
-            "Polish & Demo prep: explain how you used AI to advance a real task",
-            "Demo Day: solo presentation, defense, and retrospective",
+            "AI workflow fundamentals: from using tools to completing tasks",
+            "CRAFT prompting framework: brief the task clearly",
+            "Task breakdown & workflow design: turn ideas into steps",
+            "Claude / Codex in practice: let AI take on task steps",
+            "AI workflow in action: from information to outcome",
+            "Workflow productization & consolidation: turn the flow into a usable entry",
+            "Demo Day: solo showcase & review",
           ],
         },
         path2: {
@@ -509,6 +510,7 @@ const resources = {
             "围绕学习、升学与真实工作场景中的任务，用 Claude、Codex 等前沿 AI 工具，完成从提问拆解、成果设计、资料整理到搭建展示的完整工作流。",
           scheduleTitle: "课程设置",
           schedule: [
+            "前置诊断：正课前 1 对 1 专属诊断",
             "主课安排：每周一次线上课，共 6 次，每次 1.5 小时",
             "答疑课：每周根据学生需要安排答疑，保证所有问题在下节课前得以解决",
             "Demo Day：6 节正课之外单独举行，每人独立路演 + 评审，约 2 小时",
@@ -517,13 +519,13 @@ const resources = {
             "支持 1 对 1 私人定制与黄金组团（最多 8 人），两种形式课程内容一致，每人独立交付项目",
           curriculumTitle: "课程清单",
           curriculum: [
-            "前沿 AI 工具认知",
-            "CRAFT 提问框架",
-            "JSK 成果设计",
-            "资料整理与结果判断",
-            "用 AI 工具搭建可展示成果",
-            "成果完善与 Demo 准备",
-            "Demo Day",
+            "AI 工作流认知：从会用工具到完成任务",
+            "CRAFT 提问框架：把任务交代清楚",
+            "任务拆解与工作流设计：把想法变成步骤",
+            "Claude / Codex 实战：让 AI 接手任务步骤",
+            "AI 工作流实战：从信息到成果",
+            "工作流应用化与成果沉淀：把流程变成可使用入口",
+            "Demo Day：独立展示与评审反馈",
           ],
         },
         path2: {

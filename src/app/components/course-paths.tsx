@@ -37,6 +37,7 @@ export function CoursePaths() {
         t("coursePaths.path1.schedule.0"),
         t("coursePaths.path1.schedule.1"),
         t("coursePaths.path1.schedule.2"),
+        t("coursePaths.path1.schedule.3"),
       ],
       classSize: t("coursePaths.path1.classSize"),
       curriculumTitle: t("coursePaths.path1.curriculumTitle"),
