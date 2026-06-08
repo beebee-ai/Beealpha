@@ -12,7 +12,18 @@ import emailjs from "@emailjs/browser";
 import { supabase } from "../../lib/supabase";
 
 // Initialize EmailJS
-emailjs.init("B2gEaR0ySBdY6MP21");
+emailjs.init("qZns4V5w0SwSNuOpU");
+
+const INQUIRY_RECIPIENT_EMAIL = "service@beebee.ai";
+const INQUIRY_CC_EMAIL = "528573772@qq.com";
+
+const escapeHtml = (value: string) =>
+  value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
 
 interface InquiryFormData {
   name: string;
@@ -46,20 +57,51 @@ export function CTA() {
     const courseName = isEn
       ? "General Inquiry (CTA)"
       : "综合咨询 (CTA)";
+    const submitTime = new Date().toLocaleString("zh-CN", {
+      timeZone: "Asia/Shanghai",
+    });
+    const grade =
+      data.age ||
+      (currentLang === "CN" ? "未填写" : "Not specified");
+    const subject = `BEE ALPHA 训练营报名咨询 - ${data.name}`;
 
     const templateParams = {
+      subject,
+      to_email: INQUIRY_RECIPIENT_EMAIL,
+      cc_email: INQUIRY_CC_EMAIL,
+      from_name: "BEE ALPHA 官网",
+      from_email: data.email,
       name: data.name,
       country: data.country,
-      grade:
-        data.age ||
-        (currentLang === "CN" ? "未填写" : "Not specified"),
+      grade,
       "contact-email": data.email,
+      reply_to: data.email,
       message: data.message,
       camptype: courseName,
-      submit_time: new Date().toLocaleString("zh-CN", {
-        timeZone: "Asia/Shanghai",
-      }),
+      submit_time: submitTime,
       source_region: currentLang,
+      body_html: `
+        <div>
+          <p>您收到一条来自 BEE ALPHA 官网的训练营咨询信息</p>
+          <p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+          <p>👤 联系人信息</p>
+          <p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+          <p>姓名：${escapeHtml(data.name)}</p>
+          <p>邮箱：${escapeHtml(data.email)}</p>
+          <p>年龄/年级：${escapeHtml(grade)}</p>
+          <p>所在国家：${escapeHtml(data.country)}</p>
+          <p>咨询课程：${escapeHtml(courseName)}</p>
+          <p>语言区域：${escapeHtml(currentLang)}</p>
+          <p>提交时间：${escapeHtml(submitTime)}</p>
+          <p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+          <p>💬 咨询说明</p>
+          <p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+          <p>${escapeHtml(data.message).replace(/\n/g, "<br />")}</p>
+          <p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+          <p>此邮件由 BEE ALPHA 官网自动发送</p>
+          <p>请在24小时内回复用户</p>
+        </div>
+      `,
     };
 
     try {
@@ -85,8 +127,8 @@ export function CTA() {
 
       // 2. Send Email
       await emailjs.send(
-        "service_or46bak",
-        "template_4ticelj",
+        "service_beebeeai",
+        "template_dynamic",
         templateParams,
       );
 

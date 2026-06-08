@@ -14,6 +14,7 @@ import { AboutUs } from "./components/about-us";
 import { AllMentors } from "./components/all-mentors";
 import { InviteCodeModal } from "./components/invite-code-modal";
 import { SEO } from "./components/seo";
+import { Toaster } from "./components/ui/sonner";
 import { HelmetProvider } from 'react-helmet-async';
 import "../i18n";
 import { useTranslation } from "react-i18next";
@@ -66,6 +67,7 @@ export default function App() {
           onClose={() => setShowInviteModal(false)}
           onSuccess={handleInviteSuccess}
         />
+        <Toaster position="top-center" richColors />
       </div>
     </HelmetProvider>
   );

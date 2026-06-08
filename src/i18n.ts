@@ -416,6 +416,9 @@ const resources = {
           phone: "Phone",
           message: "Your Questions or Needs (Optional)",
           submit: "Submit Inquiry",
+          success: "Inquiry submitted successfully. We will contact you soon.",
+          error:
+            "Failed to submit inquiry. Please try again or email us directly.",
         },
         contact: {
           title: "Other Contact Methods",
@@ -846,6 +849,8 @@ const resources = {
           phone: "联系电话",
           message: "您的问题或需求（选填）",
           submit: "提交咨询",
+          success: "咨询已提交成功，我们会尽快与您联系。",
+          error: "咨询提交失败，请稍后重试，或直接通过邮箱联系我们。",
         },
         contact: {
           title: "其他联系方式",
