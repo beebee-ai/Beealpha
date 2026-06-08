@@ -13,7 +13,7 @@ import { useTranslation } from "react-i18next";
 // Initialize EmailJS
 emailjs.init("qZns4V5w0SwSNuOpU");
 
-const INQUIRY_RECIPIENT_EMAIL = "service@beebee.ai";
+const INQUIRY_RECIPIENT_EMAIL = "service@beebee.ai, brinny@beebee.ai, pin@beebee.ai";
 const INQUIRY_CC_EMAIL = "528573772@qq.com";
 
 const escapeHtml = (value: string) =>
